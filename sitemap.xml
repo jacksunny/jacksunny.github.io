@@ -4,37 +4,10 @@
 		<loc>http://rdors.com/index.html</loc>
 	</url>
 	<url>
-		<loc>http://rdors.com/sitemap/index.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/styled/index.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/styled/markdown/index.html</loc>
-	</url>
-	<url>
 		<loc>http://rdors.com/blog/index.html</loc>
 	</url>
 	<url>
-		<loc>http://rdors.com/blog/files/9e975c44274e56000d0b3614c09a9329-19.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/258851dc247afe70855a534f1ea5b07a-16.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/archive-september-2050.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/archive-october-2050.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/category-work.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/category-fun.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/blog/files/category-archive.html</loc>
+		<loc>http://rdors.com/blog-2/index.html</loc>
 	</url>
 	<url>
 		<loc>http://rdors.com/photos/index.html</loc>
@@ -56,9 +29,6 @@
 	</url>
 	<url>
 		<loc>http://rdors.com/photos/files/page1-1005-full.html</loc>
-	</url>
-	<url>
-		<loc>http://rdors.com/contact-form/index.php</loc>
 	</url>
 	<url>
 		<loc>http://rdors.com/downloads/index.html</loc>

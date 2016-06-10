@@ -56,7 +56,7 @@
 	};
  
 	// Object containing all website meta info
-	var websiteMeta = {"category-work.html":"A list of posts in category &ldquo;Work&rdquo;","archive-october-2050.html":"Archives for October 2050","category-archive.html":"A list of posts in category &ldquo;archive&rdquo;","category-fun.html":"A list of posts in category &ldquo;fun&rdquo;","archive-september-2050.html":"Archives for September 2050","category-personal.html":"A list of posts in category &ldquo;Personal&rdquo;","258851dc247afe70855a534f1ea5b07a-16.html":"More about me\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ","9e975c44274e56000d0b3614c09a9329-19.html":"￼\nResponsive images\nIn LANDER you can add the responsive behavior (edge to edge) to all images, just select the option \"Fluid Image\" in the Style Pane"};
+	var websiteMeta = {"archive-september-2050.html":"Archives for September 2050","258851dc247afe70855a534f1ea5b07a-16.html":"More about me\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ","9e975c44274e56000d0b3614c09a9329-19.html":"￼\nResponsive images\nIn LANDER you can add the responsive behavior (edge to edge) to all images, just select the option \"Fluid Image\" in the Style Pane","archive-october-2050.html":"Archives for October 2050"};
  
 	// pageId must match the key in websiteMeta object
 	var url = window.location.pathname;
