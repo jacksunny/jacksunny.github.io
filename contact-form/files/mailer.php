@@ -10,14 +10,14 @@ session_start();
 $return_url = "../index.php";
 
 //set the users email address
-$email = "info@info.com";
+$email = "395947643@qq.com";
 
 //array of fields in form. (In the format "field_name" => "field_label")
 $form_fields = array(
-"element0" => 'Your Name',
-"element1" => 'Your Email',
-"element2" => 'Subject',
-"element3" => 'Message'
+"element0" => 'name',
+"element1" => 'Email',
+"element2" => 'title',
+"element3" => 'message'
 );
 
 $required_fields = array("element0", "element1", "element2", "element3");
@@ -33,8 +33,8 @@ $send_from_users_email = false;
 $windows_server = false;
 
 // Set up the error and success messages.
-$message_success = 'Thanks';
-$message_unset_fields = "* required";
+$message_success = '<span style="font:12px PingFangSC-Regular; ">谢谢你，你的邮件正路上在飞</span>';
+$message_unset_fields = "Fields marked with * are required.";
 
 ////////////////////////////////////////////////////
 // End variables to be written out by RapidWeaver //

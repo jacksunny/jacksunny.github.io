@@ -16,24 +16,9 @@
 				</dict>
 				<key>ColourStyles</key>
 				<dict>
-					<key>AA new</key>
-					<dict/>
-					<key>BBBBBBB</key>
-					<dict/>
 					<key>Lander</key>
 					<dict/>
 					<key>Offroad</key>
-					<dict>
-						<key>%colour_accent%</key>
-						<string>#133289</string>
-						<key>%colour_body_overlay%</key>
-						<string>#12364F</string>
-						<key>%colour_headings%</key>
-						<string>#12373F</string>
-						<key>%colour_navigation_desktop_text%</key>
-						<string>#F6F4DF</string>
-					</dict>
-					<key>Patchy</key>
 					<dict/>
 				</dict>
 				<key>CreditRapidWeaver</key>
@@ -97,36 +82,36 @@
 				<string>utf-8</string>
 				<key>ThemeStyles</key>
 				<dict>
-					<key>BBBBBBB</key>
+					<key>Baukraft</key>
 					<array>
-						<string>Background overlay.80% opacity</string>
-						<string>Background.Use background image</string>
-						<string>Blur background on scroll.Blur</string>
-						<string>Desktop navigation.Main colour</string>
-						<string>Global colours.Main</string>
-						<string>Photo album.Show captions</string>
+						<string>Breadcrumb position and visibility.top</string>
+						<string>Container Font Size.medium</string>
+						<string>Custom header image.Default</string>
+						<string>Font Style.Liberation Serif Regular</string>
+						<string>Footer Font Size.medium</string>
+						<string>Header Font Size.medium</string>
+						<string>Header image visibility.On</string>
+						<string>Sidebar Font Size.medium</string>
 						<string>Sidebar.Right</string>
-						<string>Site description.Visible</string>
-						<string>Site title.Show site title</string>
 					</array>
 					<key>Lander</key>
 					<array>
 						<string>[+] combo options.Back to Top Button</string>
-						<string>[+] combo options.Banner Image: Show dots grid</string>
 						<string>[+] combo options.Navigation: Uppercase</string>
 						<string>[+] combo options.StyledText+Blog: Fluid image (edge to edge)</string>
 						<string>[+] combo options.Title and Slogan: Dark Shadow</string>
-						<string>Banner Image - Parallax.Apply Parallax (disable in small devices)</string>
-						<string>Banner Image - Vertical masking.MaxHeight 500px</string>
+						<string>Banner Image - Vertical masking.MaxHeight 400px</string>
 						<string>BreakPoint: Sidebar.  900 Pixel</string>
 						<string>Google WebFont: Classes + Titles.Raleway</string>
+						<string>Image - Parallax.Apply Parallax (disable in small devices)</string>
+						<string>Image - vertical masking.MaxHeight 400px</string>
 						<string>Loading page - Effects.Default</string>
-						<string>Max Width.1100 Pixel</string>
+						<string>Max Width.1000 Pixel</string>
 						<string>Navigation Colors.Navigation - Link</string>
 					</array>
 					<key>Offroad</key>
 					<array>
-						<string>Background overlay.40% opacity</string>
+						<string>Background overlay.80% opacity</string>
 						<string>Background.Use background image</string>
 						<string>Blur background on scroll.Blur</string>
 						<string>Desktop navigation.Main colour</string>
@@ -135,20 +120,6 @@
 						<string>Sidebar.Hidden</string>
 						<string>Site description.Visible</string>
 						<string>Site title.Show site title</string>
-					</array>
-					<key>Patchy</key>
-					<array>
-						<string>Font Style.Serif</string>
-						<string>Graphical Elements.Paper Under Site - Bottom</string>
-						<string>Graphical Elements.Paper Under Site - Right</string>
-						<string>Graphical Elements.Tape - Bottom Left and Right</string>
-						<string>Graphical Elements.Tape - Top Right</string>
-						<string>Sidebar.Right</string>
-					</array>
-					<key>Sharp</key>
-					<array>
-						<string>Sidebar.Right</string>
-						<string>Width.Default Width (700px)</string>
 					</array>
 				</dict>
 			</dict>

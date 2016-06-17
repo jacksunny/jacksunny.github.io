@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>ChangedStatuses</key>
+				<dict>
+					<key>default</key>
+					<true/>
+				</dict>
+				<key>ColourStyles</key>
+				<dict>
+					<key>Kiki</key>
+					<dict/>
+					<key>Lander</key>
+					<dict/>
+					<key>Offroad</key>
+					<dict/>
+					<key>Patchy</key>
+					<dict/>
+					<key>Realmac Software '06</key>
+					<dict/>
+				</dict>
+				<key>CreditRapidWeaver</key>
+				<true/>
+				<key>CustomCopyrightUsed</key>
+				<false/>
+				<key>CustomHeader</key>
+				<string>&lt;script type="text/javascript" src="resources/scripts/shCore.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="resources/scripts/shBrushJScript.js"&gt;&lt;/script&gt;
+	&lt;link type="text/css" rel="stylesheet" href="resources/styles/shCoreDefault.css"/&gt;
+	&lt;script type="text/javascript"&gt;SyntaxHighlighter.all();&lt;/script&gt;</string>
+				<key>CustomSiteTitleUsed</key>
+				<false/>
+				<key>CustomSloganUsed</key>
+				<false/>
+				<key>DefaultLinkTarget</key>
+				<string></string>
+				<key>FilenameExtension</key>
+				<string>html</string>
+				<key>HasCustomThemeStyle</key>
+				<true/>
+				<key>ImageFormat</key>
+				<string>Original</string>
+				<key>ImageQuality</key>
+				<string>High</string>
+				<key>IndexFilename</key>
+				<string>index.html</string>
+				<key>OutputFormat</key>
+				<string>Default</string>
+				<key>OutputXMLDeclaration</key>
+				<false/>
+				<key>RobotsShouldFollowLinks</key>
+				<true/>
+				<key>RobotsShouldIndexPage</key>
+				<true/>
+				<key>SidebarEnabled</key>
+				<integer>1</integer>
+				<key>TextEncoding</key>
+				<string>utf-8</string>
+				<key>ThemeStyles</key>
+				<dict>
+					<key>Blog</key>
+					<array>
+						<string>Header.Center</string>
+						<string>Sidebar.Right</string>
+						<string>Styles.Blue</string>
+						<string>Width.Default Width (780px)</string>
+					</array>
+					<key>Kiki</key>
+					<array>
+						<string>Font Family.Joseph</string>
+						<string>Font Size.Normal</string>
+						<string>Sidebar.Hidden</string>
+						<string>Site Banner Overlay.Red overlay</string>
+						<string>Toggle Site Banner.Display Banner</string>
+					</array>
+					<key>Lander</key>
+					<array>
+						<string>[+] combo options.Back to Top Button</string>
+						<string>[+] combo options.Navigation: Uppercase</string>
+						<string>[+] combo options.Title and Slogan: Dark Shadow</string>
+						<string>Banner Image - Parallax.Inactive</string>
+						<string>Banner Image - Vertical masking.MaxHeight 400px</string>
+						<string>BreakPoint: Sidebar.  900 Pixel</string>
+						<string>Google WebFont: Classes + Titles.Off</string>
+						<string>Loading page - Effects.Default</string>
+						<string>Max Width.1000 Pixel</string>
+						<string>Navigation Colors.Navigation - Link</string>
+					</array>
+					<key>Offroad</key>
+					<array>
+						<string>Background overlay.80% opacity</string>
+						<string>Background.Use background image</string>
+						<string>Blur background on scroll.Blur</string>
+						<string>Desktop navigation.Main colour</string>
+						<string>Global colours.Main</string>
+						<string>Photo album.Show captions</string>
+						<string>Sidebar.Right</string>
+						<string>Site description.Visible</string>
+						<string>Site title.Show site title</string>
+					</array>
+					<key>Patchy</key>
+					<array>
+						<string>Font Style.Serif</string>
+						<string>Graphical Elements.Paper Under Site - Bottom</string>
+						<string>Graphical Elements.Paper Under Site - Right</string>
+						<string>Graphical Elements.Tape - Bottom Left and Right</string>
+						<string>Graphical Elements.Tape - Top Right</string>
+						<string>Sidebar.Right</string>
+					</array>
+					<key>Realmac Software '06</key>
+					<array>
+						<string>Sidebar.Right</string>
+						<string>Width.900px</string>
+					</array>
+					<key>School</key>
+					<array>
+						<string>Fonts.Comic Book</string>
+						<string>Header Alignment.Left</string>
+						<string>Objects.Chalk</string>
+						<string>Objects.Eraser</string>
+						<string>Objects.Ruler</string>
+						<string>Sidebar.Right</string>
+						<string>Styles.Blackboard &amp; Sill</string>
+					</array>
+					<key>Simple</key>
+					<array>
+						<string>Sidebar.Right</string>
+						<string>Styles.Soft Pink</string>
+						<string>Width.Default Width (700px)</string>
+					</array>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array/>
+			<key>Subsandwiches</key>
+			<array/>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page Attributes</string>
+</dict>
+</plist>

@@ -11,6 +11,8 @@
 				<dict>
 					<key>Lander</key>
 					<dict/>
+					<key>Offroad</key>
+					<dict/>
 				</dict>
 				<key>CreditRapidWeaver</key>
 				<true/>
@@ -40,6 +42,18 @@
 				<string>utf-8</string>
 				<key>ThemeStyles</key>
 				<dict>
+					<key>Baukraft</key>
+					<array>
+						<string>Breadcrumb position and visibility.top</string>
+						<string>Container Font Size.medium</string>
+						<string>Custom header image.Default</string>
+						<string>Font Style.Liberation Serif Regular</string>
+						<string>Footer Font Size.medium</string>
+						<string>Header Font Size.medium</string>
+						<string>Header image visibility.On</string>
+						<string>Sidebar Font Size.medium</string>
+						<string>Sidebar.Right</string>
+					</array>
 					<key>Lander</key>
 					<array>
 						<string>[+] combo options.Back to Top Button</string>

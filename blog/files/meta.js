@@ -56,7 +56,7 @@
 	};
  
 	// Object containing all website meta info
-	var websiteMeta = {"archive-september-2050.html":"Archives for September 2050","258851dc247afe70855a534f1ea5b07a-16.html":"More about me\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ","9e975c44274e56000d0b3614c09a9329-19.html":"￼\nResponsive images\nIn LANDER you can add the responsive behavior (edge to edge) to all images, just select the option \"Fluid Image\" in the Style Pane","archive-october-2050.html":"Archives for October 2050"};
+	var websiteMeta = {"archive-december-2015.html":"Archives for December 2015","category-android.html":"A list of posts in category &ldquo;Android&rdquo;","category-canvas.html":"A list of posts in category &ldquo;Canvas&rdquo;","category-animation.html":"A list of posts in category &ldquo;Animation&rdquo;","category-fun.html":"A list of posts in category &ldquo;fun&rdquo;","2ba688daa773d278406f0d1132deba5d-22.html":"(No title)","258851dc247afe70855a534f1ea5b07a-16.html":"本文会带来什么？\n\t•\txml如何自定义圆角 shapeDrawable？环形？三角形？\n\t•\tdrawable有多少种？用法是什么？\n\t•\t绘制圆弧用法，原理？\n上面的统统没有！只说将一个关于Drawable不常用到的用法<br>","archive-june-2016.html":"Archives for June 2016","category-archive.html":"A list of posts in category &ldquo;archive&rdquo;","category-drawable.html":"A list of posts in category &ldquo;Drawable&rdquo;","category-work.html":"A list of posts in category &ldquo;Work&rdquo;","category-personal.html":"A list of posts in category &ldquo;Personal&rdquo;"};
  
 	// pageId must match the key in websiteMeta object
 	var url = window.location.pathname;
