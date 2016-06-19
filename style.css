@@ -505,6 +505,16 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-white{
 	background-color:#FFFFFF;
 }
+/* Button colour styles */
+
+.btn-light-sea-green{
+	background:#61823F;
+	color:#FFFFFF!important;
+}
+.btn-light-sea-green:hover{
+	background:#4e6832;
+	color:#FFFFFF!important;
+}
 /* Link colour styles */
 
 .ltc-white{
