@@ -56,7 +56,7 @@
 	};
  
 	// Object containing all website meta info
-	var websiteMeta = {"eff2b9a6e158f8a9ee15c4d86c37add8-0.html":"unity 3d","archive-june-2016.html":"Archives for June 2016"};
+	var websiteMeta = {"archive-june-2016.html":"Archives for June 2016","unity3dBlog.html":"unity 3d"};
  
 	// pageId must match the key in websiteMeta object
 	var url = window.location.pathname;

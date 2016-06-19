@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://rdors.com/blog/index.html</loc>
+		<lastmod>2016-06-19</lastmod>
 	</url>
 	<url>
-		<loc>http://rdors.com/blog/files/eff2b9a6e158f8a9ee15c4d86c37add8-0.html</loc>
+		<loc>http://rdors.com/blog/files/unity3dBlog.html</loc>
+		<lastmod>2016-06-19</lastmod>
+	</url>
+	<url>
+		<loc>http://rdors.com/blog/files/archive-june-2016.html</loc>
+		<lastmod>2016-06-19</lastmod>
 	</url>
 </urlset>
