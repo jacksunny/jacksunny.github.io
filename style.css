@@ -519,9 +519,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-camera{
 	background-image:url("img/camera.jpg");
 }
-.bg-camera{
-	background-image:url("img/camera.jpg");
-}
 .bg-tracks{
 	background-image:url("img/tracks.jpg");
 }
@@ -533,6 +530,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-forrest{
 	background-image:url("img/forrest.jpg");
+}
+.bg-forrest{
+	background-image:url('img/forrest.jpg');
 }
 
 
