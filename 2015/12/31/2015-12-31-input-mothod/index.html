@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>输入法相关姿势「汇总」(未完成...) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文会带来什么？
+1. 输入法源码分析
+2. 自定义一个数字键盘输入法
+3. 一个界面输入框调用自定义输入法和系统输入法
+4. 自定义汉字输入法
+5. 系统输入法的一些api（软键盘高度，输入法厂商等）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="输入法相关姿势「汇总」(未完成...)">
+<meta property="og:url" content="http://yoursite.com/2015/12/31/2015-12-31-input-mothod/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么？
+1. 输入法源码分析
+2. 自定义一个数字键盘输入法
+3. 一个界面输入框调用自定义输入法和系统输入法
+4. 自定义汉字输入法
+5. 系统输入法的一些api（软键盘高度，输入法厂商等）">
+<meta property="og:updated_time" content="2016-04-01T12:00:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="输入法相关姿势「汇总」(未完成...)">
+<meta name="twitter:description" content="本文会带来什么？
+1. 输入法源码分析
+2. 自定义一个数字键盘输入法
+3. 一个界面输入框调用自定义输入法和系统输入法
+4. 自定义汉字输入法
+5. 系统输入法的一些api（软键盘高度，输入法厂商等）">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2015-12-31-input-mothod" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2015/12/31/2015-12-31-input-mothod/" class="article-date">
+  <time datetime="2015-12-30T16:00:00.000Z" itemprop="datePublished">2015-12-31</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      输入法相关姿势「汇总」(未完成...)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文会带来什么？</em></p>
+<pre><code>1. 输入法源码分析
+2. 自定义一个数字键盘输入法
+3. 一个界面输入框调用自定义输入法和系统输入法
+4. 自定义汉字输入法
+5. 系统输入法的一些api（软键盘高度，输入法厂商等）
+</code></pre><a id="more"></a>
+<h1 id="一-和输入法有关的一些常见问题"><a href="#一-和输入法有关的一些常见问题" class="headerlink" title="一.和输入法有关的一些常见问题"></a>一.和输入法有关的一些常见问题</h1><hr>
+<h3 id="1-如何获取软键盘是否弹出状态-？"><a href="#1-如何获取软键盘是否弹出状态-？" class="headerlink" title="1.如何获取软键盘是否弹出状态 ？"></a>1.如何获取软键盘是否弹出状态 ？</h3><p>当前获取软键盘状态有两种方式:</p>
+<p><strong>A.监听界面view size变化</strong></p>
+<blockquote>
+<p>假定当前界面根ViewGroup为rootView，软键盘隐藏时，它的高度为屏幕高度，当软键盘弹出时，会触发rootView 的 size 变化，从而可以根据rootView高度是否等于屏幕高度-100dp（）来判断可以隐藏或者显示屏幕底部虚拟按键导航栏，同样会引起size变化，为了杜绝这种情况，遂-100dp（）</p>
+<blockquote>
+<p>为什么要减去100dp？在有的手机上，例如<code>华为的某些机型上底部虚拟导航栏可以隐藏或者消失，同样会引起size变化</code>，为了杜绝这类情况，遂减去100dp（写到这里吐槽Google一百遍啊一百遍！！！），可见，这种方式也是有缺点的.</p>
+</blockquote>
+</blockquote>
+<p>布局文件代码</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"</span><br><span class="line">    xmlns:tools="http://schemas.android.com/tools"</span><br><span class="line">    android:id="@+id/root_layout"</span><br><span class="line">    android:layout_width="match_parent"</span><br><span class="line">    android:layout_height="match_parent" &gt;</span><br><span class="line"></span><br><span class="line">    &lt;EditText</span><br><span class="line">        android:id="@+id/edit_text"</span><br><span class="line">        android:layout_width="match_parent"</span><br><span class="line">        android:layout_height="wrap_content"</span><br><span class="line">        android:text="点击我显示输入法" /&gt;</span><br><span class="line"></span><br><span class="line">&lt;/RelativeLayout&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mRootLayout = (RelativeLayout) findViewById(R.id.root_layout);</span><br><span class="line">mRootLayout.getViewTreeObserver().addOnGlobalLayoutListener(</span><br><span class="line">        <span class="keyword">new</span> ViewTreeObserver.OnGlobalLayoutListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onGlobalLayout</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="comment">// size变化会回调此方法，从而判断是否弹出软键盘</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>B.利用 <a href="http://developer.android.com/intl/zh-cn/reference/android/view/inputmethod/InputMethodManager.html" target="_blank" rel="external">InputMethodManager</a> 来获取</strong></p>
+<blockquote>
+<p>这种方法需要提前说清楚的是，调用imm.showSoftInput方法从而得出软键盘状态，同时也会把软键盘强制弹出，这是个很让人纠结的问题，调用imm.hideSoftInputFromWindow也可以得到软键盘状态，但是会强制关闭软键盘（试过得到状态后强制软键盘回到之前状态，屏幕会闪动），所以，慎用（<strong><code>有解决办法请告知</code></strong>）</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);</span><br><span class="line">      final EditText et = (EditText) findViewById(R.id.editText);</span><br><span class="line">      IMMResult result = new IMMResult();</span><br><span class="line">      imm.showSoftInput(et, <span class="number">0</span>,result);</span><br><span class="line">      int res = result.getResult();</span><br><span class="line">      <span class="keyword">if</span> (res == InputMethodManager.RESULT_UNCHANGED_SHOWN)&#123;</span><br><span class="line">          <span class="regexp">//</span> 表示软键盘弹出</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">          <span class="regexp">//</span> 表示软键盘隐藏</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">IMMResult</span> <span class="keyword">extends</span> <span class="title">ResultReceiver</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> result = -<span class="number">1</span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">IMMResult</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(<span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onReceiveResult</span><span class="params">(<span class="keyword">int</span> r, Bundle data)</span> </span>&#123;</span><br><span class="line">        result = r;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// poll result value for up to 500 milliseconds</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getResult</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">int</span> sleep = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> (result == -<span class="number">1</span> &amp;&amp; sleep &lt; <span class="number">500</span>) &#123;</span><br><span class="line">                Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                sleep += <span class="number">100</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            Log.e(<span class="string">"IMMResult"</span>, e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-如何获取软键盘高度-？"><a href="#2-如何获取软键盘高度-？" class="headerlink" title="2.如何获取软键盘高度 ？"></a>2.如何获取软键盘高度 ？</h3><p>获取软键盘高度是根据本文前面<code>一.1.A.获取软键盘是否弹出状态</code>中得到的，监听size变化，当软键盘弹出后size会改变，就可以拿到软键盘的高度,<strong><code>有其他方法请告知</code></strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 伪代码</span></span><br><span class="line"><span class="comment">// 屏幕高度</span></span><br><span class="line"><span class="keyword">int</span> heightOfScreen = a;</span><br><span class="line"><span class="comment">// 变化后的高度</span></span><br><span class="line"><span class="keyword">int</span> heightAfterChange = b;</span><br><span class="line"><span class="comment">// 键盘高度</span></span><br><span class="line"><span class="keyword">int</span> heightOfKeyBoard = heightOfScreen - heightAfterChange;</span><br></pre></td></tr></table></figure>
+<h3 id="3-如何获取系统所有输入法厂商等-？"><a href="#3-如何获取系统所有输入法厂商等-？" class="headerlink" title="3.如何获取系统所有输入法厂商等 ？"></a>3.如何获取系统所有输入法厂商等 ？</h3><blockquote>
+<p>可以获取系统所有注册输入法的包名等信息，本地维护一个关于厂商和包名的小型数据库即可得到厂商</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);</span><br><span class="line"><span class="comment">// 得到所有输入法</span></span><br><span class="line">List&lt;InputMethodInfo&gt; methodList = imm.getInputMethodList();</span><br><span class="line"><span class="keyword">final</span> <span class="keyword">int</span> length = methodList.size();</span><br><span class="line">items = <span class="keyword">new</span> String[length];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">    InputMethodInfo inputMethodInfo = methodList.get(i);</span><br><span class="line">    String temp = <span class="string">"input method:"</span> +<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">"id                    --&gt;"</span>+inputMethodInfo.getId()+<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">",getPackageName       --&gt;"</span>+inputMethodInfo.getPackageName()+<span class="string">"\n"</span> <span class="comment">// 包名</span></span><br><span class="line">            +<span class="string">",getServiceName       --&gt;"</span>+inputMethodInfo.getServiceName()+<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">",getSettingsActivity  --&gt;"</span>+inputMethodInfo.getSettingsActivity()+<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">",getIsDefaultResourceId  --&gt;"</span>+inputMethodInfo.getIsDefaultResourceId()+<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">",getSubtypeCount  --&gt;"</span>+inputMethodInfo.getSubtypeCount()+<span class="string">"\n"</span></span><br><span class="line">            +<span class="string">",getComponent         --&gt;"</span>+inputMethodInfo.getComponent();</span><br><span class="line">    Log.i(TAG,temp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-如何获取系统当前输入法厂商等-？"><a href="#4-如何获取系统当前输入法厂商等-？" class="headerlink" title="4.如何获取系统当前输入法厂商等 ？"></a>4.如何获取系统当前输入法厂商等 ？</h3><blockquote>
+<p>可以获取当前默认输入法的ID（对应于 上文所说 一.3 中 id属性 inputMethodInfo.getId()）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 对应于 上文所说 一.3 中 id属性 inputMethodInfo.getId()</span></span><br><span class="line"><span class="comment">// eg.搜狗：com.sohu.inputmethod.sogou/.SogouIME</span></span><br><span class="line">   String DEFAULT_INPUT_METHOD = Settings.Secure.getString(</span><br><span class="line">           getContentResolver(),</span><br><span class="line">           Settings.Secure.DEFAULT_INPUT_METHOD</span><br><span class="line">   );</span><br><span class="line">   String INPUT_METHOD_SELECTOR_VISIBILITY = Settings.Secure.getString(</span><br><span class="line">           getContentResolver(),</span><br><span class="line">           Settings.Secure.INPUT_METHOD_SELECTOR_VISIBILITY</span><br><span class="line">   );</span><br><span class="line">   String ENABLED_INPUT_METHODS = Settings.Secure.getString(</span><br><span class="line">           getContentResolver(),</span><br><span class="line">           Settings.Secure.ENABLED_INPUT_METHODS</span><br><span class="line">   );</span><br><span class="line">   String SELECTED_INPUT_METHOD_SUBTYPE = Settings.Secure.getString(</span><br><span class="line">           getContentResolver(),</span><br><span class="line">           Settings.Secure.SELECTED_INPUT_METHOD_SUBTYPE</span><br><span class="line">   );</span><br><span class="line">   String currentInputInfo = <span class="string">"default:"</span></span><br><span class="line">           +<span class="string">"DEFAULT_INPUT_METHOD:"</span>+DEFAULT_INPUT_METHOD+<span class="string">"\n"</span></span><br><span class="line">           +<span class="string">"ENABLED_INPUT_METHODS:"</span>+ENABLED_INPUT_METHODS+<span class="string">"\n"</span></span><br><span class="line">           + <span class="string">"SELECTED_INPUT_METHOD_SUBTYPE:"</span>+SELECTED_INPUT_METHOD_SUBTYPE+<span class="string">"\n"</span></span><br><span class="line">           +<span class="string">"INPUT_METHOD_SELECTOR_VISIBILITY:"</span>+INPUT_METHOD_SELECTOR_VISIBILITY;</span><br><span class="line">   Log.i(TAG,currentInputInfo);</span><br></pre></td></tr></table></figure>
+<h1 id="二-官方输入法sample源码分析"><a href="#二-官方输入法sample源码分析" class="headerlink" title="二.官方输入法sample源码分析"></a>二.官方输入法sample源码分析</h1><p><em>目的，通过分析官方源码来增加对输入法原理的理解</em></p>
+<blockquote>
+<p>从SDK 1.5版本以后，Android就开放它的IMF（Input Method Framework），让我们能够开发自己的输入法。而开发输入法最好的参考就是Android自带的Sample-SoftKeyboard，虽然这个例子仅包含英文和数字输入，但是它本身还算完整和清楚，对我们开始Android开发实战有很大帮助。</p>
+<blockquote>
+<p>下载的<code>sdk/sample/android-8/</code> 以及  <code>sdk/samples/android-23/legacy/</code> 下都有<code>SoftKeyboard</code>源码，我们用android-8中的</p>
+</blockquote>
+</blockquote>
+<h3 id="原理分析文章"><a href="#原理分析文章" class="headerlink" title="原理分析文章"></a>原理分析文章</h3><p><em>以下是传送门：</em></p>
+<ol>
+<li><a href="http://blog.csdn.net/deaboway/article/details/6246622" target="_blank" rel="external">Android开发实例详解之IMF</a></li>
+</ol>
+<h2 id="待续"><a href="#待续" class="headerlink" title="待续"></a><strong>待续</strong></h2><h1 id="三-自定义数字输入法"><a href="#三-自定义数字输入法" class="headerlink" title="三.自定义数字输入法"></a>三.自定义数字输入法</h1><hr>
+<h1 id="四-一个界面调用多种输入法"><a href="#四-一个界面调用多种输入法" class="headerlink" title="四.一个界面调用多种输入法"></a>四.一个界面调用多种输入法</h1><hr>
+<h1 id="五-自定义中文输入法"><a href="#五-自定义中文输入法" class="headerlink" title="五.自定义中文输入法"></a>五.自定义中文输入法</h1><hr>
+<h1 id="五-感谢"><a href="#五-感谢" class="headerlink" title="五.感谢"></a>五.感谢</h1><ul>
+<li><a href="http://blog.csdn.net/deaboway/article/details/6246622" target="_blank" rel="external">Gavin’s home</a></li>
+<li></li>
+</ul>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/InputMethod/">InputMethod</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/输入法/">输入法</a></li></ul>
+
+        <a data-url="http://yoursite.com/2015/12/31/2015-12-31-input-mothod/" data-id="cipxo61l00005506cft4lsl2u" class="article-share-link">分享到</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/01/04/2016-01-04-gradle-info/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          Gradle使用方法与技巧「汇总」，未完....
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/28/2015-12-28-Android-Studio-instant-run/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">Android Studio 2.0 的逆天功能Instant Run「转载」</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/02/19/2016-02-19-shape_detail/">Shape自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/13/2016-01-13-zhengze/">正则表达式介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/04/2016-01-04-gradle-info/">Gradle使用方法与技巧「汇总」，未完....</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/31/2015-12-31-input-mothod/">输入法相关姿势「汇总」(未完成...)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/28/2015-12-28-Android-Studio-instant-run/">Android Studio 2.0 的逆天功能Instant Run「转载」</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="返回顶部"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

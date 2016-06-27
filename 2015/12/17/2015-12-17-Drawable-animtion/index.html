@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Drawable根据时间插值自定义动画「原创」 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文会带来什么？
+
+xml如何自定义圆角 shapeDrawable？环形？三角形？
+drawable有多少种？用法是什么？
+绘制圆弧用法？原理
+
+上面的统统没有！只说将一个关于Drawable不常用到的用法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Drawable根据时间插值自定义动画「原创」">
+<meta property="og:url" content="http://yoursite.com/2015/12/17/2015-12-17-Drawable-animtion/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么？
+
+xml如何自定义圆角 shapeDrawable？环形？三角形？
+drawable有多少种？用法是什么？
+绘制圆弧用法？原理
+
+上面的统统没有！只说将一个关于Drawable不常用到的用法">
+<meta property="og:image" content="httP://img.blog.csdn.net/20151217105800205">
+<meta property="og:updated_time" content="2016-06-10T08:34:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Drawable根据时间插值自定义动画「原创」">
+<meta name="twitter:description" content="本文会带来什么？
+
+xml如何自定义圆角 shapeDrawable？环形？三角形？
+drawable有多少种？用法是什么？
+绘制圆弧用法？原理
+
+上面的统统没有！只说将一个关于Drawable不常用到的用法">
+<meta name="twitter:image" content="httP://img.blog.csdn.net/20151217105800205">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2015-12-17-Drawable-animtion" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2015/12/17/2015-12-17-Drawable-animtion/" class="article-date">
+  <time datetime="2015-12-16T16:00:00.000Z" itemprop="datePublished">2015-12-17</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Drawable根据时间插值自定义动画「原创」
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文会带来什么？</em></p>
+<ul>
+<li>xml如何自定义圆角 shapeDrawable？环形？三角形？</li>
+<li>drawable有多少种？用法是什么？</li>
+<li>绘制圆弧用法？原理</li>
+</ul>
+<p><strong>上面的统统没有！只说将一个关于Drawable不常用到的用法</strong></p>
+<a id="more"></a>
+<hr>
+<h3 id="我们要实现的效果如下图"><a href="#我们要实现的效果如下图" class="headerlink" title="我们要实现的效果如下图"></a>我们要实现的效果如下图</h3><p><img src="httP://img.blog.csdn.net/20151217105800205" alt=""></p>
+<blockquote>
+<p><em>第一个想法你想用什么来实现？在view 的 onDraw中实现？这也许是很多人的第一个想法，我也是</em><br><em>但想起之前在github上翻看某大神源码时看到用自定义Drawable + 动画器插值实现了一个太阳冉冉升起的动画，就想采用类似的做法来做</em></p>
+</blockquote>
+<h3 id="具体思路如下："><a href="#具体思路如下：" class="headerlink" title="具体思路如下："></a>具体思路如下：</h3><ol>
+<li>gif图片中的弧形动画以及阻尼动画，说白了也就是canvas绘制圆弧等的组合，即根据时间变化计算绘制相应图形即可</li>
+<li>Drawable中有draw(Canvas canvas)方法，在此方法中可通过canvas进行绘制</li>
+<li>View实现TranslationAnimation，可实现整体的上移或者下移，同时创建时间插值</li>
+<li>把View动画创建的时间插值动态传递给Drawable，Drawable根据时间插值，动态计算并绘制图形</li>
+</ol>
+<h3 id="好处如下："><a href="#好处如下：" class="headerlink" title="好处如下："></a>好处如下：</h3><ol>
+<li>使用Drawable而不是在View中来绘制，不会影响到之前View中onDraw的代码和逻辑</li>
+<li>Drawable一般当做背景，与view耦合很小</li>
+<li>Animation产生插值，可设置不同加速器 产生不同效果</li>
+</ol>
+<p><strong>可见，我们所有需要的前置条件都已经满足了，现在开始 实现</strong></p>
+<hr>
+<h1 id="以下为部分代码"><a href="#以下为部分代码" class="headerlink" title="以下为部分代码"></a>以下为部分代码</h1><h3 id="1-创建TranslationAnimation产生时间插值"><a href="#1-创建TranslationAnimation产生时间插值" class="headerlink" title="1.创建TranslationAnimation产生时间插值"></a>1.创建TranslationAnimation产生时间插值</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> AnimationSet as = <span class="keyword">new</span> AnimationSet(<span class="keyword">true</span>);</span><br><span class="line">as.setDuration(<span class="number">600</span>);</span><br><span class="line">TranslateAnimation translateAnimation = <span class="keyword">new</span> TranslateAnimation(</span><br><span class="line">        ScaleAnimation.RELATIVE_TO_SELF,<span class="number">0</span>,</span><br><span class="line">        ScaleAnimation.RELATIVE_TO_SELF,<span class="number">0</span>,</span><br><span class="line">        ScaleAnimation.RELATIVE_TO_SELF,<span class="number">1.0f</span>,</span><br><span class="line">        ScaleAnimation.RELATIVE_TO_SELF,<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">applyTransformation</span><span class="params">(<span class="keyword">float</span> interpolatedTime, Transformation t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.applyTransformation(interpolatedTime, t);</span><br><span class="line">        myDrawable.setPercent(interpolatedTime, <span class="keyword">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">as.addAnimation(translateAnimation);</span><br><span class="line"><span class="keyword">return</span> as;</span><br></pre></td></tr></table></figure>
+<h3 id="2-自定义Drawable及讲解"><a href="#2-自定义Drawable及讲解" class="headerlink" title="2.自定义Drawable及讲解"></a>2.自定义Drawable及讲解</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAnimationDrawable3</span> <span class="keyword">extends</span> <span class="title">Drawable</span> <span class="keyword">implements</span> <span class="title">Drawable</span>.<span class="title">Callback</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Paint mPaint;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> mWidth;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> mHeight;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyAnimationDrawable3</span><span class="params">(<span class="keyword">int</span> width,<span class="keyword">int</span> height)</span> </span>&#123;</span><br><span class="line">    	mPaint = <span class="keyword">new</span> Paint();</span><br><span class="line">    	mWidth = width;</span><br><span class="line">    	mHeight = height;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Canvas canvas)</span> </span>&#123;</span><br><span class="line">    	<span class="comment">// 主要绘制代码</span></span><br><span class="line">	<span class="comment">//  canvas.drawRoundRect(rectF, 30, 30, mPaint);</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getIntrinsicWidth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">return</span> mWidth;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getIntrinsicHeight</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">return</span> mHeight;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAlpha</span><span class="params">(<span class="keyword">int</span> alpha)</span> </span>&#123;</span><br><span class="line">    	mPaint.setAlpha(alpha);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setColorFilter</span><span class="params">(ColorFilter cf)</span> </span>&#123;</span><br><span class="line">   	 	mPaint.setColorFilter(cf);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getOpacity</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">return</span> PixelFormat.TRANSLUCENT;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">invalidateDrawable</span><span class="params">(Drawable who)</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">final</span> Callback callback = getCallback();</span><br><span class="line">    	<span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">        	callback.invalidateDrawable(<span class="keyword">this</span>);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">scheduleDrawable</span><span class="params">(Drawable who, Runnable what, <span class="keyword">long</span> when)</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">final</span> Callback callback = getCallback();</span><br><span class="line">    	<span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">        	callback.scheduleDrawable(<span class="keyword">this</span>, what, when);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">unscheduleDrawable</span><span class="params">(Drawable who, Runnable what)</span> </span>&#123;</span><br><span class="line">    	<span class="keyword">final</span> Callback callback = getCallback();</span><br><span class="line">    	<span class="keyword">if</span> (callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">        	callback.unscheduleDrawable(<span class="keyword">this</span>, what);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其中draw中负责具体绘制，getIntrinsicWidth,getIntrinsicHeight为指定宽高，setAlpha,setColorFilter等都很简单，最后，该类实现Drawable.CallBack，实现最后三个方法，作用是“把你实现的该接口注册到动画Drawable上可以实现动态Drawable的调度和执行” </p>
+</blockquote>
+<h3 id="3-传递时间插值进入Drawable"><a href="#3-传递时间插值进入Drawable" class="headerlink" title="3.传递时间插值进入Drawable"></a>3.传递时间插值进入Drawable</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/**</span><br><span class="line"> * <span class="doctag">@param</span> percent 时间插值</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPrecent</span><span class="params">(<span class="keyword">float</span> percent)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (percent &gt; <span class="number">0.5f</span>)&#123;</span><br><span class="line">        <span class="comment">//逻辑代码，计算弧度等</span></span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">//逻辑代码，计算弧度等</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 刷新 draw 图形</span></span><br><span class="line">    invalidateSelf();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>传递进去时间插值后，即可根据时间插值计算相关弧度，在draw中进行绘制即可完成动态图中的效果（绘制逻辑 就不说了，大概为插值0-1绘制向上半圆弧，到顶点根据阻尼振动函数绘制半径变化的圆弧）       </p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Animation/">Animation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Canvas/">Canvas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Drawable/">Drawable</a></li></ul>
+
+        <a data-url="http://yoursite.com/2015/12/17/2015-12-17-Drawable-animtion/" data-id="cipxo61lb000b506co0h2g7cd" class="article-share-link">分享到</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/18/2015-12-18-Volley-primary/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          Volley(1)-入门及使用「汇总」
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/02/19/2016-02-19-shape_detail/">Shape自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/13/2016-01-13-zhengze/">正则表达式介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/04/2016-01-04-gradle-info/">Gradle使用方法与技巧「汇总」，未完....</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/31/2015-12-31-input-mothod/">输入法相关姿势「汇总」(未完成...)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/28/2015-12-28-Android-Studio-instant-run/">Android Studio 2.0 的逆天功能Instant Run「转载」</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="返回顶部"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Gradle使用方法与技巧「汇总」，未完.... | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文会带来什么？
+1. Gradle的一些使用方法和技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gradle使用方法与技巧「汇总」，未完....">
+<meta property="og:url" content="http://yoursite.com/2016/01/04/2016-01-04-gradle-info/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么？
+1. Gradle的一些使用方法和技巧">
+<meta property="og:image" content="http://d.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=174a0a89cfbf6c81f76224ee8c0e9d0d/b17eca8065380cd71aeb4c0ca244ad345882815e.jpg">
+<meta property="og:image" content="http://img.blog.csdn.net/20151231145250256">
+<meta property="og:updated_time" content="2016-04-01T12:00:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gradle使用方法与技巧「汇总」，未完....">
+<meta name="twitter:description" content="本文会带来什么？
+1. Gradle的一些使用方法和技巧">
+<meta name="twitter:image" content="http://d.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=174a0a89cfbf6c81f76224ee8c0e9d0d/b17eca8065380cd71aeb4c0ca244ad345882815e.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2016-01-04-gradle-info" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2016/01/04/2016-01-04-gradle-info/" class="article-date">
+  <time datetime="2016-01-03T16:00:00.000Z" itemprop="datePublished">2016-01-04</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Gradle使用方法与技巧「汇总」，未完....
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文会带来什么？</em></p>
+<pre><code>1. Gradle的一些使用方法和技巧
+</code></pre><a id="more"></a>
+<h3 id="打包时不包含某些jar包"><a href="#打包时不包含某些jar包" class="headerlink" title="打包时不包含某些jar包"></a>打包时不包含某些jar包</h3><p>有的时候我们不需要打入某些jar包（如作为主工程插件，不能包含两份jar包），在eclipse中我们是这样操作的</p>
+<p><img src="http://d.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=174a0a89cfbf6c81f76224ee8c0e9d0d/b17eca8065380cd71aeb4c0ca244ad345882815e.jpg" alt=""></p>
+<p>在 AS中，包含依赖包一般姿势是这样子的(以v4包为例)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    <span class="function">compile <span class="title">fileTree</span><span class="params">(dir: <span class="string">'libs'</span>, include: <span class="string">'*.jar'</span>)</span></span><br><span class="line">    compile <span class="title">files</span><span class="params">(<span class="string">'lib/android-support-v4.jar'</span>)</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>编译通过但是打包不包含通过 provided 即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    <span class="function">compile <span class="title">fileTree</span><span class="params">(dir: <span class="string">'libs'</span>, include: <span class="string">'*.jar'</span>)</span></span><br><span class="line">    provided <span class="title">files</span><span class="params">(<span class="string">'lib/android-support-v4.jar'</span>)</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="项目与build的特定全局变量"><a href="#项目与build的特定全局变量" class="headerlink" title="项目与build的特定全局变量"></a>项目与build的特定全局变量</h3><p>用gradle可以自动生成BuildConfig类，其中能够生成附加字段。这对配置服务器URL之类的工作十分有用，使用它也能轻松开启或关闭功能。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">defaultConfig &#123;</span><br><span class="line">    buildConfigField <span class="string">"String"</span>, <span class="string">"TWITTER_TOKEN"</span>, <span class="string">'"SDASJHDKAJSK"'</span></span><br><span class="line">&#125;</span><br><span class="line">buildTypes &#123;</span><br><span class="line">    debug &#123;</span><br><span class="line">      buildConfigField <span class="string">"String"</span>, <span class="string">"API_URL"</span>, <span class="string">'"http://api.dev.com/"'</span></span><br><span class="line">      buildConfigField <span class="string">"boolean"</span>, <span class="string">"REPORT_CRASHES"</span>, <span class="string">"true"</span></span><br><span class="line">    &#125;</span><br><span class="line">    release &#123;</span><br><span class="line">      buildConfigField <span class="string">"String"</span>, <span class="string">"API_URL"</span>, <span class="string">'"http://api.prod.com/"'</span></span><br><span class="line">      buildConfigField <span class="string">"boolean"</span>, <span class="string">"REPORT_CRASHES"</span>, <span class="string">"false"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以从BuildConfig的final类BuildConfig.TWITTER_TOKEN，BuildConfig.REPORT_CRASHES与BuildConfig.API_URL进行访问，后两个根据所在的build类不同也会有差异。</p>
+<h3 id="每个buildtype的名字、版本与app-id都不同"><a href="#每个buildtype的名字、版本与app-id都不同" class="headerlink" title="每个buildtype的名字、版本与app id都不同"></a>每个buildtype的名字、版本与app id都不同</h3><p>这样一来使用者就能同时安装发布版与debug版了（切记，在安卓系统中无法安装同名的不同应用）。用户可以在崩溃报告工具中以不同的版本名筛选问题与崩溃。通过查看应用名很容易找到目前所运行的版本。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        debug &#123;</span><br><span class="line">            applicationIdSuffix <span class="string">".debug"</span></span><br><span class="line">            versionNameSuffix <span class="string">"-debug"</span></span><br><span class="line">            resValue <span class="string">"string"</span>, <span class="string">"app_name"</span>, <span class="string">"CoolApp (debug)"</span></span><br><span class="line">            signingConfig signingConfigs.debug</span><br><span class="line">        &#125;</span><br><span class="line">        release &#123;</span><br><span class="line">            resValue <span class="string">"string"</span>, <span class="string">"app_name"</span>, <span class="string">"CoolApp"</span></span><br><span class="line">            signingConfig signingConfigs.release</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="隐私信息"><a href="#隐私信息" class="headerlink" title="隐私信息"></a>隐私信息</h3><p>在Android系统中，所有应用都必须经过证书数字签名才能安装，以便系统能够识别应用的作者。而其中有些属于敏感信息，不应被别人看到。</p>
+<p>使用者永远不该将这类信息check in到源代码管理工具中。</p>
+<p>有些人主张，每个人都应当有自己的本地配置文件，甚至用全局的~/.gradle/build.gradle，不过如果你要执行持续集成（CI）或部署，特别是没有自己CI服务器的情况下，不应在CVS系统里存放任何类型的纯文本凭证。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">signingConfigs &#123;</span><br><span class="line">    release &#123;</span><br><span class="line">        storeFile     <span class="string">"$&#123;System.env.COOL_APP_PRIVATE_KEY&#125;"</span></span><br><span class="line">        keyAlias      <span class="string">"$&#123;System.env.COOL_APP_ALIAS&#125;"</span></span><br><span class="line">        storePassword <span class="string">"$&#123;System.env.COOL_APP_STORE_PW&#125;"</span></span><br><span class="line">        keyPassword   <span class="string">"$&#123;System.env.COOL_APP_PW&#125;"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因此，可以通过环境变量将敏感信息提供给自己的持续集成服务器，而无需担心将任何“危险”信息check in到公司了。</p>
+<h3 id="自动生成版本名称（versionName）与版本号（versionCode）"><a href="#自动生成版本名称（versionName）与版本号（versionCode）" class="headerlink" title="自动生成版本名称（versionName）与版本号（versionCode）"></a>自动生成版本名称（versionName）与版本号（versionCode）</h3><p>将你的版本拆分成逻辑组件，分别管理。不用再考虑版本号修改的是否正确，也不用担心版本名更新的是否合适了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def versionMajor = <span class="number">1</span></span><br><span class="line">def versionMinor = <span class="number">0</span></span><br><span class="line">def versionPatch = <span class="number">0</span></span><br><span class="line">android &#123;</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        versionCode versionMajor * <span class="number">10000</span> + versionMinor * <span class="number">100</span> + versionPatch</span><br><span class="line">        versionName <span class="string">"$&#123;versionMajor&#125;.$&#123;versionMinor&#125;.$&#123;versionPatch&#125;"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="给BuildConfig增加git-hash与build时间"><a href="#给BuildConfig增加git-hash与build时间" class="headerlink" title="给BuildConfig增加git hash与build时间"></a>给BuildConfig增加git hash与build时间</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def gitSha = <span class="string">'git rev-parse --short HEAD'</span>.execute([], project.rootDir).text.trim()</span><br><span class="line">def buildTime = <span class="keyword">new</span> Date().format(<span class="string">"yyyy-MM-dd'T'HH:mm:ss'Z'"</span>, TimeZone.getTimeZone(<span class="string">"UTC"</span>))</span><br><span class="line">android &#123;</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        buildConfigField <span class="string">"String"</span>, <span class="string">"GIT_SHA"</span>, <span class="string">"\"$&#123;gitSha&#125;\""</span></span><br><span class="line">        buildConfigField <span class="string">"String"</span>, <span class="string">"BUILD_TIME"</span>, <span class="string">"\"$&#123;buildTime&#125;\""</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在有两个可用变量：BuildConfig.GIT_SHA和BuildConfig.BUILD_TIME，用来结合日志与提交信息或者build时间再好不过。</p>
+<h3 id="扣紧安全带"><a href="#扣紧安全带" class="headerlink" title="扣紧安全带"></a>扣紧安全带</h3><p>想要快速完成部署，只需创建dev类型，将minSdkVersion设定为21。注意：这样做的话，就无法获得针对真实minSdk的合适linting了。因此很明显只能用在日常工作中，而不能用在发布时。这样一来，安卓gradle插件可以将应用程序的每个模块构建为不同的dex文件（pre-dex），并生成可以在Android Lollipop及以上系统中测试的APK包，而无需再耗费大量时间进行dex合并进程。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    productFlavors </span><br><span class="line">        dev &#123;</span><br><span class="line">            minSdkVersion <span class="number">21</span></span><br><span class="line">        &#125;</span><br><span class="line">        prod &#123;</span><br><span class="line">            <span class="comment">// The actual minSdkVersion for the application.</span></span><br><span class="line">            minSdkVersion <span class="number">14</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="直接将单元测试结果输出到console中"><a href="#直接将单元测试结果输出到console中" class="headerlink" title="直接将单元测试结果输出到console中"></a>直接将单元测试结果输出到console中</h3><p>使用这个小技巧，我们可以实时看到安卓单元测试的记录结果。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  testOptions.unitTests.all &#123;</span><br><span class="line">    testLogging &#123;</span><br><span class="line">      events <span class="string">'passed'</span>, <span class="string">'skipped'</span>, <span class="string">'failed'</span>, <span class="string">'standardOut'</span>, <span class="string">'standardError'</span></span><br><span class="line">      outputs.upToDateWhen &#123; <span class="keyword">false</span> &#125;</span><br><span class="line">      showStandardStreams = <span class="keyword">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在运行测试时，输出结果如下：</p>
+<p><img src="http://img.blog.csdn.net/20151231145250256" alt=""></p>
+<h3 id="Gradle，tell-me-I’m-pretty"><a href="#Gradle，tell-me-I’m-pretty" class="headerlink" title="Gradle，tell me I’m pretty"></a>Gradle，tell me I’m pretty</h3><p>全部放在一起的话，顺序如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        def BOOLEAN = <span class="string">"boolean"</span></span><br><span class="line">        def TRUE = <span class="string">"true"</span></span><br><span class="line">        def FALSE = <span class="string">"false"</span></span><br><span class="line">        def LOG_HTTP_REQUESTS = <span class="string">"LOG_HTTP_REQUESTS"</span></span><br><span class="line">        def REPORT_CRASHES = <span class="string">"REPORT_CRASHES"</span></span><br><span class="line">        def DEBUG_IMAGES = <span class="string">"DEBUG_IMAGES"</span></span><br><span class="line"></span><br><span class="line">        debug &#123;</span><br><span class="line">            ...</span><br><span class="line">            buildConfigField BOOLEAN, LOG_HTTP_REQUESTS, TRUE</span><br><span class="line">            buildConfigField BOOLEAN, REPORT_CRASHES, FALSE</span><br><span class="line">            buildConfigField BOOLEAN, DEBUG_IMAGES, TRUE</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        release &#123;</span><br><span class="line">            ...</span><br><span class="line">            buildConfigField BOOLEAN, LOG_HTTP_REQUESTS, FALSE</span><br><span class="line">            buildConfigField BOOLEAN, REPORT_CRASHES, TRUE</span><br><span class="line">            buildConfigField BOOLEAN, DEBUG_IMAGES, FALSE</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><ul>
+<li><a href="http://geek.csdn.net/news/detail/48955" target="_blank" rel="external">受用不尽的Gradle使用方法与技巧</a></li>
+</ul>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gradle/">Gradle</a></li></ul>
+
+        <a data-url="http://yoursite.com/2016/01/04/2016-01-04-gradle-info/" data-id="cipxo61l70009506cjxevrkq6" class="article-share-link">分享到</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/01/13/2016-01-13-zhengze/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          正则表达式介绍
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/31/2015-12-31-input-mothod/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">输入法相关姿势「汇总」(未完成...)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/02/19/2016-02-19-shape_detail/">Shape自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/13/2016-01-13-zhengze/">正则表达式介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/04/2016-01-04-gradle-info/">Gradle使用方法与技巧「汇总」，未完....</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/31/2015-12-31-input-mothod/">输入法相关姿势「汇总」(未完成...)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/28/2015-12-28-Android-Studio-instant-run/">Android Studio 2.0 的逆天功能Instant Run「转载」</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="返回顶部"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

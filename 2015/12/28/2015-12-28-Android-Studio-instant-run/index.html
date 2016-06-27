@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Android Studio 2.0 的逆天功能Instant Run「转载」 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="作为一个Android开发者，很多的时候我们需要花大量的时间在bulid，运行到真机（虚拟机）上，对于ios上的Playground羡慕不已，这种情况将在Android Studio 2.0有了很大改善，使用instant run，在第一次运行之后，就可以快速的在真机中看见修改后的结果，不仅仅是UI可以直接显示，还包括代码逻辑。不用再苦苦等build了，节约生命呀！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Studio 2.0 的逆天功能Instant Run「转载」">
+<meta property="og:url" content="http://yoursite.com/2015/12/28/2015-12-28-Android-Studio-instant-run/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="作为一个Android开发者，很多的时候我们需要花大量的时间在bulid，运行到真机（虚拟机）上，对于ios上的Playground羡慕不已，这种情况将在Android Studio 2.0有了很大改善，使用instant run，在第一次运行之后，就可以快速的在真机中看见修改后的结果，不仅仅是UI可以直接显示，还包括代码逻辑。不用再苦苦等build了，节约生命呀！">
+<meta property="og:image" content="http://segmentfault.com/img/bVq642">
+<meta property="og:image" content="http://segmentfault.com/img/bVq644">
+<meta property="og:image" content="http://segmentfault.com/img/bVq65a">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/install%20run%20old.png">
+<meta property="og:image" content="http://segmentfault.com/img/bVq65b">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/splash.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/install%20run%20new.png">
+<meta property="og:updated_time" content="2016-04-01T12:00:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android Studio 2.0 的逆天功能Instant Run「转载」">
+<meta name="twitter:description" content="作为一个Android开发者，很多的时候我们需要花大量的时间在bulid，运行到真机（虚拟机）上，对于ios上的Playground羡慕不已，这种情况将在Android Studio 2.0有了很大改善，使用instant run，在第一次运行之后，就可以快速的在真机中看见修改后的结果，不仅仅是UI可以直接显示，还包括代码逻辑。不用再苦苦等build了，节约生命呀！">
+<meta name="twitter:image" content="http://segmentfault.com/img/bVq642">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2015-12-28-Android-Studio-instant-run" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2015/12/28/2015-12-28-Android-Studio-instant-run/" class="article-date">
+  <time datetime="2015-12-27T16:00:00.000Z" itemprop="datePublished">2015-12-28</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android Studio 2.0 的逆天功能Instant Run「转载」
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>作为一个Android开发者，很多的时候我们需要花大量的时间在bulid，运行到真机（虚拟机）上，对于ios上的Playground羡慕不已，这种情况将在Android Studio 2.0有了很大改善，使用instant run，在第一次运行之后，就可以快速的在真机中看见修改后的结果，不仅仅是UI可以直接显示，还包括代码逻辑。不用再苦苦等build了，节约生命呀！</p>
+<a id="more"></a>
+<h2 id="首先要升级到Android-Studio-2-0"><a href="#首先要升级到Android-Studio-2-0" class="headerlink" title="首先要升级到Android Studio 2.0"></a>首先要升级到Android Studio 2.0</h2><hr>
+<p>目前Android Studio的2.0版本还在Canary Channel（金丝雀） 上面，所以想体验2.0的同学需要先把升级版本切换到Canary Channel 上面。</p>
+<blockquote>
+<p>Preferences -&gt; System Settings -&gt;Updates</p>
+</blockquote>
+<p><img src="http://segmentfault.com/img/bVq642" alt=""></p>
+<p>可以切换升级版本</p>
+<p>然后 <em><code>check for updates</code></em> 就可以升级了。（如果连接不上升级服务器，请墙一下）</p>
+<h2 id="升级android-tools-build"><a href="#升级android-tools-build" class="headerlink" title="升级android tools build"></a>升级android tools build</h2><hr>
+<p><em><code>instant run</code></em> 功能之后再<em><code>android tools build</code></em> 的 <em><code>2.0.0</code></em> 的版本才可以使用。</p>
+<p>需要在 <em><code>build.gradle</code></em> 中指定</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">'com.android.tools.build:gradle:2.0.0-alpha1'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="设置instant-Run"><a href="#设置instant-Run" class="headerlink" title="设置instant Run"></a>设置instant Run</h2><hr>
+<blockquote>
+<p>Preferences -&gt; Build,Execution,Deployment -&gt; Instant Run</p>
+</blockquote>
+<p><img src="http://segmentfault.com/img/bVq644" alt=""></p>
+<p>有关于 Instant Run的设置</p>
+<pre><code>1. 第一个设置是,是否开启Instant Run的，默认是开启。
+2. 第二个是,当代码变动的时候重启activity（亲测没有效果，不知道是不是还不是太完善）
+3. 第三个是，每次变动的时候都有个toast提示下
+</code></pre><h2 id="运行Instant-Run"><a href="#运行Instant-Run" class="headerlink" title="运行Instant Run"></a>运行Instant Run</h2><hr>
+<p>再没有运行项目的时候，我们的Run图标和以前是一样的。</p>
+<p><img src="http://segmentfault.com/img/bVq65a" alt=""></p>
+<p>(话说这个Debug的图标好可爱)</p>
+<p>我们写两个类，第一个类有一个按钮，点击后进入第二个activity。</p>
+<p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/install%20run%20old.png" alt=""></p>
+<p>准备把临时拜访换成别的字串比如“你好”，同时换掉左边的Icon。它是一个拥有自定义属性的自定义控件，布局代码片段为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;com.qianmi.shine.widget.CommonLeftIconRightButtonRelativeLayout</span><br><span class="line">        android:id=<span class="string">"@+id/ll_sudden_visit"</span></span><br><span class="line">        android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">        android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">        app:CLIRBRIconId=<span class="string">"@drawable/icon_temp"</span></span><br><span class="line">        app:CLIRBRTitleName=<span class="string">"@string/sudden_visit"</span></span><br><span class="line">        app:CLIRBRActionIconId=<span class="string">"@drawable/btn_go_nor"</span></span><br><span class="line">        /&gt;</span><br></pre></td></tr></table></figure>
+<p>首先我们需要先跑一下这个项目，然后先点击界面直到上述的界面为止停住不动，这个时候我们再修改上述代码（这一步是必须的，不然的Instant Run功能使用时会出现问题，导致重新运行）</p>
+<p>运行了项目之后的图标是这样的：</p>
+<p><img src="http://segmentfault.com/img/bVq65b" alt=""></p>
+<p>这个时候我们让模拟器保持在这个页面上，同时修改布局代码成：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;com.qianmi.shine.widget.CommonLeftIconRightButtonRelativeLayout</span><br><span class="line">        android:id=<span class="string">"@+id/ll_sudden_visit"</span></span><br><span class="line">        android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">        android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">        app:CLIRBRIconId=<span class="string">"@drawable/icon_resent"</span><span class="comment">//修改1</span></span><br><span class="line">        app:CLIRBRTitleName=<span class="string">"你好"</span><span class="comment">//修改2</span></span><br><span class="line">        app:CLIRBRActionIconId=<span class="string">"@drawable/btn_go_nor"</span></span><br><span class="line">        /&gt;</span><br></pre></td></tr></table></figure>
+<p>然后点击带闪电的运行：</p>
+<p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/splash.png" alt=""></p>
+<p>可以看到界面快速的刷新成了：</p>
+<p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/install%20run%20new.png" alt=""></p>
+<h2 id="最后说明"><a href="#最后说明" class="headerlink" title="最后说明"></a>最后说明</h2><hr>
+<p>需要说明的是，我在使用过程中发现，改Instant Run仅仅适用于布局的修改。即我们可以把一次修改然后到运行看效果看作一个“周期”，在这个周期里面你仅仅修改了xml布局文件，或者说和逻辑代码不相关的文件，那么你点击运行的时候才会触发Instant Run，否则的话，Android Studio还是依然会重新编译运行。</p>
+<p>其实想想也是合理的，比如若你修改了代码，而该代码恰好是当前界面的“逻辑前提”，那么你怎么仅仅刷当前界面就能得到正确结果呢？</p>
+<p>对于到底目前Instant Run支持哪些形式的代码修改，官方有<a href="https://sites.google.com/a/android.com/tools/tech-docs/instant-run" target="_blank" rel="external">一篇文章</a>可供参考</p>
+<p>另外google说优化了虚拟机部分，性能提高了50倍，是不是可以抛弃<em><code>Genymotion了</code></em>？</p>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><ul>
+<li><a href="http://segmentfault.com/blog/jjz" target="_blank" rel="external">姜家志的文章</a></li>
+<li><a href="http://www.cnblogs.com/soaringEveryday/p/4991563.html" target="_blank" rel="external">soaringEveryday</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Instant-Run/">Instant Run</a></li></ul>
+
+        <a data-url="http://yoursite.com/2015/12/28/2015-12-28-Android-Studio-instant-run/" data-id="cipxo61l20007506c8mfdirvq" class="article-share-link">分享到</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/31/2015-12-31-input-mothod/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          输入法相关姿势「汇总」(未完成...)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/27/2015-12-27-volley-middle/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">Volley(2)-volley灵活使用「汇总」</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/02/19/2016-02-19-shape_detail/">Shape自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/13/2016-01-13-zhengze/">正则表达式介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/04/2016-01-04-gradle-info/">Gradle使用方法与技巧「汇总」，未完....</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/31/2015-12-31-input-mothod/">输入法相关姿势「汇总」(未完成...)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/28/2015-12-28-Android-Studio-instant-run/">Android Studio 2.0 的逆天功能Instant Run「转载」</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="返回顶部"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
