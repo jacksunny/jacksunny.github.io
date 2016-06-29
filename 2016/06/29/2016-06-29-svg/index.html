@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Svg 使用介绍 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="导语
+
+介绍 android中svg 使用场景
+介绍 svg 使用方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Svg 使用介绍">
+<meta property="og:url" content="http://yoursite.com/2016/06/29/2016-06-29-svg/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="导语
+
+介绍 android中svg 使用场景
+介绍 svg 使用方式">
+<meta property="og:image" content="http://www.jcodecraeer.com/uploads/20150825/1440433025699352.gif">
+<meta property="og:updated_time" content="2016-06-29T11:28:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Svg 使用介绍">
+<meta name="twitter:description" content="导语
+
+介绍 android中svg 使用场景
+介绍 svg 使用方式">
+<meta name="twitter:image" content="http://www.jcodecraeer.com/uploads/20150825/1440433025699352.gif">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2016-06-29-svg" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2016/06/29/2016-06-29-svg/" class="article-date">
+  <time datetime="2016-06-28T16:00:00.000Z" itemprop="datePublished">2016-06-29</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Svg 使用介绍
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><blockquote>
+<ol>
+<li>介绍 android中svg 使用场景</li>
+<li>介绍 svg 使用方式</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+<h3 id="1-1-where-amp-when"><a href="#1-1-where-amp-when" class="headerlink" title="1.1 where&amp;when"></a>1.1 where&amp;when</h3><ul>
+<li>场景A: UE妹子想实现下图效果，身为RD哥哥你会怎么做？帧动画？自己绘制？怎么可以为妹子增加工作量！<br><img src="http://www.jcodecraeer.com/uploads/20150825/1440433025699352.gif" alt="nihao"></li>
+<li>场景B: 美工妹子做的图片在多屏幕中失真了！！！身为 RD 哥哥怎么能不为妹子插自己两刀？</li>
+<li>场景C: 待定（好吧，编不下去了）<blockquote>
+<p>以上场景如有雷同纯属巧合</p>
+</blockquote>
+</li>
+</ul>
+<p>没错，以上场景都可以用到SVG，厉不厉害!但svg是何方神圣？为什么可以满足如此让人觉得一千万头草泥马践踏的玻璃心呢？请往下看 </p>
+<h3 id="1-2-what"><a href="#1-2-what" class="headerlink" title="1.2 what"></a>1.2 what</h3><p>简单的说svg是一种图片格式，严格的来说是一种开放标准的矢量图形语音，这种语言可以用来描绘图像（像不像xml定义drawble？），而且svg可以很没底线的被任何文字处理工具打开，因为是标记语言，所以不存在失真问题，而且由于是标记语言，所以比起图片来说，小到你尖叫！</p>
+<h3 id="1-3-why"><a href="#1-3-why" class="headerlink" title="1.3 why"></a>1.3 why</h3><p>开放标准的矢量图形语<em>开放标准的矢量图形语</em>开放标准的矢量图形语<br>重要的事情说三遍！所以它</p>
+<ul>
+<li>不失真，可大可小，可攻可受</li>
+<li>比起图像文件小，下载快</li>
+<li>可以自由修改</li>
+<li>色彩分辨率相当高，且支持滤镜</li>
+<li>跨平台</li>
+</ul>
+<blockquote>
+<p>当然，缺点也是有的<br>A. Android中原生SVG只支持 Android 5.0 及以后版本（我生君未生，君生我已老，哎），不过没关系，有github大神已经实现，<a href="https://github.com/geftimov/android-pathview" target="_blank" rel="external">时空传送门</a>，但这种方式肯定会增加学习和使用成本<br>B. 理论上讲，SVG的效率可能会不如PNG好，这是因为它需要运行时的计算和对应平台的渲染绘制。而且对于PNG来说的另一优势是在开启硬件加速的设备上，绘制Bitmap一个非常快速的过程。可以想象，让SVG不比PNG慢将是一件很有挑战的事情</p>
+</blockquote>
+<h3 id="1-4-who"><a href="#1-4-who" class="headerlink" title="1.4 who"></a>1.4 who</h3><p>RD哥哥快来玩儿啊</p>
+<hr>
+<p>##如何使用</p>
+<h3 id="2-1-Android-中-svg的一些tips介绍"><a href="#2-1-Android-中-svg的一些tips介绍" class="headerlink" title="2.1 Android 中 svg的一些tips介绍"></a>2.1 Android 中 svg的一些tips介绍</h3><h4 id="2-1-1-svg-文件格式"><a href="#2-1-1-svg-文件格式" class="headerlink" title="2.1.1 svg 文件格式"></a>2.1.1 svg 文件格式</h4><p>svg 格式基本如下</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">M <span class="number">2948.00</span>,<span class="number">18.00</span></span><br><span class="line">C <span class="number">2956.86</span>,<span class="number">18.01</span> <span class="number">2954.31</span>,<span class="number">18.45</span> <span class="number">2962.00</span>,<span class="number">19.91</span></span><br><span class="line"><span class="number">3009.70</span>,<span class="number">28.94</span> <span class="number">3043.56</span>,<span class="number">69.15</span> <span class="number">3043.00</span>,<span class="number">118.00</span></span><br><span class="line"><span class="number">3042.94</span>,<span class="number">122.96</span> <span class="number">3042.06</span>,<span class="number">127.15</span> <span class="number">3041.25</span>,<span class="number">132.00</span></span><br><span class="line"><span class="number">3036.37</span>,<span class="number">161.02</span> <span class="number">3020.92</span>,<span class="number">184.46</span> <span class="number">2996.00</span>,<span class="number">200.31</span></span><br><span class="line"><span class="number">2976.23</span>,<span class="number">212.88</span> <span class="number">2959.60</span>,<span class="number">214.26</span> <span class="number">2937.00</span>,<span class="number">214.00</span></span><br><span class="line"><span class="number">2926.91</span>,<span class="number">213.88</span> <span class="number">2912.06</span>,<span class="number">209.70</span> <span class="number">2903.00</span>,<span class="number">205.24</span></span><br><span class="line"><span class="number">2893.00</span>,<span class="number">200.33</span> <span class="number">2884.08</span>,<span class="number">194.74</span> <span class="number">2876.04</span>,<span class="number">186.91</span></span><br><span class="line"><span class="number">2848.21</span>,<span class="number">159.81</span> <span class="number">2839.19</span>,<span class="number">115.93</span> <span class="number">2853.45</span>,<span class="number">80.00</span></span><br><span class="line"><span class="number">2863.41</span>,<span class="number">54.91</span> <span class="number">2883.01</span>,<span class="number">35.57</span> <span class="number">2908.00</span>,<span class="number">25.45</span></span><br><span class="line"><span class="number">2916.97</span>,<span class="number">21.82</span> <span class="number">2924.84</span>,<span class="number">20.75</span> <span class="number">2934.00</span>,<span class="number">18.51</span></span><br><span class="line"><span class="number">2938.63</span>,<span class="number">17.79</span> <span class="number">2943.32</span>,<span class="number">17.99</span> <span class="number">2948.00</span>,<span class="number">18.00</span> Z</span><br><span class="line">M <span class="number">2870.76</span>,<span class="number">78.00</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>够细心的童鞋已经发现其中有M，C，Z等一些字母，这是什么鬼？<br>其实这些都是定义了一些关于移动的tag标识：<br>M/m命令：moveto移动到绘制点，后面跟上坐标系点对即可。<br>Z/z命令：closepath一段路径等的闭合点，无参数。<br>L/l命令：lineto绘制一个点到另一个点的直线，多个坐标对可以绘制折线，后面跟上坐标系点对即可。<br>H/h命令：lineto从当前点到指定x点绘制水平直线，多个x无意义，后面跟坐标系x点即可。<br>V/v命令：lineto从当前点到指定x点绘制垂直直线，多个y无意义，后面跟坐标系y点即可。<br>C/c命令：cubic bezier三次贝塞尔曲线。<br>S/s命令：cubic bezier三次贝塞尔曲线。<br>Q/q命令：quatratic bezier二次贝塞尔曲线。<br>T/t命令：quatratic bezier二次贝塞尔曲线。<br>A/a命令：elliptical arc圆弧线。</p>
+<blockquote>
+<p>由此引出解析出svg文件后可以把相应的标签映射成 canvas moveTo，lineTo等方式来“画”出svg</p>
+</blockquote>
+<h3 id="2-2-Android-5-0-及大于5-0版本系统相关使用"><a href="#2-2-Android-5-0-及大于5-0版本系统相关使用" class="headerlink" title="2.2 Android 5.0 及大于5.0版本系统相关使用"></a>2.2 Android 5.0 及大于5.0版本系统相关使用</h3><p>####2.2.1 简单使用（静态图）</p>
+<p>Android5.0以后支持SVG矢量图了，Google提供了一个<vector>标签用来创建VectorDrawable矢量对象，我们只要在svg的path标签中的字符串复制到<vector>的path标签中，就能创建出一个ImageView可以使用的矢量图形了，如：<br>在drawable目录下新建一个根标签为<vector>的mysvgdrawable.xml,内容如下：</vector></vector></vector></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;vector xmlns:android="http://schemas.android.com/apk/res/android"</span><br><span class="line">android:width="256dp"</span><br><span class="line">android:height="256dp"</span><br><span class="line">android:viewportHeight="100"</span><br><span class="line">android:viewportWidth="100"&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart"</span><br><span class="line">android:fillColor="#E91E63"</span><br><span class="line">android:pathData="M 2948.00,18.00</span><br><span class="line">C 2956.86,18.01 2954.31,18.45 2962.00,19.91</span><br><span class="line">3009.70,28.94 3043.56,69.15 3043.00,118.00</span><br><span class="line">3042.94,122.96 3042.06,127.15 3041.25,132.00</span><br><span class="line">3036.37,161.02 3020.92,184.46 2996.00,200.31</span><br><span class="line">2976.23,212.88 2959.60,214.26 2937.00,214.00</span><br><span class="line">2926.91,213.88 2912.06,209.70 2903.00,205.24</span><br><span class="line">2893.00,200.33 2884.08,194.74 2876.04,186.91</span><br><span class="line">2848.21,159.81 2839.19,115.93 2853.45,80.00</span><br><span class="line">2863.41,54.91 2883.01,35.57 2908.00,25.45</span><br><span class="line">2916.97,21.82 2924.84,20.75 2934.00,18.51</span><br><span class="line">2938.63,17.79 2943.32,17.99 2948.00,18.00 Z</span><br><span class="line">M 2870.76,78.00"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;/vector&gt;</span><br></pre></td></tr></table></figure>
+<p>然后直接设置ImageView中即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line">android:id=<span class="string">"@+id/imageView"</span></span><br><span class="line">android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">android:src=<span class="string">"@drawable/heart"</span>/&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2-2-1-进阶使用（动态图图）"><a href="#2-2-1-进阶使用（动态图图）" class="headerlink" title="2.2.1 进阶使用（动态图图）"></a>2.2.1 进阶使用（动态图图）</h4><p>上面说了怎么显示SVG矢量图像，那怎么让SVG图像动起来？要动，才爽吗！<br>要实现动态图就要用到AnimatedVectorDrawable这个类了，它就是负责VectorDrawable矢量图形的动画的，不过我们不能像属性动画那样去通过代码进行设置动画，而是需要通过animated-vector标签在xml文件中创建一个AnimatedVectorDrawable， 只需要四步：</p>
+<ul>
+<li>第一步</li>
+</ul>
+<p>首先就是要创建一个VectorDrawable，在drawable目录下创建一个heart.xml，并且，我们知道矢量图是通过点和线进行绘制的，而在上篇中我又讲了path中M和Z两个命令，M是绘制的起始点，然后期间通过一系列的画直线、画弧等过程，最后通过Z命令来闭合这个绘制过程，也就是说绘制一个形状时候是从M出发到Z闭合。所以，面对path中混乱的排列，我们需要把M到Z的字符串进行隔开分别创建一个path（也可以合并为一个group，给它设置个name，然后对它进行动画），到时候进行绘制动画的时候，可以保证各个path绘制的时间一致，然后分别设置一个name，和线条的颜色和宽度，所以内容如下：</p>
+<p>heart.xml 如下</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;vector xmlns:android="http://schemas.android.com/apk/res/android"</span><br><span class="line">android:width="256dp"</span><br><span class="line">android:height="256dp"</span><br><span class="line">android:viewportHeight="100"</span><br><span class="line">android:viewportWidth="100"&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart1"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M58.3,10.6C51.4,3.6,40,3.7,32,10.5c-1.3-1.1-2.6-2-4.1-2.8l-5.5-3.8c-0.3-0.2-0.6-0.2-1-0.1c-0.3,0.1-0.5,0.4-0.6,0.8l-0.2,1C15,4.9,9.6,6.7,5.7,10.6C-1.8,18.1-2,30,5.4,37.8L31.3,64c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l25.9-26.2C65.9,30.2,65.7,18,58.3,10.6z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart2"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M57.2,36.4L32,61.8L6.8,36.4c-1-1-1.8-2.1-2.5-3.3l7.5,3.4c0.4,0.2,0.8,0.3,1.2,0.3c0.4,0,0.8-0.1,1.1-0.2l0.7,6.4c0,0.5,0.4,0.8,0.8,0.9l9.4,1.4c0,0,0.1,0,0.1,0c0.3,0,0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.6,0.2-0.9l-4-17.6l13.3,11.9c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.2,0c0.3-0.1,0.6-0.3,0.7-0.6l3.2-8.9c0.2-0.4,0-0.9-0.4-1.2l-5.3-3.6c0.6-0.5,1.1-1.3,1.1-2.1l0.7-9.1c0-0.3-0.1-0.7-0.4-0.9c-0.3-0.2-0.7-0.2-1-0.1l-3.6,1.5l1.1-0.9c0,0,0,0,0,0c0,0,0,0,0,0c7.2-6.7,17.8-7,24.2-0.6C63.5,18.6,63.7,29.6,57.2,36.4z"</span><br><span class="line">/&gt;</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart3"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M14.3,20.7l1.6,1.9L5.3,26.4l-0.9-9.1L14.3,20.7z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart4"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M19.5,18.3l1.5,3.8    l-2,1.2l-2.6-3.1L19.5,18.3z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart5"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M17.2,24.3C17.3,24.3,17.3,24.3,17.2,24.3l0.4,0.5L14,34c0,0,0,0,0,0l0,0c-0.1,0.3-0.3,0.5-0.5,0.6c-0.3,0.1-0.6,0.1-0.8,0l-6.8-3.1l7.6-5.9L17.2,24.3z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart6"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M22.4,23.5    l9.6,1.2l6.2,4.3l-2.5,6.8L22.2,23.7L22.4,23.5z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart7"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M33.8,21.9c0,0.3-0.2,0.6-0.4,0.7c-0.2,0.2-0.5,0.2-0.9,0.2l-9.6-1.2l-0.3-0.7    l3.3-2.8l8.4-3.6L33.8,21.9z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart8"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M30.4,11.9l-8.4,7L21,16.5c0,0,0-0.1-0.1-0.1l1.9-9.5c0,0,0.2,0,0.2,0s0,0,0,0l-0.2-0.4L30.4,11.9z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart9"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M7.1,12c3.5-3.5,8.2-5.1,13.3-4.5l-1.5,8.8l-4.1,2.4L4.5,15.3C5.3,14.1,6.1,13,7.1,12z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;path</span><br><span class="line">android:name="heart10"</span><br><span class="line">android:strokeColor="#E91E63"</span><br><span class="line">android:strokeWidth="1"</span><br><span class="line">android:pathData="</span><br><span class="line">M2.6,19.6l0.8,8.3c0,0.3,0.2,0.6,0.5,0.7c0.2,0.1,0.3,0.2,0.5,0.2c0.1,0,0.2,0,0.3-0.1l2.7-1L3.3,31c0,0,0,0,0,0C1.8,27.4,1.6,23.3,2.6,19.6z"</span><br><span class="line">/&gt;</span><br><span class="line">&lt;/vector&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>第二步</li>
+</ul>
+<p>我们在drawable目录下新建一个根结点为animated-vector的heart_animator.xml文件，也就是为矢量图像创建一个AnimatedVectorDrawable。（drawable指的是VectorDrawable，而target指的是对名字为name的path或者group进行动画）。其中内容如下：<br>heart_vector_animator.xml：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;animated-vector xmlns:android="http://schemas.android.com/apk/res/android"</span><br><span class="line">android:drawable="@drawable/heart"&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart1"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart2"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart3"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart4"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart5"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart6"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart7"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart8"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart9"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;target</span><br><span class="line">android:name="heart10"</span><br><span class="line">android:animation="@animator/heart_animator" /&gt;</span><br><span class="line">&lt;/animated-vector&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>第三步</li>
+</ul>
+<p>就是在animator目录下创建一个objectAnimator 动画，然后在第二步中分别设置给各个target。属性trimPathEnd的值是由0~1的，所以，path绘制时候也会表现出对应的动画，内容如下：<br>heart_animator.xml：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span>?&gt;</span><br><span class="line">&lt;objectAnimator xmlns:android=<span class="string">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">android:duration=<span class="string">"6000"</span></span><br><span class="line">android:propertyName=<span class="string">"trimPathEnd"</span></span><br><span class="line">android:valueFrom=<span class="string">"0"</span></span><br><span class="line">android:valueTo=<span class="string">"1"</span></span><br><span class="line">android:valueType=<span class="string">"floatType"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>【注】：trimPathEnd这个属性是path的（表示绘制由开始点到绘制结束点），与之类似的还有trimPathStart（表示绘制由结束点后退到开始点）</p>
+</blockquote>
+<ul>
+<li>第四步</li>
+</ul>
+<p>最后一步，我们已经把矢量图像和对应的动画都设置好了，此时你如果运行则不会有动画效果，所以接下来就是需要我们通过代码把动画开启起来并设置给ImageView显示，代码为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ImageView mImageView = (ImageView) findViewById(R.id.imageView);</span><br><span class="line">AnimatedVectorDrawable mAnimatedVectorDrawable =  (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.heart_vector_animator);<span class="comment">//得到对应的AnimatedVectorDrawable对象</span></span><br><span class="line">mImageView.setImageDrawable(mAnimatedVectorDrawable);</span><br><span class="line"><span class="keyword">if</span>(mAnimatedVectorDrawable!=<span class="keyword">null</span>)&#123;</span><br><span class="line">mAnimatedVectorDrawable.start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们得到AnimatorVectorDrawable对象后，只需要把这个Drawable对象设置给ImageView，然后通过AnimatedVectorDrawable.start()开启动画就可以了。</p>
+<h3 id="2-3-Android-5-0-之前版本系统使用"><a href="#2-3-Android-5-0-之前版本系统使用" class="headerlink" title="2.3 Android 5.0 之前版本系统使用"></a>2.3 Android 5.0 之前版本系统使用</h3><p>低于Android 5.0 的情况只能要么自己写一个工具，要么采用别人写好了的轮子了</p>
+<hr>
+<p>##参考</p>
+<ul>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0825/3362.html" target="_blank" rel="external">Android实现炫酷SVG动画效果</a></li>
+<li><a href="https://github.com/geftimov/android-pathview" target="_blank" rel="external">svg开源github项目</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0909/3433.html" target="_blank" rel="external">Android微信上的SVG</a></li>
+<li><a href="http://blog.dreamtobe.cn/2014/11/08/SVG-Android%E5%BA%94%E7%94%A8%E6%8E%A2%E7%A9%B6%E4%B9%8B%E8%B7%AF/" target="_blank" rel="external">SVG-Android应用探究之路</a></li>
+<li><a href="http://blog.csdn.net/u010687392/article/details/48178495" target="_blank" rel="external">Android使用SVG矢量动画（二）</a></li>
+<li><a href="http://blog.csdn.net/yanbober/article/details/50276769" target="_blank" rel="external">Android应用开发之PNG、IconFont、SVG图标资源优化详解</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/2015/0627/3115.html" target="_blank" rel="external">iconfont取代imageView来展示图标</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svg/">svg</a></li></ul>
+
+        <a data-url="http://yoursite.com/2016/06/29/2016-06-29-svg/" data-id="ciq0suetr00008z6c05uebm60" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/02/19/2016-02-19-shape_detail/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Shape自定义</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/29/2016-06-29-svg/">Svg 使用介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/02/19/2016-02-19-shape_detail/">Shape自定义</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/13/2016-01-13-zhengze/">正则表达式介绍</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/04/2016-01-04-gradle-info/">Gradle使用方法与技巧「汇总」，未完....</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/31/2015-12-31-input-mothod/">输入法相关姿势「汇总」(未完成...)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="To Top"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
