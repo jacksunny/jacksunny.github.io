@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Mac 安装 scrapy「半原创」 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文带来什么
+
+mac安装scrapy的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac 安装 scrapy「半原创」">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/2016-07-02-scrapy-install/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文带来什么
+
+mac安装scrapy的过程">
+<meta property="og:updated_time" content="2016-07-02T08:43:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac 安装 scrapy「半原创」">
+<meta name="twitter:description" content="本文带来什么
+
+mac安装scrapy的过程">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2016-07-02-scrapy-install" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2016/07/02/2016-07-02-scrapy-install/" class="article-date">
+  <time datetime="2016-07-01T16:00:00.000Z" itemprop="datePublished">2016-07-02</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/scrapy/">scrapy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mac 安装 scrapy「半原创」
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文带来什么</em></p>
+<ul>
+<li>mac安装scrapy的过程</li>
+</ul>
+<a id="more"></a>
+<h1 id="科普"><a href="#科普" class="headerlink" title="科普"></a>科普</h1><p><em>scrapy 是干什么的</em></p>
+<blockquote>
+<p>可以理解为一个写网络爬虫的框架</p>
+</blockquote>
+<h1 id="安装scrapy"><a href="#安装scrapy" class="headerlink" title="安装scrapy"></a>安装scrapy</h1><p>安装很简单，分以下3步</p>
+<ol>
+<li>检测并安装python</li>
+<li>用python 安装pip</li>
+<li>用pip安装 scrapy</li>
+</ol>
+<h2 id="1-检测并安装python"><a href="#1-检测并安装python" class="headerlink" title="1.检测并安装python"></a>1.检测并安装python</h2><p>mac 是自带python的，检查一下如果小于 2.7.9 那么就安装最新的吧<br>或者直接升级到 3.x <a href="http://gaoryrt.com/2015/09-30-upgrade-pyhton-on-mac/" target="_blank" rel="external">升级Mac的python</a><br><a href="https://www.python.org/downloads/mac-osx/" target="_blank" rel="external">python 官网传送门</a><br><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站学习python3</a><br><a href="http://www.phperz.com/article/14/1030/14347.html" target="_blank" rel="external">pycharm HelloWorld</a></p>
+<blockquote>
+<p>2.x 和 3.x <a href="http://www.cnblogs.com/codingmylife/archive/2010/06/06/1752807.html" target="_blank" rel="external">区别点我</a><br><span style="color:#c78">[这一点其实有坑在里面，如果试过了所有方法在控制台中看版本仍然是 2.7.x,那么就下载  pycharm 吧，他会在链接 python 版本时自动使用最新版本，谁用谁知道]<br></span></p>
+</blockquote>
+<h2 id="2-用python-安装pip"><a href="#2-用python-安装pip" class="headerlink" title="2.用python 安装pip"></a>2.用python 安装pip</h2><p> 步骤也超级简单，就两步，看官网吧<br><a href="https://pip.pypa.io/en/latest/installing/" target="_blank" rel="external">安装pip官网</a><br>注：如果提示什么<code>not permitted</code> 或者 <code>denied</code> 等错误，记住 <code>sodu</code> </p>
+<h2 id="3-用pip安装-scrapy"><a href="#3-用pip安装-scrapy" class="headerlink" title="3.用pip安装 scrapy"></a>3.用pip安装 scrapy</h2><p>命令<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install scrapy</span><br></pre></td></tr></table></figure></p>
+<p><em>出现错误：</em></p>
+<h3 id="错误-A"><a href="#错误-A" class="headerlink" title="错误 A"></a>错误 A</h3> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OSError: [Errno <span class="number">1</span>] Operation not permitted: <span class="string">'/tmp/pip-HG6JNq-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info'</span></span><br></pre></td></tr></table></figure>
+<p> 在 stackoverflow 上一个没有人赞的 角落答案找到了解决方式</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 猜测为 安装 scrapy 的时候忽略已经安装的 six</span></span><br><span class="line">sudo pip install scrapy --ignore-installed six</span><br></pre></td></tr></table></figure>
+<p><a href="http://stackoverflow.com/questions/31900008/oserror-errno-1-operation-not-permitted-when-installing-scrapy-in-osx-10-11/32723204#32723204" target="_blank" rel="external">stackOverflow 传送门</a></p>
+<h3 id="错误-B"><a href="#错误-B" class="headerlink" title="错误 B"></a>错误 B</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ImportError: cannot <span class="keyword">import</span> name xmlrpc_client</span><br></pre></td></tr></table></figure>
+<p>原因是没有设置环境变量<br>解决方式<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export PYTHONPATH=/Library/Python/<span class="number">2.7</span>/site-packages:$PYTHONPATH</span><br><span class="line">echo <span class="string">"export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH"</span> &gt;&gt; ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><a href="http://www.tuicool.com/articles/URNVV3E" target="_blank" rel="external">参考文章1：安装python爬虫scrapy踩过的那些坑和编程外的思考</a></li>
+<li><a href="http://stackoverflow.com/questions/30964836/scrapy-throws-importerror-cannot-import-name-xmlrpc-client" target="_blank" rel="external">参考文章2：Scrapy throws ImportError: cannot import name xmlrpc_client</a></li>
+</ul>
+<h2 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a>4.测试</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy version</span><br></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="http://www.lzqwebsoft.net/show/20140613014220.html" target="_blank" rel="external">Mac 10.8下安装Scrapy</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2016/07/02/2016-07-02-scrapy-install/" data-id="ciq4x97r70006r0s6lcvyu993" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/02/2016-07-02-python-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">学习 python 2 - python 函数「半原创」</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-scrapy-install/">Mac 安装 scrapy「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-2/">学习 python 2 - python 函数「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-1/">学习 python 1 - python 基础「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/01/2016-07-01-loggerknife/">LoggerKnife-格式化输出log的又一选择「原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/29/2016-06-29-svg/">Svg 使用介绍</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/">log</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="To Top"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>

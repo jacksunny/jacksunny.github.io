@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>学习 python 2 - python 函数「半原创」 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文会带来什么
+
+函数定义
+函数参数定义（可变参数，关键字参数等）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习 python 2 - python 函数「半原创」">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/2016-07-02-python-2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么
+
+函数定义
+函数参数定义（可变参数，关键字参数等）">
+<meta property="og:updated_time" content="2016-07-02T08:42:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习 python 2 - python 函数「半原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+函数定义
+函数参数定义（可变参数，关键字参数等）">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2016-07-02-python-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2016/07/02/2016-07-02-python-2/" class="article-date">
+  <time datetime="2016-07-01T16:00:00.000Z" itemprop="datePublished">2016-07-02</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      学习 python 2 - python 函数「半原创」
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文会带来什么</em></p>
+<ul>
+<li>函数定义</li>
+<li>函数参数定义（可变参数，关键字参数等）</li>
+</ul>
+<a id="more"></a>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>1.系统函数举例<br>类似于 java 中的set<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 转换为 int 类型</span><br><span class="line">a = int("1")</span><br><span class="line">print(a)</span><br><span class="line"># // 同样,string,float,boolean等</span><br></pre></td></tr></table></figure></p>
+<p>2.函数名赋予一个变量<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  --------------可以把函数名赋予一个变量</span><br><span class="line">a = abs</span><br><span class="line">print(a(-12))</span><br></pre></td></tr></table></figure></p>
+<p>3.普通声明函数举例<br>在Python中，定义一个函数要使用def语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用return语句返回<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#  --------------普通声明函数举例</span><br><span class="line">def my_sum(x,y):</span><br><span class="line">    c = int(x) + int(y)</span><br><span class="line">    return c</span><br><span class="line">print(my_sum(11,2))</span><br></pre></td></tr></table></figure></p>
+<p>4.空函数<br>如果想定义一个什么事也不做的空函数，可以用pass语句<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#  --------------空函数</span><br><span class="line"># 如果想定义一个什么事也不做的空函数，可以用pass语句</span><br><span class="line">def nothing():</span><br><span class="line">    pass</span><br><span class="line">print(nothing())</span><br></pre></td></tr></table></figure></p>
+<p>5.检查参数类型(isinstance)<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#  --------------检查参数类型(isinstance)</span><br><span class="line">def mySum(x,y):</span><br><span class="line">    if (not isinstance(x,(int,float)) or (not isinstance(y,(int ,float))) ):</span><br><span class="line">        print("not the right type")</span><br><span class="line">    else:</span><br><span class="line">        print("is the right type")</span><br><span class="line">mySum(1,"a")</span><br></pre></td></tr></table></figure></p>
+<p>6.抛出异常(raise)<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#  --------------抛出异常(raise)</span><br><span class="line">def mySum(x,y):</span><br><span class="line">    if (not isinstance(x,(int,float)) or (not isinstance(y,(int ,float))) ):</span><br><span class="line">        raise TypeError('type error')</span><br><span class="line">    else:</span><br><span class="line">        print("is the right type")</span><br><span class="line">mySum(1,"a")</span><br></pre></td></tr></table></figure></p>
+<p>7.返回多个值<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#  --------------返回多个值</span><br><span class="line">def returnMore(x,y):</span><br><span class="line">    return x,y,x+y</span><br><span class="line">print(returnMore(1,3))</span><br></pre></td></tr></table></figure></p>
+<p>8.设置默认参数<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#  --------------设置默认参数</span><br><span class="line">def returnMore(x, y=2):</span><br><span class="line">    s = int(x + y)</span><br><span class="line">    return s</span><br><span class="line">print(returnMore(1,3))</span><br><span class="line">print(returnMore(1))</span><br><span class="line"></span><br><span class="line">def power(x, n=2):</span><br><span class="line">    s = 1</span><br><span class="line">    while n &gt; 0:</span><br><span class="line">        n = n - 1</span><br><span class="line">        s = s * x</span><br><span class="line">    return s</span><br><span class="line">print(power(5))</span><br></pre></td></tr></table></figure></p>
+<p>9.设置可变长参数<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#  --------------设置可变长参数</span><br><span class="line">def addSum(*numbers):</span><br><span class="line">    sum = 0;</span><br><span class="line">    for n in numbers:</span><br><span class="line">        sum += n</span><br><span class="line">    return sum</span><br><span class="line">print(addSum(1,2,3))</span><br></pre></td></tr></table></figure></p>
+<p>10.已知数组作为 可变长参数<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#  --------------已知数组作为 可变长参数</span><br><span class="line">def addSum(*numbers):</span><br><span class="line">    sum = 0;</span><br><span class="line">    for n in numbers:</span><br><span class="line">        sum += n</span><br><span class="line">    return sum</span><br><span class="line"></span><br><span class="line">abc = [1,2,3,4]</span><br><span class="line">print(addSum(*abc))</span><br></pre></td></tr></table></figure></p>
+<p>11.关键字参数<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#  --------------关键字参数</span><br><span class="line"># 而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict</span><br><span class="line">def person(name, age, **kv):</span><br><span class="line">    print("name:", name, ",aaa:", age, ",other:", kv)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">extas = &#123;"aaa": 12, "bbb": 13&#125;</span><br><span class="line">print(extas.get("name"))</span><br><span class="line">person("houshijie", 21,**extas)</span><br></pre></td></tr></table></figure></p>
+<p>12.检测传入关键字参数的内容<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#  --------------检测传入关键字参数的内容</span><br><span class="line">def person(name, age, **kv):</span><br><span class="line">    if "aaa" in kv:</span><br><span class="line">        print("aaa in kv")</span><br><span class="line">    print("name:", name, ",aaa:", age, ",other:", kv)</span><br><span class="line">extas = &#123;"aaa": 12, "bbb": 13&#125;</span><br><span class="line">person(1,2,**extas)</span><br></pre></td></tr></table></figure></p>
+<p>13.限制 关键字参数的内容<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#  --------------限制 关键字参数的</span><br><span class="line"># 关键字参数**kw不同，命名关键字参数需要一个特殊分隔符*，*后面的参数被视为命名关键字参数</span><br><span class="line">def person(name, age, *,city):</span><br><span class="line">    print("name:", name, ",aaa:", age, ",other:", city)</span><br><span class="line">person(12,12,city = "a")</span><br></pre></td></tr></table></figure></p>
+<p> <span style="color:#c78">如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符*了</span></p>
+<p>14.参数组合<br><span style="color:#c78">在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数</span><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#  --------------参数组合</span><br><span class="line"># 在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数</span><br><span class="line">def f1(a, b, c=0, *args, **kw):</span><br><span class="line">    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)</span><br><span class="line"></span><br><span class="line">def f2(a, b, c=0, *, d, **kw):</span><br><span class="line">    print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'kw =', kw)</span><br></pre></td></tr></table></figure></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2016/07/02/2016-07-02-python-2/" data-id="ciq4x97r40003r0s663xnmijl" class="article-share-link">Share</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/02/2016-07-02-scrapy-install/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Mac 安装 scrapy「半原创」
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/02/2016-07-02-python-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">学习 python 1 - python 基础「半原创」</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-scrapy-install/">Mac 安装 scrapy「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-2/">学习 python 2 - python 函数「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-1/">学习 python 1 - python 基础「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/01/2016-07-01-loggerknife/">LoggerKnife-格式化输出log的又一选择「原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/29/2016-06-29-svg/">Svg 使用介绍</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/">log</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="To Top"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
