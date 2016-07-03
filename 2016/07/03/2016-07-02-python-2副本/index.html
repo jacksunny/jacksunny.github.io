@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>学习 python 3 - python 高级特性「半原创」 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文会带来什么
+
+切片
+迭代
+列表生成器
+生成器
+迭代器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习 python 3 - python 高级特性「半原创」">
+<meta property="og:url" content="http://yoursite.com/2016/07/03/2016-07-02-python-2副本/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么
+
+切片
+迭代
+列表生成器
+生成器
+迭代器">
+<meta property="og:updated_time" content="2016-07-03T02:46:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习 python 3 - python 高级特性「半原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+切片
+迭代
+列表生成器
+生成器
+迭代器">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <nav id="upper-nav" class="inner">
+      <a id="main-nav-toggle" class="nav-icon"></a>
+      <div class="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+        
+      </div>
+    </nav>
+    <div id="header-title">
+      
+        <h1 id="blog-title-wrap">
+          <a href="/" id="blog-title">My Blog</a>
+        </h1>
+      
+    </div>
+    <div id="contenedor">
+      <ul class="cube">
+        <li class="cara">MyLogo</li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+        <li class="cara"></li>
+      </ul>
+    </div>
+    <nav id="main-nav">
+      
+        <a class="main-nav-link" href="/">Home</a>
+      
+        <a class="main-nav-link" href="/archives">Archives</a>
+      
+        <a class="main-nav-link" href="/about">About</a>
+      
+      <a class="main-nav-link st-search-show-outputs">Search</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="outer">
+      <section id="main"><article id="post-2016-07-02-python-2副本" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <h3 href="/2016/07/03/2016-07-02-python-2副本/" class="article-date">
+  <time datetime="2016-07-02T16:00:00.000Z" itemprop="datePublished">2016-07-03</time>
+</h3>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+  <div class="curve-down">
+  <div class="fill-content">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      学习 python 3 - python 高级特性「半原创」
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><em>本文会带来什么</em></p>
+<ol>
+<li>切片</li>
+<li>迭代</li>
+<li>列表生成器</li>
+<li>生成器</li>
+<li>迭代器</li>
+</ol>
+<a id="more"></a>
+<h3 id="1-切片"><a href="#1-切片" class="headerlink" title="1.切片"></a>1.切片</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#  --------------切片</span><br><span class="line">L = [1,2,3,4,5,6,7,8,9]</span><br><span class="line"># 基本定义 ,取出0-2这三个元素,第二个数 3 为下标,当第一个为0的时候,可以忽略</span><br><span class="line">print(L[0:3])</span><br><span class="line">print(L[:3])</span><br><span class="line"># 前五个数,每两个取一个</span><br><span class="line">print(L[:5:2])</span><br><span class="line"># 所有数,每两个取一个</span><br><span class="line">print(L[::2])</span><br><span class="line"># 原样复制</span><br><span class="line">print(L[:])</span><br><span class="line"># 字符串也可以当做数组</span><br><span class="line">print("123456789"[::2])</span><br></pre></td></tr></table></figure>
+<h3 id="2-迭代-或者叫遍历"><a href="#2-迭代-或者叫遍历" class="headerlink" title="2.迭代(或者叫遍历)"></a>2.迭代(或者叫遍历)</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#  --------------迭代(或者叫遍历)</span><br><span class="line"># 普通迭代</span><br><span class="line"># 可迭代于一切可迭代对象上</span><br><span class="line"># 判断是否为可迭代对象</span><br><span class="line"># 引入 iterable</span><br><span class="line">from collections import Iterable</span><br><span class="line">aString = "abcefd"</span><br><span class="line">bList = [1,2,3,4]</span><br><span class="line">cDict = &#123;"name":"jack","age":2&#125;</span><br><span class="line">dDict = 12</span><br><span class="line">print(isinstance(aString,Iterable))</span><br><span class="line">print(isinstance(bList,Iterable))</span><br><span class="line">print(isinstance(cDict,Iterable))</span><br><span class="line">print(isinstance(dDict,Iterable))</span><br></pre></td></tr></table></figure>
+<h3 id="3-迭代-使出现下标循环"><a href="#3-迭代-使出现下标循环" class="headerlink" title="3.迭代(使出现下标循环)"></a>3.迭代(使出现下标循环)</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#  --------------迭代(使出现下标循环)</span><br><span class="line">L = [6,7,8,9]</span><br><span class="line">for i,value in enumerate(L):</span><br><span class="line">    print("the index is :",i,",the value is:",value)</span><br></pre></td></tr></table></figure>
+<h3 id="4-列表生成器"><a href="#4-列表生成器" class="headerlink" title="4.列表生成器"></a>4.列表生成器</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#  --------------列表生成器</span><br><span class="line"># 生成列表</span><br><span class="line"># 方式一 range</span><br><span class="line">print(list(range(11)))</span><br><span class="line">print(list(range(2,11)))</span><br><span class="line"># 列表生成器</span><br><span class="line">print([x * x for x in range(11)])</span><br><span class="line">print([m + n for m in "abc" for n in "xyz"])</span><br><span class="line">d = &#123;'x': 'A', 'y': 'B', 'z': 'C' &#125;</span><br><span class="line">print([k + "=" + v for k,v in d.items()])</span><br></pre></td></tr></table></figure>
+<h3 id="5-生成器-yield"><a href="#5-生成器-yield" class="headerlink" title="5.生成器(yield)"></a>5.生成器(yield)</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#  --------------生成器(yield)</span><br><span class="line"># 如果列表元素可以按照某种算法推算出来，那我们是否可以在循环的过程中不断推算出后续的元素呢？</span><br><span class="line"># 这样就不必创建完整的list，从而节省大量的空间。在Python中，这种一边循环一边计算的机制，称为生成器：generator</span><br><span class="line"># 方法 1 :要创建一个generator，有很多种方法。第一种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator：</span><br><span class="line">g = (x * x for x in range(10))</span><br><span class="line"># 方法二 yield</span><br><span class="line"># 原工程</span><br><span class="line">def fib(max):</span><br><span class="line">    n, a, b = 0, 0, 1</span><br><span class="line">    while n &lt; max:</span><br><span class="line">        print(b)</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n = n + 1</span><br><span class="line">    return 'done'</span><br><span class="line"># 修改后工程</span><br><span class="line">def fib(max):</span><br><span class="line">    n, a, b = 0, 0, 1</span><br><span class="line">    while n &lt; max:</span><br><span class="line">        yield b</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n = n + 1</span><br><span class="line">    return 'done'</span><br><span class="line"># 分析:generator和函数的执行流程不一样。函数是顺序执行，遇到return语句或者最后一行函数语句就返回。</span><br><span class="line"># 而变成generator的函数，在每次调用next()的时候执行，遇到yield语句返回，再次执行时从上次返回的yield语句处继续执行。</span><br></pre></td></tr></table></figure>
+<h3 id="6-迭代器"><a href="#6-迭代器" class="headerlink" title="6.迭代器"></a>6.迭代器</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#  --------------迭代器</span><br><span class="line"># 迭代器和可迭代对象区别</span><br><span class="line"># 这些可以直接作用于for循环的对象统称为可迭代对象：Iterable,可以使用isinstance()判断一个对象是否是Iterable对象</span><br><span class="line"># 可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator,如生成器,可以使用isinstance()判断一个对象是否是Iterator对象</span><br><span class="line"># 集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象。</span><br><span class="line"># Python的for循环本质上就是通过不断调用next()函数实现的</span><br></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer-content">
+        
+        <a data-url="http://yoursite.com/2016/07/03/2016-07-02-python-2副本/" data-id="ciq5zyken000n4vs6z6txfmud" class="article-share-link">分享到</a>
+        
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/02/2016-07-02-python-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">学习 python 1 - python 基础「半原创」</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/03/2016-07-02-python-2副本/">学习 python 3 - python 高级特性「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-1/">学习 python 1 - python 基础「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-scrapy-install/">Mac 安装 scrapy「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/2016-07-02-python-2/">学习 python 2 - python 函数「半原创」</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/01/2016-07-01-loggerknife/">LoggerKnife-格式化输出log的又一选择「原创」</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/">Android Studio 2.0</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/">Animation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/">Canvas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/">Drawable</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/">Gradle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/">InputMethod</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/">Instant Run</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/">SoftKeyBoard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/">Volley</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/">log</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/">shape</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/">svg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/">动画</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/">输入法</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank">Paperbox</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+</nav>
+  
+
+<!-- totop start -->
+<div id="totop">
+	<a title="返回顶部"></a>
+</div>
+<!-- totop end -->
+
+<!-- swiftype search start -->
+
+<!-- swiftype search end -->
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
