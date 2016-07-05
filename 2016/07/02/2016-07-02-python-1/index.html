@@ -30,7 +30,7 @@
 字符串转义方式（不转义方式）
 基本类型介绍
 数据集合介绍(list,set,dict,tuple)">
-<meta property="og:updated_time" content="2016-07-04T02:37:26.000Z">
+<meta property="og:updated_time" content="2016-07-04T09:46:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习 python 1 - python 基础「半原创」">
 <meta name="twitter:description" content="本文会带来什么
@@ -238,7 +238,6 @@
 <h3 id="20-while-循环"><a href="#20-while-循环" class="headerlink" title="20.while 循环"></a>20.while 循环</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------while 循环</span></span><br><span class="line">sum = <span class="number">0</span></span><br><span class="line">n = <span class="number">99</span></span><br><span class="line"><span class="keyword">while</span> n &gt; <span class="number">0</span>:</span><br><span class="line">    sum = sum + n</span><br><span class="line">    n = n - <span class="number">2</span></span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
 <h3 id="21-dict"><a href="#21-dict" class="headerlink" title="21.dict"></a>21.dict</h3><p>类似于 java 中的map<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------dict</span></span><br><span class="line"><span class="comment"># 类似于 map key : value</span></span><br><span class="line">d = &#123;<span class="string">"mick"</span> : <span class="number">3</span>,<span class="string">"jack"</span>: <span class="number">4</span>&#125;</span><br><span class="line">print(d)</span><br><span class="line">print(d.get(<span class="string">"mick"</span>))</span><br><span class="line"><span class="comment"># 查询某个key是否存在</span></span><br><span class="line">print(<span class="string">"jack"</span> <span class="keyword">in</span> d)</span><br><span class="line">print(<span class="string">"jacka"</span> <span class="keyword">in</span> d)</span><br><span class="line">print(d.get(<span class="string">"jack"</span>))</span><br><span class="line">print(d.get(<span class="string">"jacks"</span>))</span><br><span class="line"><span class="comment"># pop(key) 删除一个元素</span></span><br><span class="line">print(<span class="string">"before pop key :"</span> ,d)</span><br><span class="line">d.pop(<span class="string">"jack"</span>)</span><br><span class="line">print(<span class="string">"after pop key :"</span>,d)</span><br></pre></td></tr></table></figure></p>
 <h3 id="22-set"><a href="#22-set" class="headerlink" title="22.set"></a>22.set</h3><p>类似于 java 中的set<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------set</span></span><br><span class="line"><span class="comment"># 定义set</span></span><br><span class="line">s = set([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,])</span><br><span class="line">print(s)</span><br><span class="line"><span class="comment"># add 元素</span></span><br><span class="line">s.add(<span class="number">5</span>)</span><br><span class="line">s.add(<span class="number">4</span>)</span><br><span class="line">print(s)</span><br><span class="line"><span class="comment"># 交集并集</span></span><br><span class="line">s2 = set([<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>])</span><br><span class="line">print(s &amp; s2)</span><br><span class="line">print(s | s2)</span><br></pre></td></tr></table></figure></p>
-<h3 id="23-set"><a href="#23-set" class="headerlink" title="23.set"></a>23.set</h3><p>类似于 java 中的set<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------set</span></span><br><span class="line"><span class="comment"># 定义set</span></span><br><span class="line">s = set([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,])</span><br><span class="line">print(s)</span><br><span class="line"><span class="comment"># add 元素</span></span><br><span class="line">s.add(<span class="number">5</span>)</span><br><span class="line">s.add(<span class="number">4</span>)</span><br><span class="line">print(s)</span><br><span class="line"><span class="comment"># 交集并集</span></span><br><span class="line">s2 = set([<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>])</span><br><span class="line">print(s &amp; s2)</span><br><span class="line">print(s | s2)</span><br></pre></td></tr></table></figure></p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站</a></li>
 </ul>
@@ -288,7 +287,7 @@
 	</li>
       
 	<li>
-	  <a href="/categories/python/">python (3)</a>
+	  <a href="/categories/python/">python (4)</a>
 	</li>
       
 	<li>
@@ -401,6 +400,8 @@
 	  <h3><a href="http://yoursite.com/2015/04/01/2015-04-01-NGINX-Static-Locations/">Static NGINX Locations</a></h3>
 	</div>                        
       </div>
+    
+  
     
   
     

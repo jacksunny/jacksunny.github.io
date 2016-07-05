@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>学习 python 4 - python 函数式编程「半原创」 | Hexo</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="本文会带来什么
+
+高阶函数
+返回函数
+匿名函数
+装饰器
+偏函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习 python 4 - python 函数式编程「半原创」">
+<meta property="og:url" content="http://yoursite.com/2016/07/05/2016-07-05-python-4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文会带来什么
+
+高阶函数
+返回函数
+匿名函数
+装饰器
+偏函数">
+<meta property="og:updated_time" content="2016-07-05T11:59:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习 python 4 - python 函数式编程「半原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+高阶函数
+返回函数
+匿名函数
+装饰器
+偏函数">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
+</head>
+
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span>716-472-4484</span></li>
+	  <li><i class="fa fa-envelope-o"></i><span>ptsteadman@gmail.com</span></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="/login">Log In</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">Hexo</a>-->
+
+    <a class="site-logo" href="/">
+      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
+    </a>
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	
+	<li class="">
+	  <a  href="/">Home</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/contact/">Contact</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->
+
+  <div class="container">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2016/07/05/2016-07-05-python-4/">学习 python 4 - python 函数式编程「半原创」</a>
+    </h2>
+
+
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-2016-07-05-python-4" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> JackSunny</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2016-07-04T16:00:00.000Z" itemprop="datePublished">2016/07/05</time>
+
+	</li>
+	<li class="hidden-xs"><i class="fa fa-comments"></i>
+	  <a href="http://yoursite.com/2016/07/05/2016-07-05-python-4/#disqus_thread" class="article-comment-link">Comments</a>
+	</li>
+	<li class="hidden-xs"><i class="fa fa-tags"></i> 
+	  
+
+	</li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>本文会带来什么</em></p>
+<ol>
+<li>高阶函数</li>
+<li>返回函数</li>
+<li>匿名函数</li>
+<li>装饰器</li>
+<li>偏函数</li>
+</ol>
+<a id="more"></a>
+<h3 id="什么是函数式编程？"><a href="#什么是函数式编程？" class="headerlink" title="什么是函数式编程？"></a>什么是函数式编程？</h3><blockquote>
+<p>函数式编程就是一种抽象程度很高的编程范式，纯粹的函数式编程语言编写的函数没有变量，因此，任意一个函数，只要输入是确定的，输出就是确定的，这种纯函数我们称之为没有副作用。而允许使用变量的程序设计语言，由于函数内部的变量状态不确定，同样的输入，可能得到不同的输出，因此，这种函数是有副作用的。<br>函数式编程的一个特点就是，允许把函数本身作为参数传入另一个函数，还允许返回一个函数！<br>Python对函数式编程提供部分支持。由于Python允许使用变量，因此，Python不是纯函数式编程语言。</p>
+</blockquote>
+<h3 id="1-高阶函数"><a href="#1-高阶函数" class="headerlink" title="1.高阶函数"></a>1.高阶函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------高阶函数</span></span><br><span class="line"><span class="comment"># 既然变量可以指向函数，函数的参数能接收变量，那么一个函数就可以接收另一个函数作为参数，这种函数就称之为高阶函数。</span></span><br><span class="line"><span class="comment"># 变量指向函数</span></span><br><span class="line">f = abs</span><br><span class="line">print(f(<span class="number">-1</span>))</span><br><span class="line"><span class="comment"># 可以把函数名看做变量</span></span><br><span class="line"><span class="comment"># 传入函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">aaa</span><span class="params">(x, y, f)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> f(x) + f(y)</span><br><span class="line">print(aaa(<span class="number">-1</span>, <span class="number">-2</span>,f))</span><br></pre></td></tr></table></figure>
+<h3 id="2-map"><a href="#2-map" class="headerlink" title="2.map()"></a>2.map()</h3><blockquote>
+<p>mapReduce 是一个比较大的话题，据说是google 三宝之一，感兴趣同学可以 自行 搜索</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------map()</span></span><br><span class="line"><span class="comment"># map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * x</span><br><span class="line">r = map(f,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">print(list(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结果: [1, 4, 9]</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-reduce"><a href="#3-reduce" class="headerlink" title="3.reduce()"></a>3.reduce()</h3><blockquote>
+<p>reduce把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算，其效果就是：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------reduce()</span></span><br><span class="line"><span class="comment"># 第一个参数函数必为两个参数</span></span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line">L = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">testReduce</span><span class="params">(x,y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * y</span><br><span class="line">r = reduce(testReduce,L)</span><br><span class="line">print(r)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结果: 6</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-filter"><a href="#4-filter" class="headerlink" title="4.filter()"></a>4.filter()</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------filter()</span></span><br><span class="line"><span class="comment"># 和map()类似，filter()也接收一个函数和一个序列。和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fil</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span>  x &gt; <span class="number">0</span></span><br><span class="line">L = [<span class="number">-1</span>,<span class="number">-2</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line">print(list(filter(fil,L)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结果: [1, 2]</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-sorted"><a href="#5-sorted" class="headerlink" title="5.sorted()"></a>5.sorted()</h3><p>排序算法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------sorted()</span></span><br><span class="line"><span class="comment"># 一个参数</span></span><br><span class="line">L = [<span class="number">-1</span>,<span class="number">-2</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">-4</span>]</span><br><span class="line">print(sorted(L))</span><br><span class="line"><span class="comment"># 结果: [-4, -2, -1, 0, 1, 2]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 两个参数,用函数先行处理, key =</span></span><br><span class="line">print(sorted(L,key=abs))</span><br><span class="line"><span class="comment"># 结果: [0, -1, 1, -2, 2, -4]</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="6-返回函数"><a href="#6-返回函数" class="headerlink" title="6.返回函数"></a>6.返回函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 闭包</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">count</span><span class="params">()</span>:</span></span><br><span class="line">    fs = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">4</span>):</span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">()</span>:</span></span><br><span class="line">             <span class="keyword">return</span> i*i</span><br><span class="line">        fs.append(f)</span><br><span class="line">    <span class="keyword">return</span> fs</span><br><span class="line"></span><br><span class="line">f1 ,f2 ,f3= count()</span><br><span class="line"><span class="comment">#  结果:三个都是 9</span></span><br><span class="line"><span class="comment"># 返回闭包时牢记的一点就是：返回函数不要引用任何循环变量，或者后续会发生变化的变量。</span></span><br><span class="line"><span class="comment"># 返回一个函数时，牢记该函数并未执行，返回函数中不要引用任何可能会变化的变量。</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-匿名函数"><a href="#7-匿名函数" class="headerlink" title="7.匿名函数"></a>7.匿名函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------匿名函数</span></span><br><span class="line"><span class="comment"># 有些时候，不需要显式地定义函数，直接传入匿名函数更方便</span></span><br><span class="line"><span class="comment"># : 前面为函数名和参数</span></span><br><span class="line">print(list(map(<span class="keyword">lambda</span> x: x * x, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>])))</span><br><span class="line"><span class="comment"># 结果:[1, 4, 9, 16, 25, 36, 49, 64, 81]</span></span><br><span class="line"><span class="comment"># 限制:只能有一个表达式,不用写return,返回值就是表达式的结果</span></span><br><span class="line">print()</span><br><span class="line"><span class="comment"># 也可以把匿名函数作为返回值返回</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">build</span><span class="params">(x, y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">lambda</span>: x * x + y * y</span><br></pre></td></tr></table></figure>
+<h3 id="8-装饰器"><a href="#8-装饰器" class="headerlink" title="8.装饰器"></a>8.装饰器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------装饰器</span></span><br><span class="line"><span class="comment"># 在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）</span></span><br><span class="line"><span class="comment"># 拿到函数的名字</span></span><br><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"2015 - 10 -10"</span>)</span><br><span class="line">now()</span><br><span class="line">print(now.__name__)</span><br><span class="line"><span class="comment"># 在函数调用前后自动打印日志，但又不希望修改now()函数的定义</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">log</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args,**kw)</span>:</span></span><br><span class="line">        print(<span class="string">"item is me "</span>)</span><br><span class="line">        <span class="keyword">return</span> func(*args,**kw)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"><span class="meta">@log</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now2</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"2015 - 10 -10"</span>)</span><br><span class="line">now2()</span><br><span class="line"><span class="comment"># 3次嵌套</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">loog</span><span class="params">(text)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">de</span><span class="params">(func)</span>:</span></span><br><span class="line"><span class="meta">        @functools.wraps(func)</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args,**kw)</span>:</span></span><br><span class="line">            print(<span class="string">"haha:"</span> ,text)</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> de</span><br><span class="line"></span><br><span class="line"><span class="meta">@loog("33333")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now3</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"three"</span>)</span><br><span class="line"></span><br><span class="line">now3()</span><br><span class="line"></span><br><span class="line">print(now3.__name__)</span><br><span class="line"><span class="comment"># function tool 导入后 属性不变,否则打名字就是  wrapper</span></span><br></pre></td></tr></table></figure>
+<h3 id="9-偏函数"><a href="#9-偏函数" class="headerlink" title="9.偏函数"></a>9.偏函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------偏函数</span></span><br><span class="line"><span class="comment"># 可以帮助我们固定参数</span></span><br><span class="line"><span class="comment"># 原始函数:</span></span><br><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(x,y)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x / y</span><br><span class="line">print(sum(<span class="number">4</span>,<span class="number">5</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 固定参数</span></span><br><span class="line">sum2 = functools.partial(sum,y = <span class="number">2</span>)</span><br><span class="line">print(sum2(<span class="number">4</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 当为数组时,默认加到左边</span></span><br><span class="line"></span><br><span class="line">L = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">4</span>]</span><br><span class="line">max2 = functools.partial(max, <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">print(max2(<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>))</span><br></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站</a></li>
+</ul>
+
+      
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/03/2016-07-02-python-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">学习 python 3 - python 高级特性「半原创」</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/android/">android (11)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/python/">python (4)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/scrapy/">scrapy (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Hexo/">Hexo (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NET/">.NET (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NGINX/">NGINX (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Dynamics-NAV/">Dynamics NAV (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Humor/">Humor (1)</a>
+	</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/"><i class='fa fa-tags'></i>Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/"><i class='fa fa-tags'></i>Android Studio 2.0</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/"><i class='fa fa-tags'></i>Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/"><i class='fa fa-tags'></i>C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/"><i class='fa fa-tags'></i>Canvas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design/"><i class='fa fa-tags'></i>Design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/"><i class='fa fa-tags'></i>Drawable</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/"><i class='fa fa-tags'></i>Gradle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/"><i class='fa fa-tags'></i>InputMethod</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/"><i class='fa fa-tags'></i>Instant Run</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAV/"><i class='fa fa-tags'></i>NAV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/"><i class='fa fa-tags'></i>Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resources/"><i class='fa fa-tags'></i>Resources</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/"><i class='fa fa-tags'></i>SoftKeyBoard</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Visual-Studio/"><i class='fa fa-tags'></i>Visual Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/"><i class='fa fa-tags'></i>Volley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Development/"><i class='fa fa-tags'></i>Web Development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/employment/"><i class='fa fa-tags'></i>employment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/funny/"><i class='fa fa-tags'></i>funny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/"><i class='fa fa-tags'></i>log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/"><i class='fa fa-tags'></i>shape</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/"><i class='fa fa-tags'></i>svg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/"><i class='fa fa-tags'></i>动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/"><i class='fa fa-tags'></i>正则</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/"><i class='fa fa-tags'></i>输入法</a></li></ul>
+    </div>
+  </div>
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://yoursite.com/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/vs.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://yoursite.com/2015/03/23/2015-03-23-Make-VS-Insert-Spaces/">Spaces for Newline Indents in VS</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://yoursite.com/2015/04/01/2015-04-01-NGINX-Static-Locations/">Static NGINX Locations</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+</div>
+</div>
+
+  </section>
+</div>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Us</h2>
+            <p>Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              140 Metropolitan Avenue<br>
+              5th Floor<br>
+              Brooklyn, NY 11249<br>
+              Phone: 716-472-4484<br>
+              Email: <a href="mailto:ptsteadman@gmail.com">ptsteadman@gmail.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+	
+          <!-- BEGIN TWITTER BLOCK --> 
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/computerlab_"
+	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
+
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+          <!-- END TWITTER BLOCK -->
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2016 Hexo<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/ptsteadman"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
+    
+      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
+    
+      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
+</script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+
+
+
+
+
+
+
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
+
+</body>
+</html>
