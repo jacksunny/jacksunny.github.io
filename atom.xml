@@ -371,49 +371,6 @@
   </entry>
   
   <entry>
-    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
-    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
-    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
-    <published>2016-06-28T16:00:00.000Z</published>
-    <updated>2016-07-06T12:07:43.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;是不是屌屌的！&lt;/p&gt;
-&lt;!--Read More--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="jcenter" scheme="http://rdors.com/categories/jcenter/"/>
-    
-    
-      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
-    
-      <category term="android" scheme="http://rdors.com/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Svg 使用介绍</title>
     <link href="http://rdors.com/2016/06/29/2016-06-29-svg/"/>
     <id>http://rdors.com/2016/06/29/2016-06-29-svg/</id>
@@ -519,6 +476,49 @@
     
     
       <category term="svg" scheme="http://rdors.com/tags/svg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
+    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
+    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
+    <published>2016-06-28T16:00:00.000Z</published>
+    <updated>2016-07-06T12:07:43.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;是不是屌屌的！&lt;/p&gt;
+&lt;!--Read More--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="jcenter" scheme="http://rdors.com/categories/jcenter/"/>
+    
+    
+      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
+    
+      <category term="android" scheme="http://rdors.com/tags/android/"/>
     
   </entry>
   
@@ -752,6 +752,45 @@
     
     
       <category term="shape" scheme="http://rdors.com/tags/shape/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio  使用- 6 - 项目目录结构图解「原创」</title>
+    <link href="http://rdors.com/2016/01/25/2016-07-05-learn_as_6/"/>
+    <id>http://rdors.com/2016/01/25/2016-07-05-learn_as_6/</id>
+    <published>2016-01-24T16:00:00.000Z</published>
+    <updated>2016-07-06T12:16:29.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;项目目录结构图解&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;正文&quot;&gt;&lt;a href=&quot;#正文&quot; class=&quot;headerlink&quot; title=&quot;正文&quot;&gt;&lt;/a&gt;正文&lt;/h1&gt;&lt;p&gt;以下目录结构是新建立的AS项目目录结构，从Eclipse 转化的目录结构稍有不同&lt;br&gt;其实我们关心的是src，res，AndroidManifest.xml文件，libs在哪里，但是我建议看下我红色框中的东东&lt;/p&gt;
+&lt;h2 id=&quot;1-选择Project模式结构，如下图所示&quot;&gt;&lt;a href=&quot;#1-选择Project模式结构，如下图所示&quot; class=&quot;headerlink&quot; title=&quot;1. 选择Project模式结构，如下图所示&quot;&gt;&lt;/a&gt;1. 选择Project模式结构，如下图所示&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_6_0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;A-src-app-gt-src-gt-main-gt-java&quot;&gt;&lt;a href=&quot;#A-src-app-gt-src-gt-main-gt-java&quot; class=&quot;headerlink&quot; title=&quot;A .src:app-&amp;gt;src-&amp;gt;main-&amp;gt;java&quot;&gt;&lt;/a&gt;A .src:app-&amp;gt;src-&amp;gt;main-&amp;gt;java&lt;/h3&gt;&lt;h3 id=&quot;B-res-app-gt-src-gt-main-gt-res&quot;&gt;&lt;a href=&quot;#B-res-app-gt-src-gt-main-gt-res&quot; class=&quot;headerlink&quot; title=&quot;B.res:app-&amp;gt;src-&amp;gt;main-&amp;gt;res&quot;&gt;&lt;/a&gt;B.res:app-&amp;gt;src-&amp;gt;main-&amp;gt;res&lt;/h3&gt;&lt;h3 id=&quot;C-AndroidManifest-xml-app-gt-src-gt-main-gt-AndroidManifest-xml&quot;&gt;&lt;a href=&quot;#C-AndroidManifest-xml-app-gt-src-gt-main-gt-AndroidManifest-xml&quot; class=&quot;headerlink&quot; title=&quot;C.AndroidManifest.xml:app-&amp;gt;src-&amp;gt;main-&amp;gt;AndroidManifest.xml&quot;&gt;&lt;/a&gt;C.AndroidManifest.xml:app-&amp;gt;src-&amp;gt;main-&amp;gt;AndroidManifest.xml&lt;/h3&gt;&lt;h3 id=&quot;D-libs-app-gt-libs&quot;&gt;&lt;a href=&quot;#D-libs-app-gt-libs&quot; class=&quot;headerlink&quot; title=&quot;D.libs:app-&amp;gt;libs&quot;&gt;&lt;/a&gt;D.libs:app-&amp;gt;libs&lt;/h3&gt;&lt;h2 id=&quot;2-选择Android模式显示&quot;&gt;&lt;a href=&quot;#2-选择Android模式显示&quot; class=&quot;headerlink&quot; title=&quot;2. 选择Android模式显示&quot;&gt;&lt;/a&gt;2. 选择Android模式显示&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_6_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;A-src-app-gt-java&quot;&gt;&lt;a href=&quot;#A-src-app-gt-java&quot; class=&quot;headerlink&quot; title=&quot;A.src:app-&amp;gt;java&quot;&gt;&lt;/a&gt;A.src:app-&amp;gt;java&lt;/h3&gt;&lt;h3 id=&quot;B-res-app-gt-res&quot;&gt;&lt;a href=&quot;#B-res-app-gt-res&quot; class=&quot;headerlink&quot; title=&quot;B.res:app-&amp;gt;res&quot;&gt;&lt;/a&gt;B.res:app-&amp;gt;res&lt;/h3&gt;&lt;h3 id=&quot;C-AndroidManifest-xml-app-gt-manifest-gt-AndroidManifest-xml&quot;&gt;&lt;a href=&quot;#C-AndroidManifest-xml-app-gt-manifest-gt-AndroidManifest-xml&quot; class=&quot;headerlink&quot; title=&quot;C.AndroidManifest.xml:app-&amp;gt;manifest-&amp;gt;AndroidManifest.xml&quot;&gt;&lt;/a&gt;C.AndroidManifest.xml:app-&amp;gt;manifest-&amp;gt;AndroidManifest.xml&lt;/h3&gt;&lt;h3 id=&quot;D-libs-本模式下看不到该目录&quot;&gt;&lt;a href=&quot;#D-libs-本模式下看不到该目录&quot; class=&quot;headerlink&quot; title=&quot;D.libs:本模式下看不到该目录&quot;&gt;&lt;/a&gt;D.libs:本模式下看不到该目录&lt;/h3&gt;&lt;p&gt;ps：看到了吧，Android模式比Project模式利于开发，层级浅，但是如果要展示libs目录就要切换成Project模式&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;图解了Project和Android模式不同的目录结构，分析src，res，等目录&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;项目目录结构图解&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
+    
+    
+      <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
     
   </entry>
   
@@ -1826,75 +1865,6 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
       <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
       <category term="Volley" scheme="http://rdors.com/tags/Volley/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Drawable根据时间插值自定义动画「原创」</title>
-    <link href="http://rdors.com/2015/12/17/2015-12-17-Drawable-animtion/"/>
-    <id>http://rdors.com/2015/12/17/2015-12-17-Drawable-animtion/</id>
-    <published>2015-12-16T16:00:00.000Z</published>
-    <updated>2016-07-06T05:19:40.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;xml如何自定义圆角 shapeDrawable？环形？三角形？&lt;/li&gt;
-&lt;li&gt;drawable有多少种？用法是什么？&lt;/li&gt;
-&lt;li&gt;绘制圆弧用法？原理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;上面的统统没有！只说将一个关于Drawable不常用到的用法&lt;/strong&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;我们要实现的效果如下图&quot;&gt;&lt;a href=&quot;#我们要实现的效果如下图&quot; class=&quot;headerlink&quot; title=&quot;我们要实现的效果如下图&quot;&gt;&lt;/a&gt;我们要实现的效果如下图&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;httP://img.blog.csdn.net/20151217105800205&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;第一个想法你想用什么来实现？在view 的 onDraw中实现？这也许是很多人的第一个想法，我也是&lt;/em&gt;&lt;br&gt;&lt;em&gt;但想起之前在github上翻看某大神源码时看到用自定义Drawable + 动画器插值实现了一个太阳冉冉升起的动画，就想采用类似的做法来做&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;具体思路如下：&quot;&gt;&lt;a href=&quot;#具体思路如下：&quot; class=&quot;headerlink&quot; title=&quot;具体思路如下：&quot;&gt;&lt;/a&gt;具体思路如下：&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;gif图片中的弧形动画以及阻尼动画，说白了也就是canvas绘制圆弧等的组合，即根据时间变化计算绘制相应图形即可&lt;/li&gt;
-&lt;li&gt;Drawable中有draw(Canvas canvas)方法，在此方法中可通过canvas进行绘制&lt;/li&gt;
-&lt;li&gt;View实现TranslationAnimation，可实现整体的上移或者下移，同时创建时间插值&lt;/li&gt;
-&lt;li&gt;把View动画创建的时间插值动态传递给Drawable，Drawable根据时间插值，动态计算并绘制图形&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;好处如下：&quot;&gt;&lt;a href=&quot;#好处如下：&quot; class=&quot;headerlink&quot; title=&quot;好处如下：&quot;&gt;&lt;/a&gt;好处如下：&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;使用Drawable而不是在View中来绘制，不会影响到之前View中onDraw的代码和逻辑&lt;/li&gt;
-&lt;li&gt;Drawable一般当做背景，与view耦合很小&lt;/li&gt;
-&lt;li&gt;Animation产生插值，可设置不同加速器 产生不同效果&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;可见，我们所有需要的前置条件都已经满足了，现在开始 实现&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;以下为部分代码&quot;&gt;&lt;a href=&quot;#以下为部分代码&quot; class=&quot;headerlink&quot; title=&quot;以下为部分代码&quot;&gt;&lt;/a&gt;以下为部分代码&lt;/h1&gt;&lt;h3 id=&quot;1-创建TranslationAnimation产生时间插值&quot;&gt;&lt;a href=&quot;#1-创建TranslationAnimation产生时间插值&quot; class=&quot;headerlink&quot; title=&quot;1.创建TranslationAnimation产生时间插值&quot;&gt;&lt;/a&gt;1.创建TranslationAnimation产生时间插值&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; AnimationSet as = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; AnimationSet(&lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;as.setDuration(&lt;span class=&quot;number&quot;&gt;600&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;TranslateAnimation translateAnimation = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TranslateAnimation(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScaleAnimation.RELATIVE_TO_SELF,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScaleAnimation.RELATIVE_TO_SELF,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScaleAnimation.RELATIVE_TO_SELF,&lt;span class=&quot;number&quot;&gt;1.0f&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ScaleAnimation.RELATIVE_TO_SELF,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;applyTransformation&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; interpolatedTime, Transformation t)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;.applyTransformation(interpolatedTime, t);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        myDrawable.setPercent(interpolatedTime, &lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;as.addAnimation(translateAnimation);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; as;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;2-自定义Drawable及讲解&quot;&gt;&lt;a href=&quot;#2-自定义Drawable及讲解&quot; class=&quot;headerlink&quot; title=&quot;2.自定义Drawable及讲解&quot;&gt;&lt;/a&gt;2.自定义Drawable及讲解&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MyAnimationDrawable3&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Drawable&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Drawable&lt;/span&gt;.&lt;span class=&quot;title&quot;&gt;Callback&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Paint mPaint;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mWidth;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mHeight;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MyAnimationDrawable3&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; width,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; height)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	mPaint = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Paint();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	mWidth = width;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	mHeight = height;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Canvas canvas)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;comment&quot;&gt;// 主要绘制代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//  canvas.drawRoundRect(rectF, 30, 30, mPaint);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getIntrinsicWidth&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; mWidth;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getIntrinsicHeight&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; mHeight;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;setAlpha&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; alpha)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	mPaint.setAlpha(alpha);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;setColorFilter&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(ColorFilter cf)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   	 	mPaint.setColorFilter(cf);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getOpacity&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; PixelFormat.TRANSLUCENT;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;invalidateDrawable&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Drawable who)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; Callback callback = getCallback();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (callback != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        	callback.invalidateDrawable(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;scheduleDrawable&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Drawable who, Runnable what, &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; when)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; Callback callback = getCallback();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (callback != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        	callback.scheduleDrawable(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, what, when);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unscheduleDrawable&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Drawable who, Runnable what)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; Callback callback = getCallback();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (callback != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        	callback.unscheduleDrawable(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, what);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;其中draw中负责具体绘制，getIntrinsicWidth,getIntrinsicHeight为指定宽高，setAlpha,setColorFilter等都很简单，最后，该类实现Drawable.CallBack，实现最后三个方法，作用是“把你实现的该接口注册到动画Drawable上可以实现动态Drawable的调度和执行” &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;3-传递时间插值进入Drawable&quot;&gt;&lt;a href=&quot;#3-传递时间插值进入Drawable&quot; class=&quot;headerlink&quot; title=&quot;3.传递时间插值进入Drawable&quot;&gt;&lt;/a&gt;3.传递时间插值进入Drawable&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * &lt;span class=&quot;doctag&quot;&gt;@param&lt;/span&gt; percent 时间插值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;setPrecent&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; percent)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (percent &amp;gt; &lt;span class=&quot;number&quot;&gt;0.5f&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//逻辑代码，计算弧度等&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//逻辑代码，计算弧度等&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 刷新 draw 图形&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    invalidateSelf();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;传递进去时间插值后，即可根据时间插值计算相关弧度，在draw中进行绘制即可完成动态图中的效果（绘制逻辑 就不说了，大概为插值0-1绘制向上半圆弧，到顶点根据阻尼振动函数绘制半径变化的圆弧）       &lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;xml如何自定义圆角 shapeDrawable？环形？三角形？&lt;/li&gt;
-&lt;li&gt;drawable有多少种？用法是什么？&lt;/li&gt;
-&lt;li&gt;绘制圆弧用法？原理&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;上面的统统没有！只说将一个关于Drawable不常用到的用法&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
-    
-    
-      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
-    
-      <category term="Drawable" scheme="http://rdors.com/tags/Drawable/"/>
-    
-      <category term="Animation" scheme="http://rdors.com/tags/Animation/"/>
-    
-      <category term="Canvas" scheme="http://rdors.com/tags/Canvas/"/>
     
   </entry>
   
