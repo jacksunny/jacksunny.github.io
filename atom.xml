@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>R&amp;D 哥哥的博客世界</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://rdors.com/"/>
   <updated>2016-07-05T12:10:11.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://rdors.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>侯世杰</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>学习 python 4 - python 函数式编程「半原创」</title>
-    <link href="http://yoursite.com/2016/07/05/2016-07-05-python-4/"/>
-    <id>http://yoursite.com/2016/07/05/2016-07-05-python-4/</id>
+    <link href="http://rdors.com/2016/07/05/2016-07-05-python-4/"/>
+    <id>http://rdors.com/2016/07/05/2016-07-05-python-4/</id>
     <published>2016-07-04T16:00:00.000Z</published>
     <updated>2016-07-05T12:10:11.000Z</updated>
     
@@ -67,15 +67,15 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
   </entry>
   
   <entry>
     <title>学习 python 3 - python 高级特性「半原创」</title>
-    <link href="http://yoursite.com/2016/07/03/2016-07-02-python-3/"/>
-    <id>http://yoursite.com/2016/07/03/2016-07-02-python-3/</id>
+    <link href="http://rdors.com/2016/07/03/2016-07-02-python-3/"/>
+    <id>http://rdors.com/2016/07/03/2016-07-02-python-3/</id>
     <published>2016-07-02T16:00:00.000Z</published>
     <updated>2016-07-05T12:10:28.000Z</updated>
     
@@ -112,15 +112,15 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
   </entry>
   
   <entry>
     <title>Mac 安装 scrapy「半原创」</title>
-    <link href="http://yoursite.com/2016/07/02/2016-07-02-scrapy-install/"/>
-    <id>http://yoursite.com/2016/07/02/2016-07-02-scrapy-install/</id>
+    <link href="http://rdors.com/2016/07/02/2016-07-02-scrapy-install/"/>
+    <id>http://rdors.com/2016/07/02/2016-07-02-scrapy-install/</id>
     <published>2016-07-01T16:00:00.000Z</published>
     <updated>2016-07-05T12:13:57.000Z</updated>
     
@@ -169,15 +169,15 @@
     
     </summary>
     
-      <category term="scrapy" scheme="http://yoursite.com/categories/scrapy/"/>
+      <category term="scrapy" scheme="http://rdors.com/categories/scrapy/"/>
     
     
   </entry>
   
   <entry>
     <title>学习 python 2 - python 函数「半原创」</title>
-    <link href="http://yoursite.com/2016/07/02/2016-07-02-python-2/"/>
-    <id>http://yoursite.com/2016/07/02/2016-07-02-python-2/</id>
+    <link href="http://rdors.com/2016/07/02/2016-07-02-python-2/"/>
+    <id>http://rdors.com/2016/07/02/2016-07-02-python-2/</id>
     <published>2016-07-01T16:00:00.000Z</published>
     <updated>2016-07-05T12:10:33.000Z</updated>
     
@@ -219,15 +219,15 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
   </entry>
   
   <entry>
     <title>学习 python 1 - python 基础「半原创」</title>
-    <link href="http://yoursite.com/2016/07/02/2016-07-02-python-1/"/>
-    <id>http://yoursite.com/2016/07/02/2016-07-02-python-1/</id>
+    <link href="http://rdors.com/2016/07/02/2016-07-02-python-1/"/>
+    <id>http://rdors.com/2016/07/02/2016-07-02-python-1/</id>
     <published>2016-07-01T16:00:00.000Z</published>
     <updated>2016-07-05T12:10:38.000Z</updated>
     
@@ -280,15 +280,15 @@
     
     </summary>
     
-      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+      <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
   </entry>
   
   <entry>
     <title>LoggerKnife-格式化输出log的又一选择「原创」</title>
-    <link href="http://yoursite.com/2016/07/01/2016-07-01-loggerknife/"/>
-    <id>http://yoursite.com/2016/07/01/2016-07-01-loggerknife/</id>
+    <link href="http://rdors.com/2016/07/01/2016-07-01-loggerknife/"/>
+    <id>http://rdors.com/2016/07/01/2016-07-01-loggerknife/</id>
     <published>2016-06-30T16:00:00.000Z</published>
     <updated>2016-07-05T12:15:01.000Z</updated>
     
@@ -355,17 +355,17 @@
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="log" scheme="http://yoursite.com/tags/log/"/>
+      <category term="log" scheme="http://rdors.com/tags/log/"/>
     
   </entry>
   
   <entry>
     <title>Svg 使用介绍</title>
-    <link href="http://yoursite.com/2016/06/29/2016-06-29-svg/"/>
-    <id>http://yoursite.com/2016/06/29/2016-06-29-svg/</id>
+    <link href="http://rdors.com/2016/06/29/2016-06-29-svg/"/>
+    <id>http://rdors.com/2016/06/29/2016-06-29-svg/</id>
     <published>2016-06-28T16:00:00.000Z</published>
     <updated>2016-07-05T12:17:26.000Z</updated>
     
@@ -464,17 +464,17 @@
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="svg" scheme="http://yoursite.com/tags/svg/"/>
+      <category term="svg" scheme="http://rdors.com/tags/svg/"/>
     
   </entry>
   
   <entry>
     <title>Shape自定义</title>
-    <link href="http://yoursite.com/2016/02/19/2016-02-19-shape_detail/"/>
-    <id>http://yoursite.com/2016/02/19/2016-02-19-shape_detail/</id>
+    <link href="http://rdors.com/2016/02/19/2016-02-19-shape_detail/"/>
+    <id>http://rdors.com/2016/02/19/2016-02-19-shape_detail/</id>
     <published>2016-02-18T16:00:00.000Z</published>
     <updated>2016-07-05T12:20:37.000Z</updated>
     
@@ -697,17 +697,17 @@
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="shape" scheme="http://yoursite.com/tags/shape/"/>
+      <category term="shape" scheme="http://rdors.com/tags/shape/"/>
     
   </entry>
   
   <entry>
     <title>正则表达式介绍</title>
-    <link href="http://yoursite.com/2016/01/13/2016-01-13-zhengze/"/>
-    <id>http://yoursite.com/2016/01/13/2016-01-13-zhengze/</id>
+    <link href="http://rdors.com/2016/01/13/2016-01-13-zhengze/"/>
+    <id>http://rdors.com/2016/01/13/2016-01-13-zhengze/</id>
     <published>2016-01-12T16:00:00.000Z</published>
     <updated>2016-07-05T12:21:27.000Z</updated>
     
@@ -1000,17 +1000,17 @@
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="正则" scheme="http://yoursite.com/tags/%E6%AD%A3%E5%88%99/"/>
+      <category term="正则" scheme="http://rdors.com/tags/%E6%AD%A3%E5%88%99/"/>
     
   </entry>
   
   <entry>
     <title>Gradle使用方法与技巧「汇总」，未完....</title>
-    <link href="http://yoursite.com/2016/01/04/2016-01-04-gradle-info/"/>
-    <id>http://yoursite.com/2016/01/04/2016-01-04-gradle-info/</id>
+    <link href="http://rdors.com/2016/01/04/2016-01-04-gradle-info/"/>
+    <id>http://rdors.com/2016/01/04/2016-01-04-gradle-info/</id>
     <published>2016-01-03T16:00:00.000Z</published>
     <updated>2016-07-05T12:22:33.000Z</updated>
     
@@ -1059,19 +1059,19 @@
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="Gradle" scheme="http://yoursite.com/tags/Gradle/"/>
+      <category term="Gradle" scheme="http://rdors.com/tags/Gradle/"/>
     
   </entry>
   
   <entry>
     <title>Notes On Creating A Hexo Theme</title>
-    <link href="http://yoursite.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/"/>
-    <id>http://yoursite.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/</id>
+    <link href="http://rdors.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/"/>
+    <id>http://rdors.com/2016/01/02/2016-01-02-Notes-On-Creating-A-Hexo-Theme/</id>
     <published>2016-01-01T16:00:00.000Z</published>
     <updated>2016-07-03T15:10:07.000Z</updated>
     
@@ -1101,19 +1101,19 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://rdors.com/categories/Hexo/"/>
     
     
-      <category term="Programming" scheme="http://yoursite.com/tags/Programming/"/>
+      <category term="Programming" scheme="http://rdors.com/tags/Programming/"/>
     
-      <category term="Design" scheme="http://yoursite.com/tags/Design/"/>
+      <category term="Design" scheme="http://rdors.com/tags/Design/"/>
     
   </entry>
   
   <entry>
     <title>输入法相关姿势「汇总」(未完成...)</title>
-    <link href="http://yoursite.com/2015/12/31/2015-12-31-input-mothod/"/>
-    <id>http://yoursite.com/2015/12/31/2015-12-31-input-mothod/</id>
+    <link href="http://rdors.com/2015/12/31/2015-12-31-input-mothod/"/>
+    <id>http://rdors.com/2015/12/31/2015-12-31-input-mothod/</id>
     <published>2015-12-30T16:00:00.000Z</published>
     <updated>2016-07-05T12:24:31.000Z</updated>
     
@@ -1185,25 +1185,25 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="输入法" scheme="http://yoursite.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+      <category term="输入法" scheme="http://rdors.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
-      <category term="SoftKeyBoard" scheme="http://yoursite.com/tags/SoftKeyBoard/"/>
+      <category term="SoftKeyBoard" scheme="http://rdors.com/tags/SoftKeyBoard/"/>
     
-      <category term="InputMethod" scheme="http://yoursite.com/tags/InputMethod/"/>
+      <category term="InputMethod" scheme="http://rdors.com/tags/InputMethod/"/>
     
   </entry>
   
   <entry>
     <title>Android Studio 2.0 的逆天功能Instant Run「转载」</title>
-    <link href="http://yoursite.com/2015/12/28/2015-12-28-Android-Studio-instant-run/"/>
-    <id>http://yoursite.com/2015/12/28/2015-12-28-Android-Studio-instant-run/</id>
+    <link href="http://rdors.com/2015/12/28/2015-12-28-Android-Studio-instant-run/"/>
+    <id>http://rdors.com/2015/12/28/2015-12-28-Android-Studio-instant-run/</id>
     <published>2015-12-27T16:00:00.000Z</published>
-    <updated>2016-07-05T12:25:41.000Z</updated>
+    <updated>2016-07-06T05:16:59.000Z</updated>
     
     <content type="html">&lt;p&gt;作为一个Android开发者，很多的时候我们需要花大量的时间在bulid，运行到真机（虚拟机）上，对于ios上的Playground羡慕不已，这种情况将在Android Studio 2.0有了很大改善，使用instant run，在第一次运行之后，就可以快速的在真机中看见修改后的结果，不仅仅是UI可以直接显示，还包括代码逻辑。不用再苦苦等build了，节约生命呀！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -1262,23 +1262,23 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="Android Studio 2.0" scheme="http://yoursite.com/tags/Android-Studio-2-0/"/>
+      <category term="Android Studio 2.0" scheme="http://rdors.com/tags/Android-Studio-2-0/"/>
     
-      <category term="Instant Run" scheme="http://yoursite.com/tags/Instant-Run/"/>
+      <category term="Instant Run" scheme="http://rdors.com/tags/Instant-Run/"/>
     
   </entry>
   
   <entry>
     <title>Volley(2)-volley灵活使用「汇总」</title>
-    <link href="http://yoursite.com/2015/12/27/2015-12-27-volley-middle/"/>
-    <id>http://yoursite.com/2015/12/27/2015-12-27-volley-middle/</id>
+    <link href="http://rdors.com/2015/12/27/2015-12-27-volley-middle/"/>
+    <id>http://rdors.com/2015/12/27/2015-12-27-volley-middle/</id>
     <published>2015-12-26T16:00:00.000Z</published>
-    <updated>2016-07-05T12:28:43.000Z</updated>
+    <updated>2016-07-06T05:16:14.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;1. 如何定制自己的Request
@@ -1367,19 +1367,19 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="Volley" scheme="http://yoursite.com/tags/Volley/"/>
+      <category term="Volley" scheme="http://rdors.com/tags/Volley/"/>
     
   </entry>
   
   <entry>
     <title>Android圆弧进入及果冻效果「原创」</title>
-    <link href="http://yoursite.com/2015/12/19/2015-12-19-android-bounce/"/>
-    <id>http://yoursite.com/2015/12/19/2015-12-19-android-bounce/</id>
+    <link href="http://rdors.com/2015/12/19/2015-12-19-android-bounce/"/>
+    <id>http://rdors.com/2015/12/19/2015-12-19-android-bounce/</id>
     <published>2015-12-18T16:00:00.000Z</published>
     <updated>2016-07-05T12:32:19.000Z</updated>
     
@@ -1475,21 +1475,21 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="动画" scheme="http://yoursite.com/tags/%E5%8A%A8%E7%94%BB/"/>
+      <category term="动画" scheme="http://rdors.com/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
   <entry>
     <title>Volley(1)-入门及使用「汇总」</title>
-    <link href="http://yoursite.com/2015/12/18/2015-12-18-Volley-primary/"/>
-    <id>http://yoursite.com/2015/12/18/2015-12-18-Volley-primary/</id>
+    <link href="http://rdors.com/2015/12/18/2015-12-18-Volley-primary/"/>
+    <id>http://rdors.com/2015/12/18/2015-12-18-Volley-primary/</id>
     <published>2015-12-17T16:00:00.000Z</published>
-    <updated>2016-07-05T12:28:53.000Z</updated>
+    <updated>2016-07-06T05:16:14.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1684,21 +1684,21 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="Volley" scheme="http://yoursite.com/tags/Volley/"/>
+      <category term="Volley" scheme="http://rdors.com/tags/Volley/"/>
     
   </entry>
   
   <entry>
     <title>Drawable根据时间插值自定义动画「原创」</title>
-    <link href="http://yoursite.com/2015/12/17/2015-12-17-Drawable-animtion/"/>
-    <id>http://yoursite.com/2015/12/17/2015-12-17-Drawable-animtion/</id>
+    <link href="http://rdors.com/2015/12/17/2015-12-17-Drawable-animtion/"/>
+    <id>http://rdors.com/2015/12/17/2015-12-17-Drawable-animtion/</id>
     <published>2015-12-16T16:00:00.000Z</published>
-    <updated>2016-07-05T12:36:05.000Z</updated>
+    <updated>2016-07-06T05:16:38.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1749,23 +1749,23 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="android" scheme="http://yoursite.com/categories/android/"/>
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
-      <category term="Drawable" scheme="http://yoursite.com/tags/Drawable/"/>
+      <category term="Drawable" scheme="http://rdors.com/tags/Drawable/"/>
     
-      <category term="Animation" scheme="http://yoursite.com/tags/Animation/"/>
+      <category term="Animation" scheme="http://rdors.com/tags/Animation/"/>
     
-      <category term="Canvas" scheme="http://yoursite.com/tags/Canvas/"/>
+      <category term="Canvas" scheme="http://rdors.com/tags/Canvas/"/>
     
   </entry>
   
   <entry>
     <title>How To Impress Employers at Infosessions</title>
-    <link href="http://yoursite.com/2015/05/02/2015-05-02-How-To-Impress/"/>
-    <id>http://yoursite.com/2015/05/02/2015-05-02-How-To-Impress/</id>
+    <link href="http://rdors.com/2015/05/02/2015-05-02-How-To-Impress/"/>
+    <id>http://rdors.com/2015/05/02/2015-05-02-How-To-Impress/</id>
     <published>2015-05-01T16:00:00.000Z</published>
     <updated>2016-07-03T15:10:07.000Z</updated>
     
@@ -1794,19 +1794,19 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="Humor" scheme="http://yoursite.com/categories/Humor/"/>
+      <category term="Humor" scheme="http://rdors.com/categories/Humor/"/>
     
     
-      <category term="funny" scheme="http://yoursite.com/tags/funny/"/>
+      <category term="funny" scheme="http://rdors.com/tags/funny/"/>
     
-      <category term="employment" scheme="http://yoursite.com/tags/employment/"/>
+      <category term="employment" scheme="http://rdors.com/tags/employment/"/>
     
   </entry>
   
   <entry>
     <title>NAV Web Service Programming Resources</title>
-    <link href="http://yoursite.com/2015/04/08/2015-04-08-NAV-Programming-Resources/"/>
-    <id>http://yoursite.com/2015/04/08/2015-04-08-NAV-Programming-Resources/</id>
+    <link href="http://rdors.com/2015/04/08/2015-04-08-NAV-Programming-Resources/"/>
+    <id>http://rdors.com/2015/04/08/2015-04-08-NAV-Programming-Resources/</id>
     <published>2015-04-07T16:00:00.000Z</published>
     <updated>2016-07-03T15:10:07.000Z</updated>
     
@@ -1826,19 +1826,19 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="Dynamics NAV" scheme="http://yoursite.com/categories/Dynamics-NAV/"/>
+      <category term="Dynamics NAV" scheme="http://rdors.com/categories/Dynamics-NAV/"/>
     
     
-      <category term="Resources" scheme="http://yoursite.com/tags/Resources/"/>
+      <category term="Resources" scheme="http://rdors.com/tags/Resources/"/>
     
-      <category term="NAV" scheme="http://yoursite.com/tags/NAV/"/>
+      <category term="NAV" scheme="http://rdors.com/tags/NAV/"/>
     
   </entry>
   
   <entry>
     <title>Adding Lookup Field to a Page in Dynamics NAV</title>
-    <link href="http://yoursite.com/2015/04/05/2015-04-05-Lookup-on-Page/"/>
-    <id>http://yoursite.com/2015/04/05/2015-04-05-Lookup-on-Page/</id>
+    <link href="http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/"/>
+    <id>http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/</id>
     <published>2015-04-04T16:00:00.000Z</published>
     <updated>2016-07-03T15:10:07.000Z</updated>
     
@@ -1857,12 +1857,12 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
     
     </summary>
     
-      <category term="Dynamics NAV" scheme="http://yoursite.com/categories/Dynamics-NAV/"/>
+      <category term="Dynamics NAV" scheme="http://rdors.com/categories/Dynamics-NAV/"/>
     
     
-      <category term="Resources" scheme="http://yoursite.com/tags/Resources/"/>
+      <category term="Resources" scheme="http://rdors.com/tags/Resources/"/>
     
-      <category term="NAV" scheme="http://yoursite.com/tags/NAV/"/>
+      <category term="NAV" scheme="http://rdors.com/tags/NAV/"/>
     
   </entry>
   
