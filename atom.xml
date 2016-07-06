@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rdors.com/"/>
-  <updated>2016-07-05T12:10:11.000Z</updated>
+  <updated>2016-07-06T05:25:32.000Z</updated>
   <id>http://rdors.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://rdors.com/2016/07/05/2016-07-05-python-4/"/>
     <id>http://rdors.com/2016/07/05/2016-07-05-python-4/</id>
     <published>2016-07-04T16:00:00.000Z</published>
-    <updated>2016-07-05T12:10:11.000Z</updated>
+    <updated>2016-07-06T05:25:32.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -70,6 +70,8 @@
       <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
+      <category term="python" scheme="http://rdors.com/tags/python/"/>
+    
   </entry>
   
   <entry>
@@ -77,7 +79,7 @@
     <link href="http://rdors.com/2016/07/03/2016-07-02-python-3/"/>
     <id>http://rdors.com/2016/07/03/2016-07-02-python-3/</id>
     <published>2016-07-02T16:00:00.000Z</published>
-    <updated>2016-07-05T12:10:28.000Z</updated>
+    <updated>2016-07-06T05:25:32.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -114,6 +116,8 @@
     
       <category term="python" scheme="http://rdors.com/categories/python/"/>
     
+    
+      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -179,7 +183,7 @@
     <link href="http://rdors.com/2016/07/02/2016-07-02-python-2/"/>
     <id>http://rdors.com/2016/07/02/2016-07-02-python-2/</id>
     <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-05T12:10:33.000Z</updated>
+    <updated>2016-07-06T05:25:32.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -222,6 +226,8 @@
       <category term="python" scheme="http://rdors.com/categories/python/"/>
     
     
+      <category term="python" scheme="http://rdors.com/tags/python/"/>
+    
   </entry>
   
   <entry>
@@ -229,7 +235,7 @@
     <link href="http://rdors.com/2016/07/02/2016-07-02-python-1/"/>
     <id>http://rdors.com/2016/07/02/2016-07-02-python-1/</id>
     <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-05T12:10:38.000Z</updated>
+    <updated>2016-07-06T05:25:32.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -282,6 +288,8 @@
     
       <category term="python" scheme="http://rdors.com/categories/python/"/>
     
+    
+      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -359,6 +367,49 @@
     
     
       <category term="log" scheme="http://rdors.com/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
+    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
+    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
+    <published>2016-06-28T16:00:00.000Z</published>
+    <updated>2016-07-06T12:07:43.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;是不是屌屌的！&lt;/p&gt;
+&lt;!--Read More--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="jcenter" scheme="http://rdors.com/categories/jcenter/"/>
+    
+    
+      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
+    
+      <category term="android" scheme="http://rdors.com/tags/android/"/>
     
   </entry>
   
@@ -1008,6 +1059,45 @@
   </entry>
   
   <entry>
+    <title>Android Studio  使用- 4 - 运行HelloWorld程序及不同编译方式简介「原创」</title>
+    <link href="http://rdors.com/2016/01/10/2016-07-05-learn_as_4/"/>
+    <id>http://rdors.com/2016/01/10/2016-07-05-learn_as_4/</id>
+    <published>2016-01-09T16:00:00.000Z</published>
+    <updated>2016-07-06T12:13:19.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;运行 HelloWorld 程序并选择编译方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;一步一步来&quot;&gt;&lt;a href=&quot;#一步一步来&quot; class=&quot;headerlink&quot; title=&quot;一步一步来&quot;&gt;&lt;/a&gt;一步一步来&lt;/h1&gt;&lt;h3 id=&quot;1-运行按钮（及Debug模式运行按钮）和Eclipse长的很像&quot;&gt;&lt;a href=&quot;#1-运行按钮（及Debug模式运行按钮）和Eclipse长的很像&quot; class=&quot;headerlink&quot; title=&quot;1. 运行按钮（及Debug模式运行按钮）和Eclipse长的很像&quot;&gt;&lt;/a&gt;1. 运行按钮（及Debug模式运行按钮）和Eclipse长的很像&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_4_0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-这时已经可以在手机上看到运行的HelloWorld程序了&quot;&gt;&lt;a href=&quot;#2-这时已经可以在手机上看到运行的HelloWorld程序了&quot; class=&quot;headerlink&quot; title=&quot;2. 这时已经可以在手机上看到运行的HelloWorld程序了&quot;&gt;&lt;/a&gt;2. 这时已经可以在手机上看到运行的HelloWorld程序了&lt;/h3&gt;&lt;h3 id=&quot;3-菜单栏也有一个Run菜单，点开后是有一些run方式（如普通运行，debug模式运行，debug-break-点设置的一些东东），平时用1中说的按钮即可&quot;&gt;&lt;a href=&quot;#3-菜单栏也有一个Run菜单，点开后是有一些run方式（如普通运行，debug模式运行，debug-break-点设置的一些东东），平时用1中说的按钮即可&quot; class=&quot;headerlink&quot; title=&quot;3. 菜单栏也有一个Run菜单，点开后是有一些run方式（如普通运行，debug模式运行，debug break 点设置的一些东东），平时用1中说的按钮即可&quot;&gt;&lt;/a&gt;3. 菜单栏也有一个Run菜单，点开后是有一些run方式（如普通运行，debug模式运行，debug break 点设置的一些东东），平时用1中说的按钮即可&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_4_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4-还记得之前说过的工具栏么，有一个工具栏叫Gradle，默认在编辑区的右侧偏上，点开后有很多选项，其中一个选项叫做build，如下图，assembleDebug-意思是编译出debug版本，assembleRelease，意思-是编译出release版本&quot;&gt;&lt;a href=&quot;#4-还记得之前说过的工具栏么，有一个工具栏叫Gradle，默认在编辑区的右侧偏上，点开后有很多选项，其中一个选项叫做build，如下图，assembleDebug-意思是编译出debug版本，assembleRelease，意思-是编译出release版本&quot; class=&quot;headerlink&quot; title=&quot;4. 还记得之前说过的工具栏么，有一个工具栏叫Gradle，默认在编辑区的右侧偏上，点开后有很多选项，其中一个选项叫做build，如下图，assembleDebug 意思是编译出debug版本，assembleRelease，意思 是编译出release版本&quot;&gt;&lt;/a&gt;4. 还记得之前说过的工具栏么，有一个工具栏叫Gradle，默认在编辑区的右侧偏上，点开后有很多选项，其中一个选项叫做build，如下图，assembleDebug 意思是编译出debug版本，assembleRelease，意思 是编译出release版本&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_4_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5-编译出的apk可以在项目根目录-build-output-apk-下找到，同样，上述assembleRelease-可以用命令行替代，如打开terminal，输入命令-gradlew-assembleRelease-如下图&quot;&gt;&lt;a href=&quot;#5-编译出的apk可以在项目根目录-build-output-apk-下找到，同样，上述assembleRelease-可以用命令行替代，如打开terminal，输入命令-gradlew-assembleRelease-如下图&quot; class=&quot;headerlink&quot; title=&quot;5. 编译出的apk可以在项目根目录/build/output/apk/下找到，同样，上述assembleRelease 可以用命令行替代，如打开terminal，输入命令:./gradlew assembleRelease 如下图&quot;&gt;&lt;/a&gt;5. 编译出的apk可以在项目根目录/build/output/apk/下找到，同样，上述assembleRelease 可以用命令行替代，如打开terminal，输入命令:./gradlew assembleRelease 如下图&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_4_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;讲述了如何运行HelloWorld程序以及如果编译出Debug和Realse版本&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;运行 HelloWorld 程序并选择编译方式&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
+    
+    
+      <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Gradle使用方法与技巧「汇总」，未完....</title>
     <link href="http://rdors.com/2016/01/04/2016-01-04-gradle-info/"/>
     <id>http://rdors.com/2016/01/04/2016-01-04-gradle-info/</id>
@@ -1065,6 +1155,52 @@
       <category term="Android" scheme="http://rdors.com/tags/Android/"/>
     
       <category term="Gradle" scheme="http://rdors.com/tags/Gradle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio  使用- 0 - ide界面简单预览「原创」</title>
+    <link href="http://rdors.com/2016/01/03/2016-07-05-learn_as_3/"/>
+    <id>http://rdors.com/2016/01/03/2016-07-05-learn_as_3/</id>
+    <published>2016-01-02T16:00:00.000Z</published>
+    <updated>2016-07-06T12:12:40.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Android Studio 工具 界面预览&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;界面图概览&quot;&gt;&lt;a href=&quot;#界面图概览&quot; class=&quot;headerlink&quot; title=&quot;界面图概览&quot;&gt;&lt;/a&gt;界面图概览&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_3_0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;分栏介绍&quot;&gt;&lt;a href=&quot;#分栏介绍&quot; class=&quot;headerlink&quot; title=&quot;分栏介绍&quot;&gt;&lt;/a&gt;分栏介绍&lt;/h1&gt;&lt;h2 id=&quot;1-菜单栏&quot;&gt;&lt;a href=&quot;#1-菜单栏&quot; class=&quot;headerlink&quot; title=&quot;1. 菜单栏&quot;&gt;&lt;/a&gt;1. 菜单栏&lt;/h2&gt;&lt;p&gt;是最上面红色框起来的区域，顾名思义，各种菜单&lt;/p&gt;
+&lt;h2 id=&quot;2-工具栏&quot;&gt;&lt;a href=&quot;#2-工具栏&quot; class=&quot;headerlink&quot; title=&quot;2. 工具栏&quot;&gt;&lt;/a&gt;2. 工具栏&lt;/h2&gt;&lt;p&gt;四周围框的位置，是各种工具栏，如项目explorer，Terminal，Android Monitor，点击相应工具栏，对应工具窗口会弹出，再次点击会缩回（之后会一个一个介绍）&lt;/p&gt;
+&lt;h3 id=&quot;2-1-project-工具栏&quot;&gt;&lt;a href=&quot;#2-1-project-工具栏&quot; class=&quot;headerlink&quot; title=&quot;2.1 project 工具栏&quot;&gt;&lt;/a&gt;2.1 project 工具栏&lt;/h3&gt;&lt;p&gt;用于浏览项目文件。 Project 面板会显示当前的所有的 module 。 android application module 会显示一个手机图标（下图中的 app ）；&lt;br&gt;    android library module 会显示一个书架图标（下图中的 android-lib）；java library module 会显示一个咖啡图标（下图中的 java-lib ）。&lt;br&gt;    可以选择project，android模式，各种模式explorer 显示的目录结构是不一致的&lt;br&gt;  &lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_3_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-2-Build-Variants-工具栏&quot;&gt;&lt;a href=&quot;#2-2-Build-Variants-工具栏&quot; class=&quot;headerlink&quot; title=&quot;2.2 Build Variants 工具栏&quot;&gt;&lt;/a&gt;2.2 Build Variants 工具栏&lt;/h3&gt;&lt;p&gt;用于设置当前项目的 Build Variants （ Gradle 知识）。所有的 Module 默认都会有 release 和 debug 两种选项。当你添加了 BuildTypes 和 productFlavors ，&lt;br&gt;    这里将出现更多的选项（ Gradle 知识）。默认情况下， release 和 debug 的区别并不是很明显；针对于代码来说，是没有区别的。&lt;/p&gt;
+&lt;h3 id=&quot;2-3-Android-工具栏&quot;&gt;&lt;a href=&quot;#2-3-Android-工具栏&quot; class=&quot;headerlink&quot; title=&quot;2.3 Android 工具栏&quot;&gt;&lt;/a&gt;2.3 Android 工具栏&lt;/h3&gt;&lt;p&gt;包含了log工具，Cpu|Gpu查看工具，截图，录像，内存查看等工具&lt;/p&gt;
+&lt;h3 id=&quot;2-4-Gradle-工具栏&quot;&gt;&lt;a href=&quot;#2-4-Gradle-工具栏&quot; class=&quot;headerlink&quot; title=&quot;2.4 Gradle 工具栏&quot;&gt;&lt;/a&gt;2.4 Gradle 工具栏&lt;/h3&gt;&lt;p&gt;项目以何种方式编译的选择&lt;/p&gt;
+&lt;h2 id=&quot;3-状态栏&quot;&gt;&lt;a href=&quot;#3-状态栏&quot; class=&quot;headerlink&quot; title=&quot;3. 状态栏&quot;&gt;&lt;/a&gt;3. 状态栏&lt;/h2&gt;&lt;p&gt;如图中最下方显示的信息区域&lt;/p&gt;
+&lt;h2 id=&quot;4-主工作区（编辑区）&quot;&gt;&lt;a href=&quot;#4-主工作区（编辑区）&quot; class=&quot;headerlink&quot; title=&quot;4. 主工作区（编辑区）&quot;&gt;&lt;/a&gt;4. 主工作区（编辑区）&lt;/h2&gt;&lt;p&gt;上图显示代码区域，对代码的主要编辑即在该区域&lt;/p&gt;
+&lt;h2 id=&quot;5-导航条&quot;&gt;&lt;a href=&quot;#5-导航条&quot; class=&quot;headerlink&quot; title=&quot;5. 导航条&quot;&gt;&lt;/a&gt;5. 导航条&lt;/h2&gt;&lt;p&gt;上图显示“层级显示”箭头所示区域，每个层级都是可以点击的&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;简单介绍了界面上各个区域的作用&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Android Studio 工具 界面预览&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
+    
+    
+      <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
     
   </entry>
   
@@ -1759,110 +1895,6 @@ partial(&amp;#39;_partials/tag.ejs&amp;#39;) %&amp;gt;&lt;/code&gt;.  Problem so
       <category term="Animation" scheme="http://rdors.com/tags/Animation/"/>
     
       <category term="Canvas" scheme="http://rdors.com/tags/Canvas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How To Impress Employers at Infosessions</title>
-    <link href="http://rdors.com/2015/05/02/2015-05-02-How-To-Impress/"/>
-    <id>http://rdors.com/2015/05/02/2015-05-02-How-To-Impress/</id>
-    <published>2015-05-01T16:00:00.000Z</published>
-    <updated>2016-07-03T15:10:07.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Top tech talent knows that industry recruiters often bring a stack of&lt;br&gt;pre-negotiated offers to university infosessions, so that they can snag&lt;br&gt;programmers and UX designers who really stand out.  Instead of spending valuable&lt;br&gt;time validating a particularly promising candidate’s skillset through a&lt;br&gt;protracted series of interviews, it’s often more efficient to simply &lt;strong&gt;give the&lt;br&gt;individual an offer right then and there&lt;/strong&gt;.  Internal studies at Google have shown&lt;br&gt;that experienced recruiters can usually tell if a programmer has ‘what it takes’&lt;br&gt;just from how they act at infosessions: the insightful questions they ask, the&lt;br&gt;stickers on their laptop, and how they comport themselves in general.&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;Top tech talent knows that industry recruiters often bring a stack of&lt;br&gt;pre-negotiated offers to university infosessions, so that they can snag&lt;br&gt;programmers and UX designers who really stand out.  Instead of spending valuable&lt;br&gt;time validating a particularly promising candidate’s skillset through a&lt;br&gt;protracted series of interviews, it’s often more efficient to simply &lt;strong&gt;give the&lt;br&gt;individual an offer right then and there&lt;/strong&gt;.  Internal studies at Google have shown&lt;br&gt;that experienced recruiters can usually tell if a programmer has ‘what it takes’&lt;br&gt;just from how they act at infosessions: the insightful questions they ask, the&lt;br&gt;stickers on their laptop, and how they comport themselves in general.&lt;/p&gt;
-&lt;p&gt;Here are some of tips for optimizing your infosession performance:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Ask questions to get a feel for the company’s culture.  For example, I always&lt;br&gt;start off by asking “do you have a mandatory drug test?”.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Make sure that the recruiters know you’re passionate about the company by&lt;br&gt;crying.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Don’t be that awkward guy who goes up for more pizza while the presenter is&lt;br&gt;providing valuable information about the company’s agile development cycle.&lt;br&gt;Instead, demonstrate your ability to amortize I/O costs via bulk loading:&lt;br&gt;bring a whole box of pizza back to your seat.  Protip: “free swag” t-shirts&lt;br&gt;make great face rags, so grab a handful.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Stay focused by minimizing distractions.  I typically wear my Bose&lt;br&gt;QuietComfort noise cancelling headphones during the presentation.  This way I&lt;br&gt;retain more information from the PowerPoint, which really impresses the&lt;br&gt;recruiters during the networking session.  Follow me on Spotify to check out&lt;br&gt;my special “Let’s Do This Infosession” playlist.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Getting invited to the ‘after-infosession’ is critical.  During the networking&lt;br&gt;session, ask the recruiters what hotel they’re staying at, and make sure that&lt;br&gt;they know that you ‘know a guy’.  Without fail, someone will slip a wax-sealed&lt;br&gt;envelope under your door at midnight, the coveted invitation to an another, more&lt;br&gt;exclusive networking event.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you follow these simple tips and brush up on your data structures, you’ll&lt;br&gt;soon be literally &lt;em&gt;drowning&lt;/em&gt; in offers, like everyone else.  If these tips don’t&lt;br&gt;work out for you, you probably need to get your MEng.&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Top tech talent knows that industry recruiters often bring a stack of&lt;br&gt;pre-negotiated offers to university infosessions, so that they can snag&lt;br&gt;programmers and UX designers who really stand out.  Instead of spending valuable&lt;br&gt;time validating a particularly promising candidate’s skillset through a&lt;br&gt;protracted series of interviews, it’s often more efficient to simply &lt;strong&gt;give the&lt;br&gt;individual an offer right then and there&lt;/strong&gt;.  Internal studies at Google have shown&lt;br&gt;that experienced recruiters can usually tell if a programmer has ‘what it takes’&lt;br&gt;just from how they act at infosessions: the insightful questions they ask, the&lt;br&gt;stickers on their laptop, and how they comport themselves in general.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Humor" scheme="http://rdors.com/categories/Humor/"/>
-    
-    
-      <category term="funny" scheme="http://rdors.com/tags/funny/"/>
-    
-      <category term="employment" scheme="http://rdors.com/tags/employment/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NAV Web Service Programming Resources</title>
-    <link href="http://rdors.com/2015/04/08/2015-04-08-NAV-Programming-Resources/"/>
-    <id>http://rdors.com/2015/04/08/2015-04-08-NAV-Programming-Resources/</id>
-    <published>2015-04-07T16:00:00.000Z</published>
-    <updated>2016-07-03T15:10:07.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Here are some of the resources I found helpful for learning to develop Dynamics NAV web service based applications.&lt;/p&gt;
-&lt;h4 id=&quot;C-AL-Programming&quot;&gt;&lt;a href=&quot;#C-AL-Programming&quot; class=&quot;headerlink&quot; title=&quot;C/AL Programming:&quot;&gt;&lt;/a&gt;C/AL Programming:&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.consultec.es/DocTutoriales/Introduction_to_CAL_Programming.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Introduction to CAL Programming&lt;/a&gt;&lt;br&gt;This provides a good overview of the basics of CAL programming, which can become necessary in building a web service applications when a custom codeunit or page extension is required.&lt;/p&gt;
-&lt;h4 id=&quot;Setting-up-Web-Services&quot;&gt;&lt;a href=&quot;#Setting-up-Web-Services&quot; class=&quot;headerlink&quot; title=&quot;Setting up Web Services:&quot;&gt;&lt;/a&gt;Setting up Web Services:&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://vjeko.com/blog/connecting-to-nav-through-web-services-recorded-session&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vjecko Web Service Recorded Session&lt;/a&gt;&lt;br&gt;Vjecko.com has a lot of detailed articles about web service programming, but this older post has a pdf and recorded session that shows how to expose and connect to web services from a .NET application.  Unfortunately, he shows how to create Web Service references in .NET using the now-deprecated Web Refrence method (from .NET 2) instead of the more current Service Reference method.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/freddyk/archive/2010/01/20/connecting-to-nav-web-services-from-c-using-service-reference-config-file-version.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Using Service Reference to Connect to Web Services&lt;/a&gt;&lt;br&gt;This explains how to use Service Reference, using code instead of XML web.config configuration, which I found difficult to configure.  (Each time I updated the service reference, I would have to reconfigure the XML).&lt;/p&gt;
-&lt;h4 id=&quot;NAV-Upgrade-Process&quot;&gt;&lt;a href=&quot;#NAV-Upgrade-Process&quot; class=&quot;headerlink&quot; title=&quot;NAV Upgrade Process:&quot;&gt;&lt;/a&gt;NAV Upgrade Process:&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://saurav-nav.blogspot.com/2012/12/nav-2013-upgrade-part-iv-sql-migration.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Migration to SQL Server from C/SIDE Database&lt;/a&gt;&lt;br&gt;In order to use web services, you don’t need to be using the Role Tailored Client, but you must be using the a SQL server based NAV database.  Web Services can be configured and exposed using the Classic Client for SQL Server Databases.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/nav/archive/2012/03/05/rtc-debugging.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Debugging Code Called by Web Services&lt;/a&gt;&lt;br&gt;C/AL code won’t necessarily execute the same as it did in the Classic Client when called  as a Web Service.  C/AL code called as web service execute in the NAV Server tier, instead of the client.  &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ff477107.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Certain functions&lt;/a&gt; aren’t available for code running in the NAV Server, and some design changes need to be made (for example, CONFIRM dialogue boxes don’t make sense in the context of a web service).  To debug the codeunits called through web services (or the Role Tailored Client), you will need to use Visual Studio.&lt;br&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/dd338765.aspx#SU&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;More information.&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;Deploying-a-NET-Application&quot;&gt;&lt;a href=&quot;#Deploying-a-NET-Application&quot; class=&quot;headerlink&quot; title=&quot;Deploying a .NET Application:&quot;&gt;&lt;/a&gt;Deploying a .NET Application:&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.asp.net/mvc/overview/deployment/visual-studio-web-deployment/deploying-to-iis&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deploying to IIS&lt;/a&gt;  After you’ve built a .NET application that consumes .NET web services, you’ll have to find a way to deploy it on your servers, or Azure.  Connection strings can be used to specify different NAV servers for different environments (like development, QA, and prod).&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Here are some of the resources I found helpful for learning to develop Dynamics NAV web service based applications.&lt;/p&gt;
-&lt;h4 id=&quot;C-AL-Prog
-    
-    </summary>
-    
-      <category term="Dynamics NAV" scheme="http://rdors.com/categories/Dynamics-NAV/"/>
-    
-    
-      <category term="Resources" scheme="http://rdors.com/tags/Resources/"/>
-    
-      <category term="NAV" scheme="http://rdors.com/tags/NAV/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Adding Lookup Field to a Page in Dynamics NAV</title>
-    <link href="http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/"/>
-    <id>http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/</id>
-    <published>2015-04-04T16:00:00.000Z</published>
-    <updated>2016-07-03T15:10:07.000Z</updated>
-    
-    <content type="html">&lt;p&gt;One of the problems I faced in building a non-trivial application that consumed&lt;br&gt;NAV Web Services was figuring out how to “join” fields from different tables.&lt;br&gt;For example, when exposing a list of jobs from a job table which includes a&lt;br&gt;resource needed for the job, you might need more than just the resource id&lt;br&gt;that’s a field in the table: you might also need the resource name and&lt;br&gt;description.  While this is easy to get for one record, what about when you&lt;br&gt;need a few hundred records in a table that has been dynamically filtered?  When&lt;br&gt;exposing a Page as a web service, it’s easy to include the fields of the table&lt;br&gt;that the page is based on, but it’s less clear how to include fields from&lt;br&gt;another table.&lt;/p&gt;
-&lt;p&gt;Forum posts like &lt;a href=&quot;http://dynamicsuser.net/forums/p/32550/170843.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this&lt;/a&gt; led me to believe that I couldn’t expose flow fields in a Page web service, and I would get exceptions when I tried to expose all the fields of a table.  In fact, it’s perfectly possible to expose a flow field: it’s &lt;strong&gt;flow filters&lt;/strong&gt; that don’t work with web services.  But, I also didn’t want to modify the underlying [job] table to add a flow field, and didn’t see an easy way of adding a flow field to a Page.  I tried “joining” the data in the C# application, but found network overhead made the application unusuably slow.&lt;/p&gt;
-&lt;p&gt;The solution to this problem was to use C/AL code to the Page to effectively create a lookup / flow field.  This way, the data is “pre-joined” before leaving the NAV Server, which is fast and clean, but you didn’t modify any tables.  Here’s how it’s done:&lt;/p&gt;
-&lt;p&gt;Step 1. &lt;strong&gt;Add a Field with SourceExpression Set to a Function Name&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To start, we create a Page using the wizard that includes all of the fields of an underlying table.  Then, we create manually add fields that will contain the lookup data from other tables.  The text in the SourceExpression column will be the name of the function that populates this field.&lt;br&gt;&lt;img src=&quot;http://ptsteadman.github.io/images/lookup-1.PNG&quot; alt=&quot;Add a Field with SourceExpression Set to a Function Name&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Step 2. &lt;strong&gt;Create Function in the Page’s C/AL Code&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With the Page field designer open, go to the functions tab of C/AL Globals form, and add a function with the name of the text in the SourceExpression column.  Set the return type of the function with the “Locals” button, and a function trigger will appear in the C/AL code editor for your page.  Add code to the body of the function trigger that will be called for each record to provide a value for the field.&lt;br&gt;&lt;img src=&quot;http://ptsteadman.github.io/images/lookup-2.PNG&quot; alt=&quot;Create Function in the Page&amp;#39;s C/AL Code&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;One of the problems I faced in building a non-trivial application that consumed&lt;br&gt;NAV Web Services was figuring out how to “join” fields
-    
-    </summary>
-    
-      <category term="Dynamics NAV" scheme="http://rdors.com/categories/Dynamics-NAV/"/>
-    
-    
-      <category term="Resources" scheme="http://rdors.com/tags/Resources/"/>
-    
-      <category term="NAV" scheme="http://rdors.com/tags/NAV/"/>
     
   </entry>
   
