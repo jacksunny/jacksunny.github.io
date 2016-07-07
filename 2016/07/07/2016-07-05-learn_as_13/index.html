@@ -7,24 +7,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Adding Lookup Field to a Page in Dynamics NAV | R&amp;D 哥哥的博客世界</title>
+  <title>Android Studio  使用- 13 -  aar 使用「半原创」 | R&amp;D 哥哥的博客世界</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="One of the problems I faced in building a non-trivial application that consumedNAV Web Services was figuring out how to “join” fields from different tables.For example, when exposing a list of jobs fr">
+  <meta name="description" content="本文会带来什么
+
+aar 专门在说下，公司项目遇到，进行小调研总结了下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Adding Lookup Field to a Page in Dynamics NAV">
-<meta property="og:url" content="http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/index.html">
+<meta property="og:title" content="Android Studio  使用- 13 -  aar 使用「半原创」">
+<meta property="og:url" content="http://rdors.com/2016/07/07/2016-07-05-learn_as_13/index.html">
 <meta property="og:site_name" content="R&D 哥哥的博客世界">
-<meta property="og:description" content="One of the problems I faced in building a non-trivial application that consumedNAV Web Services was figuring out how to “join” fields from different tables.For example, when exposing a list of jobs fr">
-<meta property="og:image" content="http://ptsteadman.github.io/images/lookup-1.PNG">
-<meta property="og:image" content="http://ptsteadman.github.io/images/lookup-2.PNG">
-<meta property="og:updated_time" content="2016-07-03T15:10:07.000Z">
+<meta property="og:description" content="本文会带来什么
+
+aar 专门在说下，公司项目遇到，进行小调研总结了下">
+<meta property="og:updated_time" content="2016-07-07T12:17:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Adding Lookup Field to a Page in Dynamics NAV">
-<meta name="twitter:description" content="One of the problems I faced in building a non-trivial application that consumedNAV Web Services was figuring out how to “join” fields from different tables.For example, when exposing a list of jobs fr">
-<meta name="twitter:image" content="http://ptsteadman.github.io/images/lookup-1.PNG">
+<meta name="twitter:title" content="Android Studio  使用- 13 -  aar 使用「半原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+aar 专门在说下，公司项目遇到，进行小调研总结了下">
   
     <link rel="alternative" href="/atom.xml" title="R&amp;D 哥哥的博客世界" type="application/atom+xml">
   
@@ -150,13 +153,13 @@
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2015/04/05/2015-04-05-Lookup-on-Page/">Adding Lookup Field to a Page in Dynamics NAV</a>
+      <a class="article-title" href="/2016/07/07/2016-07-05-learn_as_13/">Android Studio  使用- 13 -  aar 使用「半原创」</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-2015-04-05-Lookup-on-Page" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-2016-07-05-learn_as_13" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -164,20 +167,18 @@
     
     <header class="article-header">
       <ul class="blog-info">
-	<li><i class="fa fa-user"></i> Patrick Steadman</li>
+	<li><i class="fa fa-user"></i> JackSunny</li>
 	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2015-04-04T16:00:00.000Z" itemprop="datePublished">2015/04/05</time>
+	  <time datetime="2016-07-06T16:00:00.000Z" itemprop="datePublished">2016/07/07</time>
 
 	</li>
 	<li class="hidden-xs"><i class="fa fa-comments"></i>
-	  <a href="http://rdors.com/2015/04/05/2015-04-05-Lookup-on-Page/#disqus_thread" class="article-comment-link">Comments</a>
+	  <a href="http://rdors.com/2016/07/07/2016-07-05-learn_as_13/#disqus_thread" class="article-comment-link">Comments</a>
 	</li>
 	<li class="hidden-xs"><i class="fa fa-tags"></i> 
 	  
   
-    <a href="/tags/Resources/" title="Resources">Resources</a>,
-  
-    <a href="/tags/NAV/" title="NAV">NAV</a>
+    <a href="/tags/android-studio/" title="android studio">android studio</a>
   
 
 
@@ -188,7 +189,7 @@
     
     Category: 
     
-    <a class="article-category-link" href="/categories/Dynamics-NAV/">Dynamics NAV</a>
+    <a class="article-category-link" href="/categories/android/">android</a>
   </div>
   <br>
 
@@ -197,13 +198,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>One of the problems I faced in building a non-trivial application that consumed<br>NAV Web Services was figuring out how to “join” fields from different tables.<br>For example, when exposing a list of jobs from a job table which includes a<br>resource needed for the job, you might need more than just the resource id<br>that’s a field in the table: you might also need the resource name and<br>description.  While this is easy to get for one record, what about when you<br>need a few hundred records in a table that has been dynamically filtered?  When<br>exposing a Page as a web service, it’s easy to include the fields of the table<br>that the page is based on, but it’s less clear how to include fields from<br>another table.</p>
-<p>Forum posts like <a href="http://dynamicsuser.net/forums/p/32550/170843.aspx" target="_blank" rel="external">this</a> led me to believe that I couldn’t expose flow fields in a Page web service, and I would get exceptions when I tried to expose all the fields of a table.  In fact, it’s perfectly possible to expose a flow field: it’s <strong>flow filters</strong> that don’t work with web services.  But, I also didn’t want to modify the underlying [job] table to add a flow field, and didn’t see an easy way of adding a flow field to a Page.  I tried “joining” the data in the C# application, but found network overhead made the application unusuably slow.</p>
-<p>The solution to this problem was to use C/AL code to the Page to effectively create a lookup / flow field.  This way, the data is “pre-joined” before leaving the NAV Server, which is fast and clean, but you didn’t modify any tables.  Here’s how it’s done:</p>
-<p>Step 1. <strong>Add a Field with SourceExpression Set to a Function Name</strong></p>
-<p>To start, we create a Page using the wizard that includes all of the fields of an underlying table.  Then, we create manually add fields that will contain the lookup data from other tables.  The text in the SourceExpression column will be the name of the function that populates this field.<br><img src="http://ptsteadman.github.io/images/lookup-1.PNG" alt="Add a Field with SourceExpression Set to a Function Name"></p>
-<p>Step 2. <strong>Create Function in the Page’s C/AL Code</strong></p>
-<p>With the Page field designer open, go to the functions tab of C/AL Globals form, and add a function with the name of the text in the SourceExpression column.  Set the return type of the function with the “Locals” button, and a function trigger will appear in the C/AL code editor for your page.  Add code to the body of the function trigger that will be called for each record to provide a value for the field.<br><img src="http://ptsteadman.github.io/images/lookup-2.PNG" alt="Create Function in the Page&#39;s C/AL Code"></p>
+        <p><em>本文会带来什么</em></p>
+<ol>
+<li>aar 专门在说下，公司项目遇到，进行小调研总结了下</li>
+</ol>
+<a id="more"></a>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>随着项目越来越多，代码的复用就变得异常重要，这时候就要进行模块化编程，就是把一些通用的组件或者类库做成单独的模块，其他项目直接进行引用就好。<br>Android常用的方式有：</p>
+<ul>
+<li>jar</li>
+<li>Android Library</li>
+<li>aar</li>
+</ul>
+<p>下面只说 aar</p>
+<p><a href="">aaa</a></p>
+<h1 id="what？"><a href="#what？" class="headerlink" title="what？"></a>what？</h1><blockquote>
+<p>是一个android库项目（Android Library Project）的二进制包</p>
+<p>何为aar？大家都知道jar文件把，如果你有一个Android Library项目，可以很容易的导出jar文件，然后在其他项目中很方便的引用，aar和jar类似，区别就是一个Android Library项目导出的jar文件不能包含资源文件，比如一些drawable文件、xml资源文件之类的，所以这就有很大的限制，在gradle之前我们要引用带资源文件的Android Library必须要把整个library导入进来进行引用，但是有了gradle之后，Android Library项目可以直接导出成aar，然后其他项目像引用jar的方式直接方便的引用。</p>
+</blockquote>
+<p>/build/outputs/aar/libraryname.aar<br>修改aar 后缀为 zip 后可查看内容<br>—aapt/<br>—aidl/<br>—AndroidManifest.xml<br>—classes.jar<br>—jni/<br>—libs/<br>—R.txt<br>—res/</p>
+<h1 id="why"><a href="#why" class="headerlink" title="why"></a>why</h1><ol>
+<li>避免修改</li>
+<li>清爽</li>
+<li>就是要用</li>
+</ol>
+<h1 id="how"><a href="#how" class="headerlink" title="how"></a>how</h1><h3 id="1-建立工程"><a href="#1-建立工程" class="headerlink" title="1. 建立工程"></a>1. 建立工程</h3><p>  <a href="https://jacksunny.github.io/2015/11/28/2016-07-05-learn_as_2/" target="_blank" rel="external">创建第一个AS程序 HelloWorld</a></p>
+<h3 id="2-建立依赖工程工程"><a href="#2-建立依赖工程工程" class="headerlink" title="2. 建立依赖工程工程"></a>2. 建立依赖工程工程</h3><p>  <a href="https://jacksunny.github.io/2016/01/20/2016-07-05-learn_as_5/" target="_blank" rel="external">建立依赖工程工程，在文中下半部分</a></p>
+<h3 id="3-Build-rebuild-Library"><a href="#3-Build-rebuild-Library" class="headerlink" title="3. Build-rebuild Library"></a>3. Build-rebuild Library</h3><h3 id="4-aar-导入（如果提示冲突可以去本地删除）"><a href="#4-aar-导入（如果提示冲突可以去本地删除）" class="headerlink" title="4. aar 导入（如果提示冲突可以去本地删除）"></a>4. aar 导入（如果提示冲突可以去本地删除）</h3><p>  <a href="https://jacksunny.github.io/2016/01/20/2016-07-05-learn_as_5/" target="_blank" rel="external">导入jar包，依赖工程，arr</a></p>
+<h1 id="引申1-如何导出jar"><a href="#引申1-如何导出jar" class="headerlink" title="引申1 如何导出jar"></a>引申1 如何导出jar</h1><p>*.jar：库/build/intermediates/bundles/debug(release)/classes.jar</p>
+<h1 id="引申1-如何导入Android-Library"><a href="#引申1-如何导入Android-Library" class="headerlink" title="引申1 如何导入Android Library"></a>引申1 如何导入Android Library</h1><p>直接使用即可</p>
+<h1 id="引申3-上传-jcenter"><a href="#引申3-上传-jcenter" class="headerlink" title="引申3 上传 jcenter"></a>引申3 上传 jcenter</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'com.android.support:appcompat-v7:23.4.0'</span></span><br></pre></td></tr></table></figure>
+<p><a href="http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html" target="_blank" rel="external">教程</a></p>
 
       
     </div>
@@ -212,19 +237,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/04/08/2015-04-08-NAV-Programming-Resources/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          NAV Web Service Programming Resources
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/04/01/2015-04-01-NGINX-Static-Locations/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/07/05/2016-07-05-python-4/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Static NGINX Locations</div>
+      <div class="article-nav-title">学习 python 4 - python 函数式编程「半原创」</div>
     </a>
   
 </nav>
