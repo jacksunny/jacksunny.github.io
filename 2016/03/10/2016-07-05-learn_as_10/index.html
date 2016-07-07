@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android Studio  使用- 10 - 版本管理「原创」 | R&amp;D 哥哥的博客世界</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="本文会带来什么
+
+首先，AS中的版本管理是不需要下载插件进行支持的
+AS中的版本管理爽得不要不要的，如何爽，请听我细细道来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Studio  使用- 10 - 版本管理「原创」">
+<meta property="og:url" content="http://rdors.com/2016/03/10/2016-07-05-learn_as_10/index.html">
+<meta property="og:site_name" content="R&D 哥哥的博客世界">
+<meta property="og:description" content="本文会带来什么
+
+首先，AS中的版本管理是不需要下载插件进行支持的
+AS中的版本管理爽得不要不要的，如何爽，请听我细细道来">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_0.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_1.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_2.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_3.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_4.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_5.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_6.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_7.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_8.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_9.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_10.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_11.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_12.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_13.png">
+<meta property="og:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_14.png">
+<meta property="og:updated_time" content="2016-07-07T12:04:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android Studio  使用- 10 - 版本管理「原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+首先，AS中的版本管理是不需要下载插件进行支持的
+AS中的版本管理爽得不要不要的，如何爽，请听我细细道来">
+<meta name="twitter:image" content="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_0.png">
+  
+    <link rel="alternative" href="/atom.xml" title="R&amp;D 哥哥的博客世界" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/turquoise.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
+</head>
+
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span>716-472-4484</span></li>
+	  <li><i class="fa fa-envelope-o"></i><span>ptsteadman@gmail.com</span></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="/login">Log In</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">R&amp;D 哥哥的博客世界</a>-->
+
+    <a class="site-logo" href="/">
+      <img src="/metronic/assets/corporate/img/logos/logo-corp-turquoise.png" alt="Metronic FrontEnd">
+    </a>
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	
+	<li class="">
+	  <a  href="/">Home</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/contact/">Contact</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->
+
+  <div class="container">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2016/03/10/2016-07-05-learn_as_10/">Android Studio  使用- 10 - 版本管理「原创」</a>
+    </h2>
+
+
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-2016-07-05-learn_as_10" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> JackSunny</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2016-03-09T16:00:00.000Z" itemprop="datePublished">2016/03/10</time>
+
+	</li>
+	<li class="hidden-xs"><i class="fa fa-comments"></i>
+	  <a href="http://rdors.com/2016/03/10/2016-07-05-learn_as_10/#disqus_thread" class="article-comment-link">Comments</a>
+	</li>
+	<li class="hidden-xs"><i class="fa fa-tags"></i> 
+	  
+  
+    <a href="/tags/android-studio/" title="android studio">android studio</a>
+  
+
+
+	</li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>本文会带来什么</em></p>
+<ol>
+<li>首先，AS中的版本管理是不需要下载插件进行支持的</li>
+<li>AS中的版本管理爽得不要不要的，如何爽，请听我细细道来</li>
+</ol>
+<a id="more"></a>
+<hr>
+<h1 id="1-如何根据Repositories地址导入svn工程"><a href="#1-如何根据Repositories地址导入svn工程" class="headerlink" title="1.如何根据Repositories地址导入svn工程"></a>1.如何根据Repositories地址导入svn工程</h1><h2 id="1-1-从远程Repositories-地址导入svn工程，打开AS，如下图，可见点击后可选择svn，git，github等，我们选择svn"><a href="#1-1-从远程Repositories-地址导入svn工程，打开AS，如下图，可见点击后可选择svn，git，github等，我们选择svn" class="headerlink" title="1.1 从远程Repositories 地址导入svn工程，打开AS，如下图，可见点击后可选择svn，git，github等，我们选择svn"></a>1.1 从远程Repositories 地址导入svn工程，打开AS，如下图，可见点击后可选择svn，git，github等，我们选择svn</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_0.png" alt=""></p>
+<h2 id="1-2-点击后弹出窗口如下图"><a href="#1-2-点击后弹出窗口如下图" class="headerlink" title="1.2 点击后弹出窗口如下图"></a>1.2 点击后弹出窗口如下图</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_1.png" alt=""></p>
+<h2 id="1-3-在弹窗内输入svn地址，并确定（该地址所）"><a href="#1-3-在弹窗内输入svn地址，并确定（该地址所）" class="headerlink" title="1.3 在弹窗内输入svn地址，并确定（该地址所）"></a>1.3 在弹窗内输入svn地址，并确定（该地址所）</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_2.png" alt=""></p>
+<h2 id="1-4-然后选中地址，然后点击checkout"><a href="#1-4-然后选中地址，然后点击checkout" class="headerlink" title="1.4 然后选中地址，然后点击checkout"></a>1.4 然后选中地址，然后点击checkout</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_3.png" alt=""></p>
+<h2 id="1-5-接着选择checkout文件夹地址，如果之前svn网络地址-是一个文件夹，下面有子工程，会出现如下图所示，选中你想checkout的目录即可，点击ok即可"><a href="#1-5-接着选择checkout文件夹地址，如果之前svn网络地址-是一个文件夹，下面有子工程，会出现如下图所示，选中你想checkout的目录即可，点击ok即可" class="headerlink" title="1.5 接着选择checkout文件夹地址，如果之前svn网络地址 是一个文件夹，下面有子工程，会出现如下图所示，选中你想checkout的目录即可，点击ok即可"></a>1.5 接着选择checkout文件夹地址，如果之前svn网络地址 是一个文件夹，下面有子工程，会出现如下图所示，选中你想checkout的目录即可，点击ok即可</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_4.png" alt=""></p>
+<h2 id="1-6-接下来会有选择svn-版本，默认即可，如果该工程不为AS工程，则会提示是否修改为AS工程提示"><a href="#1-6-接下来会有选择svn-版本，默认即可，如果该工程不为AS工程，则会提示是否修改为AS工程提示" class="headerlink" title="1.6 接下来会有选择svn 版本，默认即可，如果该工程不为AS工程，则会提示是否修改为AS工程提示"></a>1.6 接下来会有选择svn 版本，默认即可，如果该工程不为AS工程，则会提示是否修改为AS工程提示</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_5.png" alt=""></p>
+<h2 id="1-7-如果你选择是，则会需要你指定GRADULE地址什么的，比较繁琐，所以，从远程地址导入推荐导入GRADLE工程"><a href="#1-7-如果你选择是，则会需要你指定GRADULE地址什么的，比较繁琐，所以，从远程地址导入推荐导入GRADLE工程" class="headerlink" title="1.7 如果你选择是，则会需要你指定GRADULE地址什么的，比较繁琐，所以，从远程地址导入推荐导入GRADLE工程"></a>1.7 如果你选择是，则会需要你指定GRADULE地址什么的，比较繁琐，所以，从远程地址导入推荐导入GRADLE工程</h2><hr>
+<h1 id="2-如何根据Repositories地址导入svn工程"><a href="#2-如何根据Repositories地址导入svn工程" class="headerlink" title="2.如何根据Repositories地址导入svn工程"></a>2.如何根据Repositories地址导入svn工程</h1><h2 id="2-1-这个就没什么说的了，如果是eclipse工程根据之前教程先转化一下在直接导入到AS中，只不过，导入的时候会提示是否加入到SVN版本管理，选择no即可"><a href="#2-1-这个就没什么说的了，如果是eclipse工程根据之前教程先转化一下在直接导入到AS中，只不过，导入的时候会提示是否加入到SVN版本管理，选择no即可" class="headerlink" title="2.1 这个就没什么说的了，如果是eclipse工程根据之前教程先转化一下在直接导入到AS中，只不过，导入的时候会提示是否加入到SVN版本管理，选择no即可"></a>2.1 这个就没什么说的了，如果是eclipse工程根据之前教程先转化一下在直接导入到AS中，只不过，导入的时候会提示是否加入到SVN版本管理，选择no即可</h2><h2 id="2-2-其他操作-就跟普通工程一致，其实大家最关心的还是-怎么update，commit，看diff，创建patch"><a href="#2-2-其他操作-就跟普通工程一致，其实大家最关心的还是-怎么update，commit，看diff，创建patch" class="headerlink" title="2.2 其他操作 就跟普通工程一致，其实大家最关心的还是 怎么update，commit，看diff，创建patch"></a>2.2 其他操作 就跟普通工程一致，其实大家最关心的还是 怎么update，commit，看diff，创建patch</h2><hr>
+<h1 id="3-SVN-UPDATE"><a href="#3-SVN-UPDATE" class="headerlink" title="3.SVN-UPDATE"></a>3.SVN-UPDATE</h1><p>目录或者文件夹上右键选择Subversion，然后选择update 即可<br><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_6.png" alt=""></p>
+<hr>
+<h1 id="4-SVN-COMMIT"><a href="#4-SVN-COMMIT" class="headerlink" title="4.SVN-COMMIT"></a>4.SVN-COMMIT</h1><h2 id="4-1-首先打开版本管理面板，接着选择面板中Local-Changes子面板，即可看到changes"><a href="#4-1-首先打开版本管理面板，接着选择面板中Local-Changes子面板，即可看到changes" class="headerlink" title="4.1 首先打开版本管理面板，接着选择面板中Local Changes子面板，即可看到changes"></a>4.1 首先打开版本管理面板，接着选择面板中Local Changes子面板，即可看到changes</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_7.png" alt=""></p>
+<h2 id="4-2-在需要提交的文件上右键，如图所示，可以看到commit选项（下面还有看diff，待会再讲）"><a href="#4-2-在需要提交的文件上右键，如图所示，可以看到commit选项（下面还有看diff，待会再讲）" class="headerlink" title="4.2 在需要提交的文件上右键，如图所示，可以看到commit选项（下面还有看diff，待会再讲）"></a>4.2 在需要提交的文件上右键，如图所示，可以看到commit选项（下面还有看diff，待会再讲）</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_8.png" alt=""></p>
+<h2 id="4-3-选择ci后进入新的界面，上面为需要提交的类，下面为提交log，右下角时钟表示历史-log，可以选择历史log（很方便），最后修改完提交即可"><a href="#4-3-选择ci后进入新的界面，上面为需要提交的类，下面为提交log，右下角时钟表示历史-log，可以选择历史log（很方便），最后修改完提交即可" class="headerlink" title="4.3 选择ci后进入新的界面，上面为需要提交的类，下面为提交log，右下角时钟表示历史 log，可以选择历史log（很方便），最后修改完提交即可"></a>4.3 选择ci后进入新的界面，上面为需要提交的类，下面为提交log，右下角时钟表示历史 log，可以选择历史log（很方便），最后修改完提交即可</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_9.png" alt=""></p>
+<hr>
+<h1 id="5-SVN-diff"><a href="#5-SVN-diff" class="headerlink" title="5.SVN-diff"></a>5.SVN-diff</h1><h2 id="5-1-如何看diff也是很重要的，在local-changes-子面板中右键-想看diff的文件，然后右键单击，如下图"><a href="#5-1-如何看diff也是很重要的，在local-changes-子面板中右键-想看diff的文件，然后右键单击，如下图" class="headerlink" title="5.1 如何看diff也是很重要的，在local changes 子面板中右键 想看diff的文件，然后右键单击，如下图"></a>5.1 如何看diff也是很重要的，在local changes 子面板中右键 想看diff的文件，然后右键单击，如下图</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_10.png" alt=""></p>
+<h2 id="5-2-可以看到，中间和右侧能看到diff的区域"><a href="#5-2-可以看到，中间和右侧能看到diff的区域" class="headerlink" title="5.2 可以看到，中间和右侧能看到diff的区域"></a>5.2 可以看到，中间和右侧能看到diff的区域</h2><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_11.png" alt=""></p>
+<hr>
+<h1 id="6-一些快捷方式"><a href="#6-一些快捷方式" class="headerlink" title="6.一些快捷方式"></a>6.一些快捷方式</h1><p>其实是有快捷方式看diff，update等操作的，如下图箭头处，很方便，可以试试<br><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_12.png" alt=""></p>
+<hr>
+<h1 id="7-查看某一行是谁修改的，在某行头-右键弹出如下窗体，选择Annotate即可查看"><a href="#7-查看某一行是谁修改的，在某行头-右键弹出如下窗体，选择Annotate即可查看" class="headerlink" title="7.查看某一行是谁修改的，在某行头 右键弹出如下窗体，选择Annotate即可查看"></a>7.查看某一行是谁修改的，在某行头 右键弹出如下窗体，选择Annotate即可查看</h1><p><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_13.png" alt=""></p>
+<hr>
+<h1 id="8-怎么创建Patch？"><a href="#8-怎么创建Patch？" class="headerlink" title="8.怎么创建Patch？"></a>8.怎么创建Patch？</h1><p>点击Create Patch，然后一步步即可（剩下的前面都说过）<br><img src="http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_10_14.png" alt=""></p>
+<hr>
+<h1 id="9-关于-git"><a href="#9-关于-git" class="headerlink" title="9.关于 git"></a>9.关于 git</h1><p>————————————————–git（未完待续，因为公司用svn，所以git以后再补）———————————————————–</p>
+<hr>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>文章主要说了如何在AS中使用svn，通过看本文，应该能进行svn的使用了</p>
+
+      
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/12/2016-07-05-learn_as_11/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Android Studio  使用- 11 - Theme editor 介绍「原创」
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/05/2016-07-05-learn_as_9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Android Studio  使用- 9 - AS中的DEBUG方式「原创」</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/android/">android (24)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/python/">python (4)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/scrapy/">scrapy (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Hexo/">Hexo (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NET/">.NET (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NGINX/">NGINX (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Dynamics-NAV/">Dynamics NAV (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Humor/">Humor (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/jcenter/">jcenter (1)</a>
+	</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/"><i class='fa fa-tags'></i>Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/"><i class='fa fa-tags'></i>Android Studio 2.0</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/"><i class='fa fa-tags'></i>Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/"><i class='fa fa-tags'></i>C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/"><i class='fa fa-tags'></i>Canvas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design/"><i class='fa fa-tags'></i>Design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/"><i class='fa fa-tags'></i>Drawable</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/"><i class='fa fa-tags'></i>Gradle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/"><i class='fa fa-tags'></i>InputMethod</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/"><i class='fa fa-tags'></i>Instant Run</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAV/"><i class='fa fa-tags'></i>NAV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/"><i class='fa fa-tags'></i>Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resources/"><i class='fa fa-tags'></i>Resources</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/"><i class='fa fa-tags'></i>SoftKeyBoard</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Visual-Studio/"><i class='fa fa-tags'></i>Visual Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/"><i class='fa fa-tags'></i>Volley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Development/"><i class='fa fa-tags'></i>Web Development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/"><i class='fa fa-tags'></i>android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android-studio/"><i class='fa fa-tags'></i>android studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/employment/"><i class='fa fa-tags'></i>employment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/funny/"><i class='fa fa-tags'></i>funny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jcenter/"><i class='fa fa-tags'></i>jcenter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/"><i class='fa fa-tags'></i>log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/"><i class='fa fa-tags'></i>python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/"><i class='fa fa-tags'></i>shape</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/"><i class='fa fa-tags'></i>svg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/"><i class='fa fa-tags'></i>动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/"><i class='fa fa-tags'></i>正则</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/"><i class='fa fa-tags'></i>输入法</a></li></ul>
+    </div>
+  </div>
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/vs.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2015/03/23/2015-03-23-Make-VS-Insert-Spaces/">Spaces for Newline Indents in VS</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2015/04/01/2015-04-01-NGINX-Static-Locations/">Static NGINX Locations</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+</div>
+</div>
+
+  </section>
+</div>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Us</h2>
+            <p>Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              140 Metropolitan Avenue<br>
+              5th Floor<br>
+              Brooklyn, NY 11249<br>
+              Phone: 716-472-4484<br>
+              Email: <a href="mailto:ptsteadman@gmail.com">ptsteadman@gmail.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+	
+          <!-- BEGIN TWITTER BLOCK --> 
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/computerlab_"
+	  data-widget-id="678830341331820544">Tweets by @computerlab_</a>
+
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+          <!-- END TWITTER BLOCK -->
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2016 R&amp;D 哥哥的博客世界<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/jacksunny/"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="http://blog.csdn.net/banzhuancaidao"><i class="fa fa-csdn"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
+</script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+
+
+
+
+
+
+
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
+
+</body>
+</html>
