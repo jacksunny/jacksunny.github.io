@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>学习 python 6 - python面向对象编程「半原创」 | R&amp;D 哥哥的博客世界</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="本文会带来什么
+
+python 中面向对象的特性
+封装继承多态等学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习 python 6 - python面向对象编程「半原创」">
+<meta property="og:url" content="http://rdors.com/2016/07/09/2016-07-09-python-6/index.html">
+<meta property="og:site_name" content="R&D 哥哥的博客世界">
+<meta property="og:description" content="本文会带来什么
+
+python 中面向对象的特性
+封装继承多态等学习">
+<meta property="og:updated_time" content="2016-07-09T02:28:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习 python 6 - python面向对象编程「半原创」">
+<meta name="twitter:description" content="本文会带来什么
+
+python 中面向对象的特性
+封装继承多态等学习">
+  
+    <link rel="alternative" href="/atom.xml" title="R&amp;D 哥哥的博客世界" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/turquoise.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
+</head>
+
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <!--<div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">-->
+	<!--<ul class="list-unstyled list-inline">-->
+	  <!--<li><i class="fa fa-phone"></i><span>保密</span></li>-->
+	  <!--<li><i class="fa fa-envelope-o"></i><span>houshijie3@126.com</span></li>-->
+	<!--</ul>-->
+      <!--</div>-->
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <!--<div class="col-md-6 col-sm-6 col-xs-3 additional-nav">-->
+	<!--<ul class="list-unstyled list-inline pull-right">-->
+	  <!--<li><a href="/login">Log In</a></li>-->
+	<!--</ul>-->
+      <!--</div>-->
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">R&amp;D 哥哥的博客世界</a>-->
+
+    <a class="site-logo" href="/">
+      <img src="/metronic/assets/corporate/img/logos/logo-corp-turquoise.png" alt="Metronic FrontEnd">
+    </a>
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	
+	<li class="">
+	  <a  href="/">Home</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->
+
+  <div class="container">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2016/07/09/2016-07-09-python-6/">学习 python 6 - python面向对象编程「半原创」</a>
+    </h2>
+
+
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-2016-07-09-python-6" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> JackSunny</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2016-07-08T16:00:00.000Z" itemprop="datePublished">2016/07/09</time>
+
+	</li>
+	<li class="hidden-xs"><i class="fa fa-comments"></i>
+	  <a href="http://rdors.com/2016/07/09/2016-07-09-python-6/#disqus_thread" class="article-comment-link">Comments</a>
+	</li>
+	<li class="hidden-xs"><i class="fa fa-tags"></i> 
+	  
+  
+    <a href="/tags/python/" title="python">python</a>
+  
+
+
+	</li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>本文会带来什么</em></p>
+<ol>
+<li>python 中面向对象的特性</li>
+<li>封装继承多态等学习</li>
+</ol>
+<a id="more"></a>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>面向对象编程，简称oop，是一种程序设计思想，万物皆对象，概念和Java 类似，不做过多介绍</p>
+</blockquote>
+<hr>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="1-类和类方法的定义"><a href="#1-类和类方法的定义" class="headerlink" title="1.类和类方法的定义"></a>1.类和类方法的定义</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------类和类方法的定义</span></span><br><span class="line"><span class="comment"># class后面紧接着是类名，即Student，类名通常是大写开头的单词，紧接着是(object)，</span></span><br><span class="line"><span class="comment"># 表示该类是从哪个类继承下来的，继承的概念我们后面再讲，通常，如果没有合适的继承类，</span></span><br><span class="line"><span class="comment"># 就使用object类，这是所有类最终都会继承的类。</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">student = Student()</span><br><span class="line"><span class="comment"># 可以给该变量绑定属性</span></span><br><span class="line">student.name = <span class="string">"jack"</span></span><br><span class="line">print(student.name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 也可以在创建的收把一些属性绑定上去,如下</span></span><br><span class="line"><span class="comment"># 注意到__init__方法的第一个参数永远是self，表示创建的实例本身，</span></span><br><span class="line"><span class="comment"># 因此，在__init__方法内部，就可以把各种属性绑定到self，因为self就指向创建的实例本身。</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student2</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,age)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"><span class="comment"># 有了__init__方法，在创建实例的时候，就不能传入空的参数了，</span></span><br><span class="line"><span class="comment"># 必须传入与__init__方法匹配的参数，但self不需要传，Python解释器自己会把实例变量传进去：</span></span><br><span class="line">student2 = Student2(<span class="string">"jack"</span>,<span class="number">3</span>)</span><br><span class="line">print(student2.name,<span class="string">"age :"</span> ,student2.age)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，</span></span><br><span class="line"><span class="comment"># 并且，调用时，不用传递该参数。除此之外，类的方法和普通函数没有什么区别，</span></span><br><span class="line"><span class="comment"># 所以，你仍然可以用默认参数、可变参数、关键字参数和命名关键字参数。</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student3</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,age)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">printNameAndAge</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(self.name , <span class="string">"from def:"</span> ,self.age)</span><br><span class="line"><span class="comment"># 有了__init__方法，在创建实例的时候，就不能传入空的参数了，</span></span><br><span class="line"><span class="comment"># 必须传入与__init__方法匹配的参数，但self不需要传，Python解释器自己会把实例变量传进去：</span></span><br><span class="line">student3 = Student3(<span class="string">"jack3"</span>,<span class="number">3</span>)</span><br><span class="line">print(student3.name,<span class="string">"age :"</span> ,student3.age)</span><br><span class="line">student3.printNameAndAge()</span><br></pre></td></tr></table></figure>
+<h2 id="2-访问限制"><a href="#2-访问限制" class="headerlink" title="2.访问限制"></a>2.访问限制</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------访问限制</span></span><br><span class="line"><span class="comment"># 如果要让内部属性不被外部访问，可以把属性的名称前加上两个下划线__,是两个下滑,一个是没用的</span></span><br><span class="line"><span class="comment"># 方法也是如此</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></span><br><span class="line">        self.__name = name</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__printSelf</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"print"</span>)</span><br><span class="line">student = Student(<span class="string">"jack"</span>)</span><br><span class="line"><span class="comment"># 如果想要属性得以访问,可以 加类似于 get set 方法来做</span></span><br><span class="line"><span class="comment"># 有时候会看到 一个下划线开头的那种,也请视为 私有变量</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-继承和多态"><a href="#3-继承和多态" class="headerlink" title="3.继承和多态"></a>3.继承和多态</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------继承和多态</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">printSelf</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"i am from student"</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student2</span><span class="params">(Student)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">student2 = Student2()</span><br><span class="line">student2.printSelf()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 继承的好处</span></span><br><span class="line"><span class="comment"># 传入一个 animal 类型的函数,继承 Animal,实现 run 方法</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_twice</span><span class="params">(animal)</span>:</span></span><br><span class="line">    animal.run()</span><br><span class="line">    animal.run()</span><br><span class="line"><span class="comment"># 静态语言 vs 动态语言</span></span><br><span class="line"><span class="comment"># 对于静态语言（例如Java）来说，如果需要传入Animal类型，则传入的对象必须是Animal类型或者它的子类，否则，将无法调用run()方法。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 对于Python这样的动态语言来说，则不一定需要传入Animal类型。我们只需要保证传入的对象有一个run()方法就可以了：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Timer</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'Start...'</span>)</span><br><span class="line"><span class="comment"># 这就是动态语言的“鸭子类型”，它并不要求严格的继承体系，一个对象只要“看起来像鸭子，走起路来像鸭子”，那它就可以被看做是鸭子。</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-获取对象信息"><a href="#4-获取对象信息" class="headerlink" title="4.获取对象信息"></a>4.获取对象信息</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------获取对象信息</span></span><br><span class="line"><span class="comment"># 当我们拿到一个对象的引用时，如何知道这个对象是什么类型、有哪些方法呢？</span></span><br><span class="line"><span class="comment"># 首先，我们来判断对象类型，使用type()函数：</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 基本类型都可以用type()判断</span></span><br><span class="line">print(type(<span class="number">123</span>))</span><br><span class="line">print(type(<span class="string">""</span>))</span><br><span class="line">print(type(<span class="string">'12'</span>))</span><br><span class="line">print(type(<span class="keyword">None</span>))</span><br><span class="line"><span class="comment"># 但是type()函数返回的是什么类型呢？它返回对应的Class类型。</span></span><br><span class="line"><span class="comment"># 如果我们要在if语句中判断，就需要比较两个变量的type类型是否相同：</span></span><br><span class="line">print(type(<span class="number">123</span>) == type(<span class="number">456</span>))</span><br><span class="line">print(type(<span class="number">123</span>) == str)</span><br><span class="line">print(type(<span class="number">123</span>) == int)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断基本数据类型可以直接写int，str等，但如果要判断一个对象是否是函数怎么办？可以使用types模块中定义的常量</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> types</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(type(fn) == types.FunctionType)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对于class继承的关系来看,用type 就很不方便,可以使用 isinstance</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 能用type()判断的基本类型也可以用isinstance()判断</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果要获得一个对象的所有属性和方法，可以使用dir()函数，它返回一个包含字符串的list</span></span><br><span class="line"><span class="comment"># 比如，获得一个str对象的所有属性和方法</span></span><br><span class="line"></span><br><span class="line">print(dir(<span class="string">"abc"</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 类似__xxx__的属性和方法在Python中都是有特殊用途的，比如__len__方法返回长度。</span></span><br><span class="line"><span class="comment"># 在Python中，如果你调用len()函数试图获取一个对象的长度，实际上，在len()函数内部，</span></span><br><span class="line"><span class="comment"># 它自动去调用该对象的__len__()方法，所以，下面的代码是等价的：</span></span><br><span class="line">len(<span class="string">"abc"</span>)</span><br><span class="line"><span class="string">"abc"</span>.__len__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 我们自己写的类，如果也想用len(myObj)的话，就自己写一个__len__()方法</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyDog</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">100</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 仅仅把属性和方法列出来是不够的，</span></span><br><span class="line">    <span class="comment"># 配合getattr()、setattr()以及hasattr()，我们可以直接操作一个对象的状态：</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyObject</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.x = <span class="number">9</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">power</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.x * self.x</span><br><span class="line"></span><br><span class="line">obj = MyObject()</span><br><span class="line"></span><br><span class="line">hasattr(obj, <span class="string">'x'</span>) <span class="comment"># 有属性'x'吗？</span></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line">obj.x</span><br><span class="line"><span class="comment"># 9</span></span><br><span class="line">hasattr(obj, <span class="string">'y'</span>) <span class="comment"># 有属性'y'吗？</span></span><br><span class="line"><span class="comment"># False</span></span><br><span class="line">setattr(obj, <span class="string">'y'</span>, <span class="number">19</span>) <span class="comment"># 设置一个属性'y'</span></span><br><span class="line">hasattr(obj, <span class="string">'y'</span>) <span class="comment"># 有属性'y'吗？</span></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line">getattr(obj, <span class="string">'y'</span>) <span class="comment"># 获取属性'y'</span></span><br><span class="line"><span class="comment"># 19</span></span><br><span class="line">obj.y <span class="comment"># 获取属性'y'</span></span><br><span class="line"><span class="comment"># 19</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以传入一个default参数，如果属性不存在，就返回默认值：</span></span><br><span class="line">getattr(obj, <span class="string">'z'</span>, <span class="number">404</span>) <span class="comment"># 获取属性'z'，如果不存在，返回默认值404</span></span><br><span class="line"><span class="comment"># 404</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 也可以获得对象的方法：</span></span><br><span class="line">hasattr(obj, <span class="string">'power'</span>) <span class="comment"># 有属性'power'吗？</span></span><br><span class="line"><span class="comment"># True</span></span><br><span class="line">getattr(obj, <span class="string">'power'</span>) <span class="comment"># 获取属性'power'</span></span><br><span class="line"><span class="comment"># &lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;</span></span><br><span class="line">fn = getattr(obj, <span class="string">'power'</span>) <span class="comment"># 获取属性'power'并赋值到变量fn</span></span><br><span class="line">fn <span class="comment"># fn指向obj.power</span></span><br><span class="line"><span class="comment"># &lt;bound method MyObject.power of &lt;__main__.MyObject object at 0x10077a6a0&gt;&gt;</span></span><br><span class="line">fn() <span class="comment"># 调用fn()与调用obj.power()是一样的</span></span><br><span class="line"><span class="comment"># 81</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-实例属性和类属性"><a href="#5-实例属性和类属性" class="headerlink" title="5.实例属性和类属性"></a>5.实例属性和类属性</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  --------------实例属性和类属性</span></span><br><span class="line"><span class="comment"># 由于Python是动态语言，根据类创建的实例可以任意绑定属性。</span></span><br><span class="line"><span class="comment"># 给实例绑定属性的方法是通过实例变量，或者通过self变量：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">s = Student(<span class="string">'Bob'</span>)</span><br><span class="line">s.score = <span class="number">90</span></span><br><span class="line">print(s.score)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 但是，如果Student类本身需要绑定一个属性呢？可以直接在class中定义属性，这种属性是类属性，归Student类所有：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student2</span><span class="params">(Student)</span>:</span></span><br><span class="line">    age = <span class="number">3</span></span><br><span class="line"></span><br><span class="line">s1 = Student2(<span class="string">"b"</span>)</span><br><span class="line">print(s1.age)</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的官方网站</a></li>
+</ul>
+
+      
+    </div>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/08/2016-07-08-python-5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">学习 python 5 - python中模块介绍「半原创」</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/android/">android (25)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/python/">python (6)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/scrapy/">scrapy (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Hexo/">Hexo (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NET/">.NET (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/NGINX/">NGINX (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Dynamics-NAV/">Dynamics NAV (2)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Humor/">Humor (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/jcenter/">jcenter (1)</a>
+	</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/"><i class='fa fa-tags'></i>Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-Studio-2-0/"><i class='fa fa-tags'></i>Android Studio 2.0</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Animation/"><i class='fa fa-tags'></i>Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/"><i class='fa fa-tags'></i>C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Canvas/"><i class='fa fa-tags'></i>Canvas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design/"><i class='fa fa-tags'></i>Design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Drawable/"><i class='fa fa-tags'></i>Drawable</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gradle/"><i class='fa fa-tags'></i>Gradle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/InputMethod/"><i class='fa fa-tags'></i>InputMethod</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Instant-Run/"><i class='fa fa-tags'></i>Instant Run</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAV/"><i class='fa fa-tags'></i>NAV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Programming/"><i class='fa fa-tags'></i>Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resources/"><i class='fa fa-tags'></i>Resources</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SoftKeyBoard/"><i class='fa fa-tags'></i>SoftKeyBoard</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Visual-Studio/"><i class='fa fa-tags'></i>Visual Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Volley/"><i class='fa fa-tags'></i>Volley</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Development/"><i class='fa fa-tags'></i>Web Development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/"><i class='fa fa-tags'></i>android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android-studio/"><i class='fa fa-tags'></i>android studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/employment/"><i class='fa fa-tags'></i>employment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/funny/"><i class='fa fa-tags'></i>funny</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jcenter/"><i class='fa fa-tags'></i>jcenter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/"><i class='fa fa-tags'></i>log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/"><i class='fa fa-tags'></i>python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shape/"><i class='fa fa-tags'></i>shape</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/svg/"><i class='fa fa-tags'></i>svg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动画/"><i class='fa fa-tags'></i>动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/"><i class='fa fa-tags'></i>正则</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/输入法/"><i class='fa fa-tags'></i>输入法</a></li></ul>
+    </div>
+  </div>
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/vs.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2015/03/23/2015-03-23-Make-VS-Insert-Spaces/">Spaces for Newline Indents in VS</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://rdors.com/2015/04/01/2015-04-01-NGINX-Static-Locations/">Static NGINX Locations</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+</div>
+</div>
+
+  </section>
+</div>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Me</h2>
+            <p>非著名程序员<br><br> 真的非著名,百度不到</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              北京<br>
+              西二旗<br>
+              百度科技园<br>
+              Phone: 保密<br>
+              Email: <a href="mailto:houshijie3@126.com">houshijie3@126.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+	
+          <!-- BEGIN TWITTER BLOCK --> 
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+
+	  <a data-tweet-limit="1" class="twitter-timeline"
+	  href="https://twitter.com/保密# twitter username without the @"
+	  data-widget-id="678830341331820544">Tweets by @保密# twitter username without the @</a>
+
+	  <script>!function(d,s,id){var
+	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+          <!-- END TWITTER BLOCK -->
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2016 R&amp;D 哥哥的博客世界<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/jacksunny/"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="http://blog.csdn.net/banzhuancaidao"><i class="fa fa-csdn"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
+</script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+
+
+
+
+
+
+
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
+
+</body>
+</html>
