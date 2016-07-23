@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rdors.com/"/>
-  <updated>2016-07-23T01:31:12.000Z</updated>
+  <updated>2016-07-23T01:48:30.000Z</updated>
   <id>http://rdors.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://rdors.com/2016/07/09/2016-07-09-python-6/"/>
     <id>http://rdors.com/2016/07/09/2016-07-09-python-6/</id>
     <published>2016-07-08T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:12.000Z</updated>
+    <updated>2016-07-23T01:48:30.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -54,10 +54,8 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
-    
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -66,7 +64,7 @@
     <link href="http://rdors.com/2016/07/08/2016-07-08-python-5/"/>
     <id>http://rdors.com/2016/07/08/2016-07-08-python-5/</id>
     <published>2016-07-07T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:07.000Z</updated>
+    <updated>2016-07-23T01:48:30.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -117,10 +115,8 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
-    
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -129,7 +125,7 @@
     <link href="http://rdors.com/2016/07/07/2016-07-05-learn_as_13/"/>
     <id>http://rdors.com/2016/07/07/2016-07-05-learn_as_13/</id>
     <published>2016-07-06T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -173,7 +169,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -185,7 +181,7 @@
     <link href="http://rdors.com/2016/07/05/2016-07-05-python-4/"/>
     <id>http://rdors.com/2016/07/05/2016-07-05-python-4/</id>
     <published>2016-07-04T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:01.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -232,10 +228,8 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
-    
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -244,7 +238,7 @@
     <link href="http://rdors.com/2016/07/03/2016-07-02-python-3/"/>
     <id>http://rdors.com/2016/07/03/2016-07-02-python-3/</id>
     <published>2016-07-02T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:27.000Z</updated>
+    <updated>2016-07-23T01:46:35.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -279,66 +273,7 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 安装 scrapy「半原创」</title>
-    <link href="http://rdors.com/2016/07/02/2016-07-02-scrapy-install/"/>
-    <id>http://rdors.com/2016/07/02/2016-07-02-scrapy-install/</id>
-    <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-05T12:13:57.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;科普&quot;&gt;&lt;a href=&quot;#科普&quot; class=&quot;headerlink&quot; title=&quot;科普&quot;&gt;&lt;/a&gt;科普&lt;/h1&gt;&lt;p&gt;&lt;em&gt;scrapy 是干什么的&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可以理解为一个写网络爬虫的框架&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h1&gt;&lt;p&gt;安装很简单，分以下3步&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;检测并安装python&lt;/li&gt;
-&lt;li&gt;用python 安装pip&lt;/li&gt;
-&lt;li&gt;用pip安装 scrapy&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;1-检测并安装python&quot;&gt;&lt;a href=&quot;#1-检测并安装python&quot; class=&quot;headerlink&quot; title=&quot;1.检测并安装python&quot;&gt;&lt;/a&gt;1.检测并安装python&lt;/h2&gt;&lt;p&gt;mac 是自带python的，检查一下如果小于 2.7.9 那么就安装最新的吧&lt;br&gt;或者直接升级到 3.x &lt;a href=&quot;http://gaoryrt.com/2015/09-30-upgrade-pyhton-on-mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;升级Mac的python&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.python.org/downloads/mac-osx/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python 官网传送门&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的官方网站学习python3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.phperz.com/article/14/1030/14347.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pycharm HelloWorld&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2.x 和 3.x &lt;a href=&quot;http://www.cnblogs.com/codingmylife/archive/2010/06/06/1752807.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;区别点我&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;color:#c78&quot;&gt;[这一点其实有坑在里面，如果试过了所有方法在控制台中看版本仍然是 2.7.x,那么就下载  pycharm 吧，他会在链接 python 版本时自动使用最新版本，谁用谁知道]&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;2-用python-安装pip&quot;&gt;&lt;a href=&quot;#2-用python-安装pip&quot; class=&quot;headerlink&quot; title=&quot;2.用python 安装pip&quot;&gt;&lt;/a&gt;2.用python 安装pip&lt;/h2&gt;&lt;p&gt; 步骤也超级简单，就两步，看官网吧&lt;br&gt;&lt;a href=&quot;https://pip.pypa.io/en/latest/installing/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装pip官网&lt;/a&gt;&lt;br&gt;注：如果提示什么&lt;code&gt;not permitted&lt;/code&gt; 或者 &lt;code&gt;denied&lt;/code&gt; 等错误，记住 &lt;code&gt;sodu&lt;/code&gt; &lt;/p&gt;
-&lt;h2 id=&quot;3-用pip安装-scrapy&quot;&gt;&lt;a href=&quot;#3-用pip安装-scrapy&quot; class=&quot;headerlink&quot; title=&quot;3.用pip安装 scrapy&quot;&gt;&lt;/a&gt;3.用pip安装 scrapy&lt;/h2&gt;&lt;p&gt;命令&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;出现错误：&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;错误-A&quot;&gt;&lt;a href=&quot;#错误-A&quot; class=&quot;headerlink&quot; title=&quot;错误 A&quot;&gt;&lt;/a&gt;错误 A&lt;/h3&gt; &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;OSError: [Errno &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] Operation not permitted: &lt;span class=&quot;string&quot;&gt;&#39;/tmp/pip-HG6JNq-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt; 在 stackoverflow 上一个没有人赞的 角落答案找到了解决方式&lt;/p&gt;
- &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 猜测为 安装 scrapy 的时候忽略已经安装的 six&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy --ignore-installed six&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/31900008/oserror-errno-1-operation-not-permitted-when-installing-scrapy-in-osx-10-11/32723204#32723204&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stackOverflow 传送门&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;错误-B&quot;&gt;&lt;a href=&quot;#错误-B&quot; class=&quot;headerlink&quot; title=&quot;错误 B&quot;&gt;&lt;/a&gt;错误 B&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImportError: cannot &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; name xmlrpc_client&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;原因是没有设置环境变量&lt;br&gt;解决方式&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;export PYTHONPATH=/Library/Python/&lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;/site-packages:$PYTHONPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &lt;span class=&quot;string&quot;&gt;&quot;export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH&quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.tuicool.com/articles/URNVV3E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章1：安装python爬虫scrapy踩过的那些坑和编程外的思考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/30964836/scrapy-throws-importerror-cannot-import-name-xmlrpc-client&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章2：Scrapy throws ImportError: cannot import name xmlrpc_client&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;4-测试&quot;&gt;&lt;a href=&quot;#4-测试&quot; class=&quot;headerlink&quot; title=&quot;4.测试&quot;&gt;&lt;/a&gt;4.测试&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scrapy version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.lzqwebsoft.net/show/20140613014220.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac 10.8下安装Scrapy&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="scrapy" scheme="http://rdors.com/categories/scrapy/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
     
   </entry>
@@ -348,7 +283,7 @@
     <link href="http://rdors.com/2016/07/02/2016-07-02-python-1/"/>
     <id>http://rdors.com/2016/07/02/2016-07-02-python-1/</id>
     <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:18.000Z</updated>
+    <updated>2016-07-23T01:46:35.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -399,10 +334,67 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
     
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
+  </entry>
+  
+  <entry>
+    <title>Mac 安装 scrapy「半原创」</title>
+    <link href="http://rdors.com/2016/07/02/2016-07-02-scrapy-install/"/>
+    <id>http://rdors.com/2016/07/02/2016-07-02-scrapy-install/</id>
+    <published>2016-07-01T16:00:00.000Z</published>
+    <updated>2016-07-23T01:48:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;科普&quot;&gt;&lt;a href=&quot;#科普&quot; class=&quot;headerlink&quot; title=&quot;科普&quot;&gt;&lt;/a&gt;科普&lt;/h1&gt;&lt;p&gt;&lt;em&gt;scrapy 是干什么的&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以理解为一个写网络爬虫的框架&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h1&gt;&lt;p&gt;安装很简单，分以下3步&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;检测并安装python&lt;/li&gt;
+&lt;li&gt;用python 安装pip&lt;/li&gt;
+&lt;li&gt;用pip安装 scrapy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-检测并安装python&quot;&gt;&lt;a href=&quot;#1-检测并安装python&quot; class=&quot;headerlink&quot; title=&quot;1.检测并安装python&quot;&gt;&lt;/a&gt;1.检测并安装python&lt;/h2&gt;&lt;p&gt;mac 是自带python的，检查一下如果小于 2.7.9 那么就安装最新的吧&lt;br&gt;或者直接升级到 3.x &lt;a href=&quot;http://gaoryrt.com/2015/09-30-upgrade-pyhton-on-mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;升级Mac的python&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.python.org/downloads/mac-osx/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python 官网传送门&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的官方网站学习python3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.phperz.com/article/14/1030/14347.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pycharm HelloWorld&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2.x 和 3.x &lt;a href=&quot;http://www.cnblogs.com/codingmylife/archive/2010/06/06/1752807.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;区别点我&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;color:#c78&quot;&gt;[这一点其实有坑在里面，如果试过了所有方法在控制台中看版本仍然是 2.7.x,那么就下载  pycharm 吧，他会在链接 python 版本时自动使用最新版本，谁用谁知道]&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;2-用python-安装pip&quot;&gt;&lt;a href=&quot;#2-用python-安装pip&quot; class=&quot;headerlink&quot; title=&quot;2.用python 安装pip&quot;&gt;&lt;/a&gt;2.用python 安装pip&lt;/h2&gt;&lt;p&gt; 步骤也超级简单，就两步，看官网吧&lt;br&gt;&lt;a href=&quot;https://pip.pypa.io/en/latest/installing/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装pip官网&lt;/a&gt;&lt;br&gt;注：如果提示什么&lt;code&gt;not permitted&lt;/code&gt; 或者 &lt;code&gt;denied&lt;/code&gt; 等错误，记住 &lt;code&gt;sodu&lt;/code&gt; &lt;/p&gt;
+&lt;h2 id=&quot;3-用pip安装-scrapy&quot;&gt;&lt;a href=&quot;#3-用pip安装-scrapy&quot; class=&quot;headerlink&quot; title=&quot;3.用pip安装 scrapy&quot;&gt;&lt;/a&gt;3.用pip安装 scrapy&lt;/h2&gt;&lt;p&gt;命令&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;出现错误：&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;错误-A&quot;&gt;&lt;a href=&quot;#错误-A&quot; class=&quot;headerlink&quot; title=&quot;错误 A&quot;&gt;&lt;/a&gt;错误 A&lt;/h3&gt; &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;OSError: [Errno &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] Operation not permitted: &lt;span class=&quot;string&quot;&gt;&#39;/tmp/pip-HG6JNq-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; 在 stackoverflow 上一个没有人赞的 角落答案找到了解决方式&lt;/p&gt;
+ &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 猜测为 安装 scrapy 的时候忽略已经安装的 six&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy --ignore-installed six&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/31900008/oserror-errno-1-operation-not-permitted-when-installing-scrapy-in-osx-10-11/32723204#32723204&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stackOverflow 传送门&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;错误-B&quot;&gt;&lt;a href=&quot;#错误-B&quot; class=&quot;headerlink&quot; title=&quot;错误 B&quot;&gt;&lt;/a&gt;错误 B&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImportError: cannot &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; name xmlrpc_client&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;原因是没有设置环境变量&lt;br&gt;解决方式&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;export PYTHONPATH=/Library/Python/&lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;/site-packages:$PYTHONPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &lt;span class=&quot;string&quot;&gt;&quot;export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH&quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tuicool.com/articles/URNVV3E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章1：安装python爬虫scrapy踩过的那些坑和编程外的思考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/30964836/scrapy-throws-importerror-cannot-import-name-xmlrpc-client&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章2：Scrapy throws ImportError: cannot import name xmlrpc_client&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-测试&quot;&gt;&lt;a href=&quot;#4-测试&quot; class=&quot;headerlink&quot; title=&quot;4.测试&quot;&gt;&lt;/a&gt;4.测试&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scrapy version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.lzqwebsoft.net/show/20140613014220.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac 10.8下安装Scrapy&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
+    
+    
+      <category term="scrapy" scheme="http://rdors.com/tags/scrapy/"/>
     
   </entry>
   
@@ -411,7 +403,7 @@
     <link href="http://rdors.com/2016/07/02/2016-07-02-python-2/"/>
     <id>http://rdors.com/2016/07/02/2016-07-02-python-2/</id>
     <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-23T01:31:22.000Z</updated>
+    <updated>2016-07-23T01:46:35.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -451,10 +443,8 @@
     
     </summary>
     
-      <category term="python" scheme="http://rdors.com/categories/python/"/>
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
-    
-      <category term="python" scheme="http://rdors.com/tags/python/"/>
     
   </entry>
   
@@ -463,7 +453,7 @@
     <link href="http://rdors.com/2016/07/01/2016-07-01-loggerknife/"/>
     <id>http://rdors.com/2016/07/01/2016-07-01-loggerknife/</id>
     <published>2016-06-30T16:00:00.000Z</published>
-    <updated>2016-07-05T12:15:01.000Z</updated>
+    <updated>2016-07-23T01:46:08.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -528,10 +518,53 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="log" scheme="http://rdors.com/tags/log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
+    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
+    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
+    <published>2016-06-28T16:00:00.000Z</published>
+    <updated>2016-07-23T01:48:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;是不是屌屌的！&lt;/p&gt;
+&lt;!--Read More--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
+    
+    
+      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
+    
+      <category term="gradle" scheme="http://rdors.com/tags/gradle/"/>
     
   </entry>
   
@@ -540,7 +573,7 @@
     <link href="http://rdors.com/2016/06/29/2016-06-29-svg/"/>
     <id>http://rdors.com/2016/06/29/2016-06-29-svg/</id>
     <published>2016-06-28T16:00:00.000Z</published>
-    <updated>2016-07-05T12:17:26.000Z</updated>
+    <updated>2016-07-23T01:46:08.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -637,53 +670,10 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="svg" scheme="http://rdors.com/tags/svg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
-    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
-    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
-    <published>2016-06-28T16:00:00.000Z</published>
-    <updated>2016-07-06T12:07:43.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;是不是屌屌的！&lt;/p&gt;
-&lt;!--Read More--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="jcenter" scheme="http://rdors.com/categories/jcenter/"/>
-    
-    
-      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
-    
-      <category term="android" scheme="http://rdors.com/tags/android/"/>
     
   </entry>
   
@@ -692,7 +682,7 @@
     <link href="http://rdors.com/2016/03/13/2016-07-05-learn_as_12/"/>
     <id>http://rdors.com/2016/03/13/2016-07-05-learn_as_12/</id>
     <published>2016-03-12T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -722,7 +712,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -734,7 +724,7 @@
     <link href="http://rdors.com/2016/03/12/2016-07-05-learn_as_11/"/>
     <id>http://rdors.com/2016/03/12/2016-07-05-learn_as_11/</id>
     <published>2016-03-11T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -767,7 +757,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -779,7 +769,7 @@
     <link href="http://rdors.com/2016/03/10/2016-07-05-learn_as_10/"/>
     <id>http://rdors.com/2016/03/10/2016-07-05-learn_as_10/</id>
     <published>2016-03-09T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -826,7 +816,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -838,7 +828,7 @@
     <link href="http://rdors.com/2016/03/05/2016-07-05-learn_as_9/"/>
     <id>http://rdors.com/2016/03/05/2016-07-05-learn_as_9/</id>
     <published>2016-03-04T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -872,7 +862,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -884,7 +874,7 @@
     <link href="http://rdors.com/2016/03/02/2016-07-05-learn_as_8/"/>
     <id>http://rdors.com/2016/03/02/2016-07-05-learn_as_8/</id>
     <published>2016-03-01T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -918,7 +908,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -930,7 +920,7 @@
     <link href="http://rdors.com/2016/02/25/2016-07-05-learn_as_7/"/>
     <id>http://rdors.com/2016/02/25/2016-07-05-learn_as_7/</id>
     <published>2016-02-24T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -967,7 +957,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -979,7 +969,7 @@
     <link href="http://rdors.com/2016/02/19/2016-02-19-shape_detail/"/>
     <id>http://rdors.com/2016/02/19/2016-02-19-shape_detail/</id>
     <published>2016-02-18T16:00:00.000Z</published>
-    <updated>2016-07-05T12:20:37.000Z</updated>
+    <updated>2016-07-23T01:46:08.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么？&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1200,7 +1190,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="shape" scheme="http://rdors.com/tags/shape/"/>
@@ -1212,7 +1202,7 @@
     <link href="http://rdors.com/2016/01/25/2016-07-05-learn_as_6/"/>
     <id>http://rdors.com/2016/01/25/2016-07-05-learn_as_6/</id>
     <published>2016-01-24T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -1239,7 +1229,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
@@ -1251,7 +1241,7 @@
     <link href="http://rdors.com/2016/01/20/2016-07-05-learn_as_5/"/>
     <id>http://rdors.com/2016/01/20/2016-07-05-learn_as_5/</id>
     <published>2016-01-19T16:00:00.000Z</published>
-    <updated>2016-07-22T11:18:07.000Z</updated>
+    <updated>2016-07-23T01:48:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -1292,7 +1282,7 @@
     
     </summary>
     
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
+      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
     
     
       <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
