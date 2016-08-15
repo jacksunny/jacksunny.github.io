@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rdors.com/"/>
-  <updated>2016-07-23T01:48:30.000Z</updated>
+  <updated>2016-08-15T11:32:55.000Z</updated>
   <id>http://rdors.com/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习 groovy 1 - mac 环境搭建及hello groovy「原创」</title>
+    <link href="http://rdors.com/2016/08/15/2016-08-15-groovy-1/"/>
+    <id>http://rdors.com/2016/08/15/2016-08-15-groovy-1/</id>
+    <published>2016-08-14T16:00:00.000Z</published>
+    <updated>2016-08-15T11:32:55.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;mac下安装配置groovy文件&lt;/li&gt;
+&lt;li&gt;配置 Intellij Idea 中进行 groovy开发&lt;/li&gt;
+&lt;li&gt;HelloGroovy的编写&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;下载安装Groovy&quot;&gt;&lt;a href=&quot;#下载安装Groovy&quot; class=&quot;headerlink&quot; title=&quot;下载安装Groovy&quot;&gt;&lt;/a&gt;下载安装Groovy&lt;/h1&gt;&lt;h3 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.groovy-lang.org/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;下载传送门中提供了三种安装方式&lt;br&gt;sdkman、homebrew，macPorts，我用的 homebrew，没有遇到困难&lt;/p&gt;
+&lt;h1 id=&quot;intellij-idea-安装-groovy-环境&quot;&gt;&lt;a href=&quot;#intellij-idea-安装-groovy-环境&quot; class=&quot;headerlink&quot; title=&quot;intellij idea 安装 groovy 环境&quot;&gt;&lt;/a&gt;intellij idea 安装 groovy 环境&lt;/h1&gt;&lt;p&gt;首先先下载intellij idea，安装，下一步下一步什么的都略过，最后安装好了，此时是无法正确常见一个 groovy 项目的，需要以下几步&lt;/p&gt;
+&lt;h3 id=&quot;1-确认groovy插件是否已经安装&quot;&gt;&lt;a href=&quot;#1-确认groovy插件是否已经安装&quot; class=&quot;headerlink&quot; title=&quot;1. 确认groovy插件是否已经安装&quot;&gt;&lt;/a&gt;1. 确认groovy插件是否已经安装&lt;/h3&gt;&lt;p&gt;‘preferences –&amp;gt; plugin’ 中输入groovy 查看是否已经安装groovy插件，如果没有安装，点击该页面 Browse repositories 按钮 搜索并安装&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/groovy_1_0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-正确配置groovy-library&quot;&gt;&lt;a href=&quot;#2-正确配置groovy-library&quot; class=&quot;headerlink&quot; title=&quot;2. 正确配置groovy library&quot;&gt;&lt;/a&gt;2. 正确配置groovy library&lt;/h3&gt;&lt;p&gt;安装插件后 点击 ‘ File –&amp;gt; New –&amp;gt; Project ‘ 找到 Groovy 选项卡,下图红框中应该对应之前安装的  groovy的某个版本，如果没有，点击三角，如果有提示，选中即可，如果 没有提示，即需要点击箭头所指按钮，手动加入 groovy library。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果是 homebrew 安装，则 文件路径: /usr/local/Cellar/groovy/2.4.7/libexec&lt;/li&gt;
+&lt;li&gt;如果是其他方式安装，请自行google&lt;br&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/groovy_1_2.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;HelloGroovy运行&quot;&gt;&lt;a href=&quot;#HelloGroovy运行&quot; class=&quot;headerlink&quot; title=&quot;HelloGroovy运行&quot;&gt;&lt;/a&gt;HelloGroovy运行&lt;/h1&gt;&lt;p&gt;创建  Groovy 工程后，在src 目录上右键选择 Groovy Script 即可&lt;/p&gt;
+&lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;println(&lt;span class=&quot;string&quot;&gt;&quot;hello groovy&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;右键 创建的 Groovy Script 文件，选择 run，即可运行并在控制台输出结果&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.groovy-lang.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Groovy官方网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/777cc61a6202&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Groovy windows下安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/help/idea/2016.2/getting-started-with-groovy.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Getting Started with Groovy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;mac下安装配置groovy文件&lt;/li&gt;
+&lt;li&gt;配置 Intellij Idea 中进行 groovy开发&lt;/li&gt;
+&lt;li&gt;HelloGroovy的编写&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Groovy" scheme="http://rdors.com/categories/Groovy/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>学习 python 6 - python面向对象编程「半原创」</title>
@@ -279,6 +331,65 @@
   </entry>
   
   <entry>
+    <title>Mac 安装 scrapy「半原创」</title>
+    <link href="http://rdors.com/2016/07/02/2016-07-02-scrapy-install/"/>
+    <id>http://rdors.com/2016/07/02/2016-07-02-scrapy-install/</id>
+    <published>2016-07-01T16:00:00.000Z</published>
+    <updated>2016-07-23T01:48:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;科普&quot;&gt;&lt;a href=&quot;#科普&quot; class=&quot;headerlink&quot; title=&quot;科普&quot;&gt;&lt;/a&gt;科普&lt;/h1&gt;&lt;p&gt;&lt;em&gt;scrapy 是干什么的&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以理解为一个写网络爬虫的框架&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h1&gt;&lt;p&gt;安装很简单，分以下3步&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;检测并安装python&lt;/li&gt;
+&lt;li&gt;用python 安装pip&lt;/li&gt;
+&lt;li&gt;用pip安装 scrapy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-检测并安装python&quot;&gt;&lt;a href=&quot;#1-检测并安装python&quot; class=&quot;headerlink&quot; title=&quot;1.检测并安装python&quot;&gt;&lt;/a&gt;1.检测并安装python&lt;/h2&gt;&lt;p&gt;mac 是自带python的，检查一下如果小于 2.7.9 那么就安装最新的吧&lt;br&gt;或者直接升级到 3.x &lt;a href=&quot;http://gaoryrt.com/2015/09-30-upgrade-pyhton-on-mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;升级Mac的python&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.python.org/downloads/mac-osx/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python 官网传送门&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的官方网站学习python3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.phperz.com/article/14/1030/14347.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pycharm HelloWorld&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2.x 和 3.x &lt;a href=&quot;http://www.cnblogs.com/codingmylife/archive/2010/06/06/1752807.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;区别点我&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;color:#c78&quot;&gt;[这一点其实有坑在里面，如果试过了所有方法在控制台中看版本仍然是 2.7.x,那么就下载  pycharm 吧，他会在链接 python 版本时自动使用最新版本，谁用谁知道]&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;2-用python-安装pip&quot;&gt;&lt;a href=&quot;#2-用python-安装pip&quot; class=&quot;headerlink&quot; title=&quot;2.用python 安装pip&quot;&gt;&lt;/a&gt;2.用python 安装pip&lt;/h2&gt;&lt;p&gt; 步骤也超级简单，就两步，看官网吧&lt;br&gt;&lt;a href=&quot;https://pip.pypa.io/en/latest/installing/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装pip官网&lt;/a&gt;&lt;br&gt;注：如果提示什么&lt;code&gt;not permitted&lt;/code&gt; 或者 &lt;code&gt;denied&lt;/code&gt; 等错误，记住 &lt;code&gt;sodu&lt;/code&gt; &lt;/p&gt;
+&lt;h2 id=&quot;3-用pip安装-scrapy&quot;&gt;&lt;a href=&quot;#3-用pip安装-scrapy&quot; class=&quot;headerlink&quot; title=&quot;3.用pip安装 scrapy&quot;&gt;&lt;/a&gt;3.用pip安装 scrapy&lt;/h2&gt;&lt;p&gt;命令&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;出现错误：&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;错误-A&quot;&gt;&lt;a href=&quot;#错误-A&quot; class=&quot;headerlink&quot; title=&quot;错误 A&quot;&gt;&lt;/a&gt;错误 A&lt;/h3&gt; &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;OSError: [Errno &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] Operation not permitted: &lt;span class=&quot;string&quot;&gt;&#39;/tmp/pip-HG6JNq-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; 在 stackoverflow 上一个没有人赞的 角落答案找到了解决方式&lt;/p&gt;
+ &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 猜测为 安装 scrapy 的时候忽略已经安装的 six&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy --ignore-installed six&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/31900008/oserror-errno-1-operation-not-permitted-when-installing-scrapy-in-osx-10-11/32723204#32723204&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stackOverflow 传送门&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;错误-B&quot;&gt;&lt;a href=&quot;#错误-B&quot; class=&quot;headerlink&quot; title=&quot;错误 B&quot;&gt;&lt;/a&gt;错误 B&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImportError: cannot &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; name xmlrpc_client&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;原因是没有设置环境变量&lt;br&gt;解决方式&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;export PYTHONPATH=/Library/Python/&lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;/site-packages:$PYTHONPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &lt;span class=&quot;string&quot;&gt;&quot;export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH&quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tuicool.com/articles/URNVV3E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章1：安装python爬虫scrapy踩过的那些坑和编程外的思考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/30964836/scrapy-throws-importerror-cannot-import-name-xmlrpc-client&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章2：Scrapy throws ImportError: cannot import name xmlrpc_client&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-测试&quot;&gt;&lt;a href=&quot;#4-测试&quot; class=&quot;headerlink&quot; title=&quot;4.测试&quot;&gt;&lt;/a&gt;4.测试&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scrapy version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.lzqwebsoft.net/show/20140613014220.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac 10.8下安装Scrapy&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
+    
+    
+      <category term="scrapy" scheme="http://rdors.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>学习 python 1 - python 基础「半原创」</title>
     <link href="http://rdors.com/2016/07/02/2016-07-02-python-1/"/>
     <id>http://rdors.com/2016/07/02/2016-07-02-python-1/</id>
@@ -336,65 +447,6 @@
     
       <category term="Python" scheme="http://rdors.com/categories/Python/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 安装 scrapy「半原创」</title>
-    <link href="http://rdors.com/2016/07/02/2016-07-02-scrapy-install/"/>
-    <id>http://rdors.com/2016/07/02/2016-07-02-scrapy-install/</id>
-    <published>2016-07-01T16:00:00.000Z</published>
-    <updated>2016-07-23T01:48:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;科普&quot;&gt;&lt;a href=&quot;#科普&quot; class=&quot;headerlink&quot; title=&quot;科普&quot;&gt;&lt;/a&gt;科普&lt;/h1&gt;&lt;p&gt;&lt;em&gt;scrapy 是干什么的&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可以理解为一个写网络爬虫的框架&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;安装scrapy&quot;&gt;&lt;a href=&quot;#安装scrapy&quot; class=&quot;headerlink&quot; title=&quot;安装scrapy&quot;&gt;&lt;/a&gt;安装scrapy&lt;/h1&gt;&lt;p&gt;安装很简单，分以下3步&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;检测并安装python&lt;/li&gt;
-&lt;li&gt;用python 安装pip&lt;/li&gt;
-&lt;li&gt;用pip安装 scrapy&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;1-检测并安装python&quot;&gt;&lt;a href=&quot;#1-检测并安装python&quot; class=&quot;headerlink&quot; title=&quot;1.检测并安装python&quot;&gt;&lt;/a&gt;1.检测并安装python&lt;/h2&gt;&lt;p&gt;mac 是自带python的，检查一下如果小于 2.7.9 那么就安装最新的吧&lt;br&gt;或者直接升级到 3.x &lt;a href=&quot;http://gaoryrt.com/2015/09-30-upgrade-pyhton-on-mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;升级Mac的python&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.python.org/downloads/mac-osx/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python 官网传送门&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的官方网站学习python3&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.phperz.com/article/14/1030/14347.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pycharm HelloWorld&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2.x 和 3.x &lt;a href=&quot;http://www.cnblogs.com/codingmylife/archive/2010/06/06/1752807.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;区别点我&lt;/a&gt;&lt;br&gt;&lt;span style=&quot;color:#c78&quot;&gt;[这一点其实有坑在里面，如果试过了所有方法在控制台中看版本仍然是 2.7.x,那么就下载  pycharm 吧，他会在链接 python 版本时自动使用最新版本，谁用谁知道]&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;2-用python-安装pip&quot;&gt;&lt;a href=&quot;#2-用python-安装pip&quot; class=&quot;headerlink&quot; title=&quot;2.用python 安装pip&quot;&gt;&lt;/a&gt;2.用python 安装pip&lt;/h2&gt;&lt;p&gt; 步骤也超级简单，就两步，看官网吧&lt;br&gt;&lt;a href=&quot;https://pip.pypa.io/en/latest/installing/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安装pip官网&lt;/a&gt;&lt;br&gt;注：如果提示什么&lt;code&gt;not permitted&lt;/code&gt; 或者 &lt;code&gt;denied&lt;/code&gt; 等错误，记住 &lt;code&gt;sodu&lt;/code&gt; &lt;/p&gt;
-&lt;h2 id=&quot;3-用pip安装-scrapy&quot;&gt;&lt;a href=&quot;#3-用pip安装-scrapy&quot; class=&quot;headerlink&quot; title=&quot;3.用pip安装 scrapy&quot;&gt;&lt;/a&gt;3.用pip安装 scrapy&lt;/h2&gt;&lt;p&gt;命令&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;出现错误：&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;错误-A&quot;&gt;&lt;a href=&quot;#错误-A&quot; class=&quot;headerlink&quot; title=&quot;错误 A&quot;&gt;&lt;/a&gt;错误 A&lt;/h3&gt; &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;OSError: [Errno &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] Operation not permitted: &lt;span class=&quot;string&quot;&gt;&#39;/tmp/pip-HG6JNq-uninstall/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six-1.4.1-py2.7.egg-info&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt; 在 stackoverflow 上一个没有人赞的 角落答案找到了解决方式&lt;/p&gt;
- &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 猜测为 安装 scrapy 的时候忽略已经安装的 six&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install scrapy --ignore-installed six&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/31900008/oserror-errno-1-operation-not-permitted-when-installing-scrapy-in-osx-10-11/32723204#32723204&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stackOverflow 传送门&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;错误-B&quot;&gt;&lt;a href=&quot;#错误-B&quot; class=&quot;headerlink&quot; title=&quot;错误 B&quot;&gt;&lt;/a&gt;错误 B&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ImportError: cannot &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; name xmlrpc_client&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;原因是没有设置环境变量&lt;br&gt;解决方式&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;export PYTHONPATH=/Library/Python/&lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;/site-packages:$PYTHONPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &lt;span class=&quot;string&quot;&gt;&quot;export PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH&quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.tuicool.com/articles/URNVV3E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章1：安装python爬虫scrapy踩过的那些坑和编程外的思考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/30964836/scrapy-throws-importerror-cannot-import-name-xmlrpc-client&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考文章2：Scrapy throws ImportError: cannot import name xmlrpc_client&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;4-测试&quot;&gt;&lt;a href=&quot;#4-测试&quot; class=&quot;headerlink&quot; title=&quot;4.测试&quot;&gt;&lt;/a&gt;4.测试&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scrapy version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.lzqwebsoft.net/show/20140613014220.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac 10.8下安装Scrapy&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mac安装scrapy的过程&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Python" scheme="http://rdors.com/categories/Python/"/>
-    
-    
-      <category term="scrapy" scheme="http://rdors.com/tags/scrapy/"/>
     
   </entry>
   
@@ -526,49 +578,6 @@
   </entry>
   
   <entry>
-    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
-    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
-    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
-    <published>2016-06-28T16:00:00.000Z</published>
-    <updated>2016-07-23T01:48:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;是不是屌屌的！&lt;/p&gt;
-&lt;!--Read More--&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="android" scheme="http://rdors.com/categories/android/"/>
-    
-    
-      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
-    
-      <category term="gradle" scheme="http://rdors.com/tags/gradle/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Svg 使用介绍</title>
     <link href="http://rdors.com/2016/06/29/2016-06-29-svg/"/>
     <id>http://rdors.com/2016/06/29/2016-06-29-svg/</id>
@@ -674,6 +683,49 @@
     
     
       <category term="svg" scheme="http://rdors.com/tags/svg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 创建的 library 上传到Jcenter「半原创」</title>
+    <link href="http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/"/>
+    <id>http://rdors.com/2016/06/29/2016-07-05-publish_jcenter/</id>
+    <published>2016-06-28T16:00:00.000Z</published>
+    <updated>2016-07-23T01:48:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;导读&lt;/h1&gt;&lt;p&gt;为什么要上传到Jcenter？因为上传后你在使用Library 就可以这么用了!&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;是不是屌屌的！&lt;/p&gt;
+&lt;!--Read More--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照本文章来可以上传到Jcenter（）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/yunnywu/article/details/48826653&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;遇到问题了可以看看这个,也许能解决&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0623/3097.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最后一击，超详细：如何使用Android Studio把自己的Android library分享到jCenter和Maven Central&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如何把自己的Library 发布到 Jcenter&lt;br&gt;以后的引用方式就为&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;compile &lt;span class=&quot;string&quot;&gt;&#39;com.android.support:appcompat-v7:23.2.1&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="android" scheme="http://rdors.com/categories/android/"/>
+    
+    
+      <category term="gradle" scheme="http://rdors.com/tags/gradle/"/>
+    
+      <category term="jcenter" scheme="http://rdors.com/tags/jcenter/"/>
     
   </entry>
   
@@ -1225,59 +1277,6 @@
       &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;项目目录结构图解&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="Android" scheme="http://rdors.com/categories/Android/"/>
-    
-    
-      <category term="android studio" scheme="http://rdors.com/tags/android-studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio  使用- 5 - 导入jar包，依赖工程，arr「原创」</title>
-    <link href="http://rdors.com/2016/01/20/2016-07-05-learn_as_5/"/>
-    <id>http://rdors.com/2016/01/20/2016-07-05-learn_as_5/</id>
-    <published>2016-01-19T16:00:00.000Z</published>
-    <updated>2016-07-23T01:48:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何导入jar包，依赖工程，arr&lt;/li&gt;
-&lt;/ol&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;导入jar&quot;&gt;&lt;a href=&quot;#导入jar&quot; class=&quot;headerlink&quot; title=&quot;导入jar&quot;&gt;&lt;/a&gt;导入jar&lt;/h1&gt;&lt;h2 id=&quot;1-直接copy到libs文件夹下，右键Add-as，具体步骤如下（优点：和eclipse类似，平滑过渡）&quot;&gt;&lt;a href=&quot;#1-直接copy到libs文件夹下，右键Add-as，具体步骤如下（优点：和eclipse类似，平滑过渡）&quot; class=&quot;headerlink&quot; title=&quot;1. 直接copy到libs文件夹下，右键Add as，具体步骤如下（优点：和eclipse类似，平滑过渡）&quot;&gt;&lt;/a&gt;1. 直接copy到libs文件夹下，右键Add as，具体步骤如下（优点：和eclipse类似，平滑过渡）&lt;/h2&gt;&lt;h3 id=&quot;1-1-点击工具栏选择Project模式（关于模式，请参照”目录3-界面预览“）&quot;&gt;&lt;a href=&quot;#1-1-点击工具栏选择Project模式（关于模式，请参照”目录3-界面预览“）&quot; class=&quot;headerlink&quot; title=&quot;1.1 点击工具栏选择Project模式（关于模式，请参照”目录3-界面预览“）&quot;&gt;&lt;/a&gt;1.1 点击工具栏选择Project模式（关于模式，请参照”目录3-界面预览“）&lt;/h3&gt;&lt;h3 id=&quot;1-2-复制volley-jar到libs文件夹下&quot;&gt;&lt;a href=&quot;#1-2-复制volley-jar到libs文件夹下&quot; class=&quot;headerlink&quot; title=&quot;1.2 复制volley.jar到libs文件夹下&quot;&gt;&lt;/a&gt;1.2 复制volley.jar到libs文件夹下&lt;/h3&gt;&lt;h3 id=&quot;1-3-选中jar，右键，选择Add-As-Library&quot;&gt;&lt;a href=&quot;#1-3-选中jar，右键，选择Add-As-Library&quot; class=&quot;headerlink&quot; title=&quot;1.3 选中jar，右键，选择Add As Library&quot;&gt;&lt;/a&gt;1.3 选中jar，右键，选择Add As Library&lt;/h3&gt;&lt;h3 id=&quot;1-4-成功&quot;&gt;&lt;a href=&quot;#1-4-成功&quot; class=&quot;headerlink&quot; title=&quot;1.4 成功&quot;&gt;&lt;/a&gt;1.4 成功&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_0.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;PS1：可以查看File-&amp;gt;Project Stucture-&amp;gt;app-&amp;gt;dependencies查看，确实已经导入&lt;br&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;PS2:或者查看build.gradle文件，确实已经导入&lt;br&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;2-Import-jar-方式导入jar包（本步骤的后半部分其实已经是导入依赖工程的部分）&quot;&gt;&lt;a href=&quot;#2-Import-jar-方式导入jar包（本步骤的后半部分其实已经是导入依赖工程的部分）&quot; class=&quot;headerlink&quot; title=&quot;2. Import jar 方式导入jar包（本步骤的后半部分其实已经是导入依赖工程的部分）&quot;&gt;&lt;/a&gt;2. Import jar 方式导入jar包（本步骤的后半部分其实已经是导入依赖工程的部分）&lt;/h2&gt;&lt;h3 id=&quot;2-1-File-gt-New-gt-New-Module&quot;&gt;&lt;a href=&quot;#2-1-File-gt-New-gt-New-Module&quot; class=&quot;headerlink&quot; title=&quot;2.1 File-&amp;gt;New-&amp;gt;New Module&quot;&gt;&lt;/a&gt;2.1 File-&amp;gt;New-&amp;gt;New Module&lt;/h3&gt;&lt;h3 id=&quot;2-2-选择Import-jar-arr&quot;&gt;&lt;a href=&quot;#2-2-选择Import-jar-arr&quot; class=&quot;headerlink&quot; title=&quot;2.2 选择Import jar/arr&quot;&gt;&lt;/a&gt;2.2 选择Import jar/arr&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-3-选择jar位置，点击finish导入&quot;&gt;&lt;a href=&quot;#2-3-选择jar位置，点击finish导入&quot; class=&quot;headerlink&quot; title=&quot;2.3 选择jar位置，点击finish导入&quot;&gt;&lt;/a&gt;2.3 选择jar位置，点击finish导入&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-4-点击菜单，File-gt-Project-Structure，显示如图所示界面，可见，volley已经存在project-structure中，你需要的只是把volley和app关联&quot;&gt;&lt;a href=&quot;#2-4-点击菜单，File-gt-Project-Structure，显示如图所示界面，可见，volley已经存在project-structure中，你需要的只是把volley和app关联&quot; class=&quot;headerlink&quot; title=&quot;2.4 点击菜单，File-&amp;gt;Project Structure，显示如图所示界面，可见，volley已经存在project structure中，你需要的只是把volley和app关联&quot;&gt;&lt;/a&gt;2.4 点击菜单，File-&amp;gt;Project Structure，显示如图所示界面，可见，volley已经存在project structure中，你需要的只是把volley和app关联&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-5-点击app，然后点击Dependencies&quot;&gt;&lt;a href=&quot;#2-5-点击app，然后点击Dependencies&quot; class=&quot;headerlink&quot; title=&quot;2.5 点击app，然后点击Dependencies&quot;&gt;&lt;/a&gt;2.5 点击app，然后点击Dependencies&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_6.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-6-这个界面显示的是app工程引用的依赖工程，jar等，点击最下方“-”号，选择，将volley与app关联，点击ok即可&quot;&gt;&lt;a href=&quot;#2-6-这个界面显示的是app工程引用的依赖工程，jar等，点击最下方“-”号，选择，将volley与app关联，点击ok即可&quot; class=&quot;headerlink&quot; title=&quot;2.6 这个界面显示的是app工程引用的依赖工程，jar等，点击最下方“+”号，选择，将volley与app关联，点击ok即可&quot;&gt;&lt;/a&gt;2.6 这个界面显示的是app工程引用的依赖工程，jar等，点击最下方“+”号，选择，将volley与app关联，点击ok即可&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2-7-至此已经成功导入&quot;&gt;&lt;a href=&quot;#2-7-至此已经成功导入&quot; class=&quot;headerlink&quot; title=&quot;2.7 至此已经成功导入&quot;&gt;&lt;/a&gt;2.7 至此已经成功导入&lt;/h3&gt;&lt;h2 id=&quot;3-compile方式导入jar-如果-该包有compile方式的话（Gradle语法），如下面v4包（优点：项目比较干净）&quot;&gt;&lt;a href=&quot;#3-compile方式导入jar-如果-该包有compile方式的话（Gradle语法），如下面v4包（优点：项目比较干净）&quot; class=&quot;headerlink&quot; title=&quot;3. compile方式导入jar,如果 该包有compile方式的话（Gradle语法），如下面v4包（优点：项目比较干净）&quot;&gt;&lt;/a&gt;3. compile方式导入jar,如果 该包有compile方式的话（Gradle语法），如下面v4包（优点：项目比较干净）&lt;/h2&gt;&lt;h3 id=&quot;3-1-如下图所示，在build-gradle文件dependencies部分加入你找到的compile语句&quot;&gt;&lt;a href=&quot;#3-1-如下图所示，在build-gradle文件dependencies部分加入你找到的compile语句&quot; class=&quot;headerlink&quot; title=&quot;3.1 如下图所示，在build.gradle文件dependencies部分加入你找到的compile语句&quot;&gt;&lt;/a&gt;3.1 如下图所示，在build.gradle文件dependencies部分加入你找到的compile语句&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_8.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;3-2-在文件上方会出现Sync-Now，如图所示，点击即可编译，如果是正确的compile语句，即导入成功&quot;&gt;&lt;a href=&quot;#3-2-在文件上方会出现Sync-Now，如图所示，点击即可编译，如果是正确的compile语句，即导入成功&quot; class=&quot;headerlink&quot; title=&quot;3.2 在文件上方会出现Sync Now，如图所示，点击即可编译，如果是正确的compile语句，即导入成功&quot;&gt;&lt;/a&gt;3.2 在文件上方会出现Sync Now，如图所示，点击即可编译，如果是正确的compile语句，即导入成功&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_9.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;3-3-接下来的步骤重复-一-2-D中的步骤，即引用成功&quot;&gt;&lt;a href=&quot;#3-3-接下来的步骤重复-一-2-D中的步骤，即引用成功&quot; class=&quot;headerlink&quot; title=&quot;3.3 接下来的步骤重复 一.2.D中的步骤，即引用成功&quot;&gt;&lt;/a&gt;3.3 接下来的步骤重复 一.2.D中的步骤，即引用成功&lt;/h3&gt;&lt;p&gt;小结：总结了导入jar常用的三种方式，个人认为如果有可能，第三种方式最佳&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;引用依赖工程&quot;&gt;&lt;a href=&quot;#引用依赖工程&quot; class=&quot;headerlink&quot; title=&quot;引用依赖工程&quot;&gt;&lt;/a&gt;引用依赖工程&lt;/h1&gt;&lt;p&gt;AS中的依赖工程叫做Module。&lt;br&gt;     AS中的依赖工程是和eclipse 中的目录结构不一样的，你可以把eclipse中的依赖工程转成AS工程（这样做可能会有莫名其妙的问题），但是我推荐新建Module，然后copy&lt;br&gt;     源码和资源到新的Module中，这是最保险的。&lt;/p&gt;
-&lt;h2 id=&quot;1-新建Module&quot;&gt;&lt;a href=&quot;#1-新建Module&quot; class=&quot;headerlink&quot; title=&quot;1. 新建Module&quot;&gt;&lt;/a&gt;1. 新建Module&lt;/h2&gt;&lt;h3 id=&quot;1-1-File-gt-New-gt-New-Module-然后一步一步创建，直到Finish，即创建Module成功&quot;&gt;&lt;a href=&quot;#1-1-File-gt-New-gt-New-Module-然后一步一步创建，直到Finish，即创建Module成功&quot; class=&quot;headerlink&quot; title=&quot;1.1 File-&amp;gt;New-&amp;gt;New Module,然后一步一步创建，直到Finish，即创建Module成功&quot;&gt;&lt;/a&gt;1.1 File-&amp;gt;New-&amp;gt;New Module,然后一步一步创建，直到Finish，即创建Module成功&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_10.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-2-接下来的步骤重复-一-2-D中的步骤，即引用新创建的Module成功&quot;&gt;&lt;a href=&quot;#1-2-接下来的步骤重复-一-2-D中的步骤，即引用新创建的Module成功&quot; class=&quot;headerlink&quot; title=&quot;1.2 接下来的步骤重复 一.2.D中的步骤，即引用新创建的Module成功&quot;&gt;&lt;/a&gt;1.2 接下来的步骤重复 一.2.D中的步骤，即引用新创建的Module成功&lt;/h3&gt;&lt;h2 id=&quot;2-常规方法引用依赖工程&quot;&gt;&lt;a href=&quot;#2-常规方法引用依赖工程&quot; class=&quot;headerlink&quot; title=&quot;2. 常规方法引用依赖工程&quot;&gt;&lt;/a&gt;2. 常规方法引用依赖工程&lt;/h2&gt;&lt;p&gt;所以，下面的操作建立在已经存在一个可以被引用的AS依赖工程&lt;/p&gt;
-&lt;h3 id=&quot;2-1-File-gt-New-gt-Import-Module-选择-依赖工程，点击Finish（这些都很简单，不在截图）&quot;&gt;&lt;a href=&quot;#2-1-File-gt-New-gt-Import-Module-选择-依赖工程，点击Finish（这些都很简单，不在截图）&quot; class=&quot;headerlink&quot; title=&quot;2.1 File-&amp;gt;New-&amp;gt;Import Module,选择 依赖工程，点击Finish（这些都很简单，不在截图）&quot;&gt;&lt;/a&gt;2.1 File-&amp;gt;New-&amp;gt;Import Module,选择 依赖工程，点击Finish（这些都很简单，不在截图）&lt;/h3&gt;&lt;h3 id=&quot;2-2-接下来的步骤重复-一-2-D中的步骤，即引用新import的Module成功&quot;&gt;&lt;a href=&quot;#2-2-接下来的步骤重复-一-2-D中的步骤，即引用新import的Module成功&quot; class=&quot;headerlink&quot; title=&quot;2.2 接下来的步骤重复 一.2.D中的步骤，即引用新import的Module成功&quot;&gt;&lt;/a&gt;2.2 接下来的步骤重复 一.2.D中的步骤，即引用新import的Module成功&lt;/h3&gt;&lt;h2 id=&quot;3-compile方式引用依赖工程&quot;&gt;&lt;a href=&quot;#3-compile方式引用依赖工程&quot; class=&quot;headerlink&quot; title=&quot;3. compile方式引用依赖工程&quot;&gt;&lt;/a&gt;3. compile方式引用依赖工程&lt;/h2&gt;&lt;p&gt;看到这里是不是很熟悉？没错，跟引入jar一样，如果这个依赖工程放出了compile引用的方式，可以直接在build.gradle中声明，编译即可引用，&lt;br&gt;       具体步骤参照一.3 的步骤，即引用成功&lt;br&gt;  小结：总结了引入依赖工程的几种方式，其实和引入jar很类似&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;引入aar&quot;&gt;&lt;a href=&quot;#引入aar&quot; class=&quot;headerlink&quot; title=&quot;引入aar&quot;&gt;&lt;/a&gt;引入aar&lt;/h1&gt;&lt;p&gt;什么是aar？其实和jar类似，最大的区别是，jar只有class源文件，但是arr不仅有源文件，还有各种资源文件，导入了aar，类似于导入了依赖工程&lt;/p&gt;
-&lt;h3 id=&quot;1-File-gt-New-gt-New-Module&quot;&gt;&lt;a href=&quot;#1-File-gt-New-gt-New-Module&quot; class=&quot;headerlink&quot; title=&quot;1. File-&amp;gt;New-&amp;gt;New Module&quot;&gt;&lt;/a&gt;1. File-&amp;gt;New-&amp;gt;New Module&lt;/h3&gt;&lt;h3 id=&quot;2-选择Import-jar-arr，然后一步步操作直到Finish&quot;&gt;&lt;a href=&quot;#2-选择Import-jar-arr，然后一步步操作直到Finish&quot; class=&quot;headerlink&quot; title=&quot;2. 选择Import jar/arr，然后一步步操作直到Finish&quot;&gt;&lt;/a&gt;2. 选择Import jar/arr，然后一步步操作直到Finish&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xpc6d.com1.z0.glb.clouddn.com/as_learn_5_11.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;3-接下来的步骤重复-一-2-D中的步骤，即导入arr文件成功&quot;&gt;&lt;a href=&quot;#3-接下来的步骤重复-一-2-D中的步骤，即导入arr文件成功&quot; class=&quot;headerlink&quot; title=&quot;3. 接下来的步骤重复 一.2.D中的步骤，即导入arr文件成功&quot;&gt;&lt;/a&gt;3. 接下来的步骤重复 一.2.D中的步骤，即导入arr文件成功&lt;/h3&gt;&lt;p&gt;PS：一个依赖工程的arr文件可在该依赖工程的/build/outputs/arr文件夹下找到&lt;br&gt;小结：总结了导入arr文件的方式，导入后不可修改&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;简单描述了导入jar，依赖工程，arr等的方式&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;本文会带来什么&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何导入jar包，依赖工程，arr&lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
