@@ -7,27 +7,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>16年9月总结 | R&amp;D 哥哥的博客世界</title>
+  <title>mac 开发环境&amp;工具 - charles 4.0 使用「原创」 | R&amp;D 哥哥的博客世界</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="description" content="本文会带来什么
 
-之前的一些总结">
+介绍charles是什么
+filter 使用
+map remote
+map local(解决返回乱码问题)
+compose
+retry
+break">
 <meta property="og:type" content="article">
-<meta property="og:title" content="16年9月总结">
-<meta property="og:url" content="http://rdors.com/2016/09/17/2016-09-17-fights/index.html">
+<meta property="og:title" content="mac 开发环境&工具 - charles 4.0 使用「原创」">
+<meta property="og:url" content="http://rdors.com/2016/09/17/2016-09-17-engin-tools&evs-3/index.html">
 <meta property="og:site_name" content="R&D 哥哥的博客世界">
 <meta property="og:description" content="本文会带来什么
 
-之前的一些总结">
-<meta property="og:updated_time" content="2016-09-17T03:44:29.000Z">
+介绍charles是什么
+filter 使用
+map remote
+map local(解决返回乱码问题)
+compose
+retry
+break">
+<meta property="og:updated_time" content="2016-09-17T07:07:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="16年9月总结">
+<meta name="twitter:title" content="mac 开发环境&工具 - charles 4.0 使用「原创」">
 <meta name="twitter:description" content="本文会带来什么
 
-之前的一些总结">
+介绍charles是什么
+filter 使用
+map remote
+map local(解决返回乱码问题)
+compose
+retry
+break">
   
     <link rel="alternative" href="/atom.xml" title="R&amp;D 哥哥的博客世界" type="application/atom+xml">
   
@@ -149,13 +167,13 @@
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2016/09/17/2016-09-17-fights/">16年9月总结</a>
+      <a class="article-title" href="/2016/09/17/2016-09-17-engin-tools&evs-3/">mac 开发环境&amp;工具 - charles 4.0 使用「原创」</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-2016-09-17-fights" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-2016-09-17-engin-tools&amp;evs-3" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -169,7 +187,7 @@
 
 	</li>
 	<li class="hidden-xs"><i class="fa fa-comments"></i>
-	  <a href="http://rdors.com/2016/09/17/2016-09-17-fights/#disqus_thread" class="article-comment-link">Comments</a>
+	  <a href="http://rdors.com/2016/09/17/2016-09-17-engin-tools&evs-3/#disqus_thread" class="article-comment-link">Comments</a>
 	</li>
 	<li class="hidden-xs"><i class="fa fa-tags"></i> 
 	  
@@ -181,7 +199,7 @@
     
     Category: 
     
-    <a class="article-category-link" href="/categories/随笔/">随笔</a>
+    <a class="article-category-link" href="/categories/tools/">tools</a>
   </div>
   <br>
 
@@ -192,16 +210,28 @@
       
         <p><em>本文会带来什么</em></p>
 <ol>
-<li>之前的一些总结</li>
+<li>介绍charles是什么</li>
+<li>filter 使用</li>
+<li>map remote</li>
+<li>map local(解决返回乱码问题)</li>
+<li>compose</li>
+<li>retry</li>
+<li>break</li>
 </ol>
 <a id="more"></a>
 <hr>
-<h1 id="随性而写"><a href="#随性而写" class="headerlink" title="随性而写"></a>随性而写</h1><blockquote>
-<p>更新几乎断了两个月，忙着写ppt，忙着做项目，有一点感慨</p>
-<p>先说述职，感觉到干的再多，写不进ppt，说不出来 都是白搭，很多干了的，不能写进ppt，有的没干的，死活都要跟自己的工作拉关系，有点形式主义，但，又能如何？地位不到，别人看到的都是你能表现出来的东西，不是楚门，没有人会注意你真正做了什么，不过还好，一切都往好的方面发展，会越来越好，感谢nice的同事&amp;nice的领导支持</p>
-<p> 然后就是一个做了一个多月的项目，时间紧，任务重，准入的前一天还在开发，灰度的时候还在加需求，也是醉了，一度认为中秋节都要在公司，还好还好，在中秋当天4点完成，老大们全程都在，同事也在，还有其他部门的同事半夜起来支持，给力，精神值得赞扬，但这样流程杂乱的方式不鼓励，拥抱变化没错，更希望的是井井有条，周期这么紧的快速开发带来的低质量，高耦合之后需要更多时间修补</p>
-<p>do more , do better</p>
+<p> 推荐这位同学的 <a href="http://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="external">Charles 从入门到精通</a> ,写得很好,本文属于些许补充</p>
+<h1 id="介绍charles"><a href="#介绍charles" class="headerlink" title="介绍charles"></a>介绍charles</h1><blockquote>
+<p>对于我们 app 开发者来说,就是 移动设备和 后台server 的一个中间代理,他会截获我们的 request 和 response,以此为 基点可以做很多事,比如 修改 request,修改返回response,重发request,模拟网络异常等</p>
 </blockquote>
+<h1 id="map-设置-maplocal-乱码怎么破"><a href="#map-设置-maplocal-乱码怎么破" class="headerlink" title="map 设置 maplocal 乱码怎么破?"></a>map 设置 maplocal 乱码怎么破?</h1><p><a href="http://www.paincker.com/charles-charset-incorrect" target="_blank" rel="external">Charles设置MapLocal乱码的解决</a></p>
+<p>简单来说,就是因为  map local的时候 返回 response  中 header 会自动修改部分,所以就要检测,如果其中content-type 不包含 utf-8,则修改为 包含 utf-8即可</p>
+<h1 id="response-乱码怎么破"><a href="#response-乱码怎么破" class="headerlink" title="response 乱码怎么破"></a>response 乱码怎么破</h1><p>在 4.0上没有找到较好办法,只能将 response中的 内容复制下来用 subline text 打开(安装pretty 插件 ,然后格式化即可),会自动转化 为 utf - 8 </p>
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="external">Charles 从入门到精通</a></li>
+<li><a href="http://www.paincker.com/charles-charset-incorrect" target="_blank" rel="external">Charles设置MapLocal乱码的解决</a></li>
+</ul>
 
       
     </div>
@@ -210,19 +240,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/09/17/2016-09-17-engin-tools&evs-3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          mac 开发环境&amp;工具 - charles 4.0 使用「原创」
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/09/13/2016-09-13-engin-tools&evs-2/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/17/2016-09-17-fights/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">mac 开发环境&amp;工具 - sublime text 3 「原创」</div>
+      <div class="article-nav-title">16年9月总结</div>
     </a>
   
 </nav>
