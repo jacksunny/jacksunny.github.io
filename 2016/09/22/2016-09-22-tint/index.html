@@ -7,30 +7,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>mac 开发环境&amp;工具 - sublime text 3 「原创」 | R&amp;D 哥哥的博客世界</title>
+  <title>Tint 着色器讲解「原创」 | R&amp;D 哥哥的博客世界</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="description" content="本文会带来什么
 
-介绍 sublime text 是什么
-sublime text 插件安装">
+android tint 是什么鬼？
+tint 可用来做什么？
+例子：selector 的另一种实现方式
+tint原理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mac 开发环境&工具 - sublime text 3 「原创」">
-<meta property="og:url" content="http://rdors.com/2016/09/13/2016-09-13-engin-tools&evs-2/index.html">
+<meta property="og:title" content="Tint 着色器讲解「原创」">
+<meta property="og:url" content="http://rdors.com/2016/09/22/2016-09-22-tint/index.html">
 <meta property="og:site_name" content="R&D 哥哥的博客世界">
 <meta property="og:description" content="本文会带来什么
 
-介绍 sublime text 是什么
-sublime text 插件安装">
-<meta property="og:updated_time" content="2016-09-17T07:21:15.000Z">
+android tint 是什么鬼？
+tint 可用来做什么？
+例子：selector 的另一种实现方式
+tint原理">
+<meta property="og:updated_time" content="2016-09-22T11:47:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mac 开发环境&工具 - sublime text 3 「原创」">
+<meta name="twitter:title" content="Tint 着色器讲解「原创」">
 <meta name="twitter:description" content="本文会带来什么
 
-介绍 sublime text 是什么
-sublime text 插件安装">
+android tint 是什么鬼？
+tint 可用来做什么？
+例子：selector 的另一种实现方式
+tint原理">
   
     <link rel="alternative" href="/atom.xml" title="R&amp;D 哥哥的博客世界" type="application/atom+xml">
   
@@ -152,13 +158,13 @@ sublime text 插件安装">
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2016/09/13/2016-09-13-engin-tools&evs-2/">mac 开发环境&amp;工具 - sublime text 3 「原创」</a>
+      <a class="article-title" href="/2016/09/22/2016-09-22-tint/">Tint 着色器讲解「原创」</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-2016-09-13-engin-tools&amp;evs-2" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-2016-09-22-tint" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -168,11 +174,11 @@ sublime text 插件安装">
       <ul class="blog-info">
 	<li><i class="fa fa-user"></i> JackSunny</li>
 	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2016-09-12T16:00:00.000Z" itemprop="datePublished">2016/09/13</time>
+	  <time datetime="2016-09-21T16:00:00.000Z" itemprop="datePublished">2016/09/22</time>
 
 	</li>
 	<li class="hidden-xs"><i class="fa fa-comments"></i>
-	  <a href="http://rdors.com/2016/09/13/2016-09-13-engin-tools&evs-2/#disqus_thread" class="article-comment-link">Comments</a>
+	  <a href="http://rdors.com/2016/09/22/2016-09-22-tint/#disqus_thread" class="article-comment-link">Comments</a>
 	</li>
 	<li class="hidden-xs"><i class="fa fa-tags"></i> 
 	  
@@ -184,7 +190,7 @@ sublime text 插件安装">
     
     Category: 
     
-    <a class="article-category-link" href="/categories/tools/">tools</a>
+    <a class="article-category-link" href="/categories/Android/">Android</a>
   </div>
   <br>
 
@@ -195,21 +201,42 @@ sublime text 插件安装">
       
         <p><em>本文会带来什么</em></p>
 <ol>
-<li>介绍 sublime text 是什么</li>
-<li>sublime text 插件安装</li>
+<li>android tint 是什么鬼？</li>
+<li>tint 可用来做什么？</li>
+<li>例子：selector 的另一种实现方式</li>
+<li>tint原理</li>
 </ol>
 <a id="more"></a>
 <hr>
-<h1 id="sublime-text-是什么"><a href="#sublime-text-是什么" class="headerlink" title="sublime text 是什么"></a>sublime text 是什么</h1><blockquote>
-<p>Sublime Text：一款具有代码高亮、语法提示、自动完成且反应快速的编辑器软件，不仅具有华丽的界面，还支持插件扩展机制，用她来写代码，绝对是一种享受。相比于难于上手的Vim，浮肿沉重的Eclipse，VS，即便体积轻巧迅速启动的Editplus、Notepad++，在SublimeText面前大略显失色，无疑这款性感无比的编辑器是Coding和Writing最佳的选择，没有之一</p>
+<h1 id="android-tint-是什么鬼？"><a href="#android-tint-是什么鬼？" class="headerlink" title="android tint 是什么鬼？"></a>android tint 是什么鬼？</h1><blockquote>
+<p>tint 翻译为 着色器</p>
 </blockquote>
-<h1 id="sublime-text-3-插件安装"><a href="#sublime-text-3-插件安装" class="headerlink" title="sublime text 3 插件安装"></a>sublime text 3 插件安装</h1><h3 id="1-下载package-Control"><a href="#1-下载package-Control" class="headerlink" title="1.下载package Control"></a>1.下载package Control</h3><p><a href="https://packagecontrol.io/installation" target="_blank" rel="external">传送门</a></p>
-<h3 id="2-下载后-移动下载文件-到以下目录后-重启-软件"><a href="#2-下载后-移动下载文件-到以下目录后-重启-软件" class="headerlink" title="2.下载后 移动下载文件 到以下目录后 重启 软件"></a>2.下载后 移动下载文件 到以下目录后 重启 软件</h3><p>/Users/<em>**</em>/Library/Application Support/Sublime Text 3/Installed Packages</p>
-<h3 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3.安装插件"></a>3.安装插件</h3><p>重启后已经可以使用,快捷键:command + shift + p ,然后选择 install package ,然后输入你想要的插件名即可安装,重启后使用</p>
+<h1 id="tint-可用来做什么？"><a href="#tint-可用来做什么？" class="headerlink" title="tint 可用来做什么？"></a>tint 可用来做什么？</h1><blockquote>
+<p>可以为drawable 着色，满足以下需求<br>1.图片没换，就换了颜色，用tint省了一张图片<br>2.设置整体色调</p>
+</blockquote>
+<h1 id="例子：selector-的另一种实现方式"><a href="#例子：selector-的另一种实现方式" class="headerlink" title="例子：selector 的另一种实现方式"></a>例子：selector 的另一种实现方式</h1><blockquote>
+<p>我们试着用tint ，以及一张图片设置按钮的normal态和按下态</p>
+</blockquote>
+<h3 id="方式1"><a href="#方式1" class="headerlink" title="方式1"></a>方式1</h3><p>用xml布局来做（<code>5.0 以上有效</code>）</p>
+<p>/res/drawable/tint_selector.xml</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;selector xmlns:android="http://schemas.android.com/apk/res/android"&gt;</span><br><span class="line">    &lt;item android:state_pressed="true" android:drawable="@drawable/tint_pressed" &gt;&lt;/item&gt;</span><br><span class="line">    &lt;item android:drawable="@drawable/tint_normal" &gt;&lt;/item&gt;</span><br><span class="line">&lt;/selector&gt;</span><br></pre></td></tr></table></figure>
+<p>其中 tint_normal 为一张png图片,tint_pressed为以tint_normal.png为基础的xml drawable 文件,其内容如下</p>
+<p>/res/drawable/tint_pressed.xml</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;bitmap xmlns:android="http://schemas.android.com/apk/res/android"</span><br><span class="line">        android:src="@drawable/tint_normal"</span><br><span class="line">        android:tint="@color/tint_pressed"</span><br><span class="line">        android:tintMode="multiply"&gt;</span><br><span class="line">&lt;/bitmap&gt;</span><br></pre></td></tr></table></figure>
+<p>讲解：其中 以 tint_normal 为基础图片，以 color/tint_pressed 颜色为 图片作色，最后 ImageView 正常引用即可</p>
+<h3 id="方式2"><a href="#方式2" class="headerlink" title="方式2"></a>方式2</h3><p>用java 代码（<code>完美兼容5.0以下</code>）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 用 tint 设置 按下颜色切换</span><br><span class="line"> *</span><br><span class="line"> * <span class="doctag">@param</span> imageView</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTintDrawable</span><span class="params">(ImageView imageView)</span> </span>&#123;</span><br><span class="line">    Drawable drawable = ContextCompat.getDrawable(<span class="keyword">this</span>, R.drawable.tint_normal);</span><br><span class="line">    <span class="keyword">int</span>[] colors = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;ContextCompat.getColor(<span class="keyword">this</span>, R.color.tint_pressed),</span><br><span class="line">            ContextCompat.getColor(<span class="keyword">this</span>, R.color.tint_normal)&#125;;</span><br><span class="line">    <span class="keyword">int</span>[][] states = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][];</span><br><span class="line">    states[<span class="number">0</span>] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;android.R.attr.state_pressed&#125;;</span><br><span class="line">    states[<span class="number">1</span>] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;&#125;;</span><br><span class="line">    ColorStateList colorList = <span class="keyword">new</span> ColorStateList(states, colors);</span><br><span class="line">    StateListDrawable stateListDrawable = <span class="keyword">new</span> StateListDrawable();</span><br><span class="line">    stateListDrawable.addState(states[<span class="number">0</span>], drawable);<span class="comment">//注意顺序</span></span><br><span class="line">    stateListDrawable.addState(states[<span class="number">1</span>], drawable);</span><br><span class="line">    Drawable.ConstantState state = stateListDrawable.getConstantState();</span><br><span class="line">    drawable = DrawableCompat.wrap(state == <span class="keyword">null</span> ? stateListDrawable : state.newDrawable()).mutate();</span><br><span class="line">    DrawableCompat.setTintList(drawable, colorList);</span><br><span class="line">    imageView.setImageDrawable(drawable);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>讲解：以代码的方式为ImageView 设置 tint着色后的图片</p>
+<h1 id="tint-原理"><a href="#tint-原理" class="headerlink" title="tint 原理"></a>tint 原理</h1><blockquote>
+<p>最终调用了 Drawable 的 setColorFilter() 方法</p>
+</blockquote>
 <hr>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a href="http://www.jianshu.com/p/3cb5c6f2421c" target="_blank" rel="external">如何优雅地使用Sublime Text3</a></li>
-</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li><a href="http://www.race604.com/tint-drawable/" target="_blank" rel="external">Drawable 着色的后向兼容方案</a></li>
+<li><a href="https://segmentfault.com/a/1190000003038675" target="_blank" rel="external">谈谈Android Material Design 中的Tint（着色）</a></li>
+<li><a href="http://www.open-open.com/lib/view/open1454052058573.html" target="_blank" rel="external">浅谈 Android L 的 Tint（着色）</a></li>
+<li><a href="http://www.mobile-open.com/2016/975866.html" target="_blank" rel="external">Android-使用tint一张图制作selector</a></li>
+</ol>
 
       
     </div>
@@ -218,19 +245,10 @@ sublime text 插件安装">
     
 <nav id="article-nav">
   
-    <a href="/2016/09/17/2016-09-17-engin-tools&evs-3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          mac 开发环境&amp;工具 - charles 4.0 使用「原创」
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/09/01/2016-09-01-engin-tools&evs-1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/17/2016-09-17-fights/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">mac 开发环境&amp;工具 - iTerm 2「原创」</div>
+      <div class="article-nav-title">16年9月总结</div>
     </a>
   
 </nav>
